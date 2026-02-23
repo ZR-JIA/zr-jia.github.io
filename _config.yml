@@ -1,0 +1,35 @@
+# Site Settings
+title: "Zheng Rong JIA"
+name: "Zheng Rong JIA"
+description: "Researcher applying for MPhil in Australia. Clinical AI, deep learning, and data-driven systems."
+url: "https://zr-jia.github.io"
+baseurl: ""
+repository: "ZR-JIA/zr-jia.github.io"
+
+# Reading Files
+include:
+  - _pages
+
+# Defaults
+defaults:
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: default
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+# Encoding
+encoding: "utf-8"

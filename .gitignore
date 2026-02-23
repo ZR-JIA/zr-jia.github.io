@@ -1,0 +1,14 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+Gemfile.lock
+.ruby-version
+.DS_Store
+
+# Sensitive documents - DO NOT upload
+*.pdf
+conference.pdf
+ZhengrongJIA-CV.pdf

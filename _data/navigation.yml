@@ -1,0 +1,15 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Slides"
+    url: /slides/
+  - title: "CV"
+    url: /cv/
+
+profiles:
+  github: "https://github.com/ZR-JIA"
+  linkedin: "https://www.linkedin.com/in/zhengrong-jia-866456374"
+  orcid: "https://orcid.org/0009-0007-8829-6713"
+  email: "zhengrong.jia.academic@gmail.com"
