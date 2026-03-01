@@ -33,7 +33,7 @@ title: "Slides"
           <span style="position:absolute;top:8px;left:10px;font-family:'Inter',sans-serif;font-size:9px;font-weight:600;color:rgba(255,255,255,0.5);background:rgba(0,0,0,0.2);padding:2px 6px;border-radius:3px;"><i class="fas fa-code" style="margin-right:3px;"></i> Marp / Markdown</span>
         </div>
         <h3 class="slide-title">DT-Transformer for Stroke Mortality Prediction</h3>
-        <p class="slide-meta">CCAI 2025</p>
+        <p class="slide-meta">CCAI 2026</p>
         <p style="font-size:12px;color:var(--color-text-tertiary);margin-top:6px;font-style:italic;"><i class="fas fa-clock" style="margin-right:4px;"></i> Slides will be released alongside the preprint</p>
       </div>
     </div>

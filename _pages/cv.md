@@ -128,7 +128,7 @@ title: "CV"
             <ul style="font-size:14px;color:var(--color-text-secondary);padding-left:20px;line-height:1.8;">
               <li>Outperformed strongest neural baseline NN (AUPRC 0.5394) and Standard Transformer (0.5279); competitive with XGBoost (0.6467)</li>
               <li>Implemented attention map visualization for clinical interpretability of feature importance</li>
-              <li>Paper accepted at <strong>CCAI (China Conference on Artificial Intelligence)</strong> (expected publication May 2026)</li>
+              <li>Paper accepted at <strong>CCAI 2026</strong> (The 6th International Conference on Computer Communication and Artificial Intelligence, May 2026)</li>
             </ul>
           </div>
         </div>

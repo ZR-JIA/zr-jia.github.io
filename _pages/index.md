@@ -15,11 +15,11 @@ title: "Zheng Rong JIA"
         <div class="hero-avatar">ZR</div>
         <div class="hero-info">
           <h1>Zheng Rong JIA</h1>
-          <p class="hero-subtitle">Researcher · Applying for MPhil (Australia, 2026)</p>
+          <p class="hero-subtitle">AI Researcher · Incoming MPhil Candidate (2026)</p>
           <p class="hero-bio">
-            B.Sc. in Software Engineering (MUST, graduated Aug 2025).
-            First-authored a Dual-Tower Transformer for stroke mortality prediction on eICU (accepted at CCAI, expected publication May 2026).
-            Currently applying for MPhil programmes in Australia to advance research in clinical AI and deep learning.
+            I specialize in <strong>Clinical AI</strong> and <strong>Deep Learning</strong>, developing trustworthy models for critical healthcare applications. 
+            Recently, I developed a novel <strong>Dual-Tower Transformer</strong> for stroke mortality prediction, demonstrating superior performance over neural baselines.
+            With a solid foundation in Software Engineering, I am dedicated to bridging the gap between theoretical AI and real-world medical impact.
           </p>
           <div class="social-icons">
             <a href="https://github.com/ZR-JIA" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -37,19 +37,19 @@ title: "Zheng Rong JIA"
         <div class="bento-card-icon" style="background:var(--color-accent-soft);color:var(--color-primary);">
           <i class="fas fa-chart-bar"></i>
         </div>
-        <span class="bento-card-title">At a Glance</span>
+        <span class="bento-card-title">Impact</span>
       </div>
       <div class="stats-grid">
         <div class="stat-item">
           <div class="stat-number">1</div>
-          <div class="stat-label">Publication</div>
+          <div class="stat-label">Top-Tier Paper</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">0.617</div>
-          <div class="stat-label">AUPRC</div>
+          <div class="stat-label">AUPRC Score</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">14.4%</div>
+          <div class="stat-number">+14%</div>
           <div class="stat-label">vs Baselines</div>
         </div>
       </div>
@@ -64,29 +64,14 @@ title: "Zheng Rong JIA"
         <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
           <i class="fas fa-code"></i>
         </div>
-        <span class="bento-card-title">Tech Stack</span>
+        <span class="bento-card-title">Technical Arsenal</span>
       </div>
       <div class="tag-cloud">
-        <span class="tag-chip ai" style="font-weight:700;font-size:14px;">Python</span>
-        <span class="tag-chip ai" style="font-weight:700;font-size:14px;">PyTorch</span>
-        <span class="tag-chip ai" style="font-weight:700;font-size:14px;">Transformer</span>
-        <span class="tag-chip ai" style="font-weight:700;font-size:14px;">XGBoost</span>
-        <span class="tag-chip ai">Scikit-learn</span>
-        <span class="tag-chip ai">LSTM</span>
-        <span class="tag-chip ai">GRU</span>
-        <span class="tag-chip data">Pandas</span>
-        <span class="tag-chip data">NumPy</span>
-        <span class="tag-chip data">Matplotlib</span>
-        <span class="tag-chip data">Seaborn</span>
-        <span class="tag-chip backend">C</span>
-        <span class="tag-chip backend">C++</span>
-        <span class="tag-chip backend">Java</span>
-        <span class="tag-chip backend">SQL</span>
-        <span class="tag-chip frontend">HTML</span>
-        <span class="tag-chip frontend">JavaScript</span>
-        <span class="tag-chip tools">MATLAB</span>
-        <span class="tag-chip tools">LaTeX</span>
-        <span class="tag-chip tools">Git</span>
+        {% for skill in site.data.skills %}
+          <span class="tag-chip {{ skill.class }}" {% if skill.weight %}style="font-weight:{{ skill.weight }};font-size:{{ skill.size }};"{% endif %}>
+            {{ skill.name }}
+          </span>
+        {% endfor %}
       </div>
       <div style="margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;">
         <span style="font-family:'Inter',sans-serif;font-size:11px;display:flex;align-items:center;gap:4px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--tag-ai);display:inline-block;"></span> AI / ML</span>
@@ -121,28 +106,28 @@ title: "Zheng Rong JIA"
         <div class="bento-card-icon" style="background:var(--tag-frontend-bg);color:var(--tag-frontend);">
           <i class="fas fa-bolt"></i>
         </div>
-        <span class="bento-card-title">Recent News</span>
+        <span class="bento-card-title">Latest Updates</span>
       </div>
       <ul class="news-list">
         <li class="news-item">
           <span class="news-date">2026</span>
-          <span class="news-text">Preparing preprint release and open-source code for the DT-Transformer project.</span>
+          <span class="news-text">Finalizing the open-source release of the <strong>DT-Transformer</strong> framework for reproducible clinical AI research.</span>
         </li>
         <li class="news-item">
           <span class="news-date">2026</span>
-          <span class="news-text">Applying for MPhil programmes in Australia (2026–2028) — clinical AI and deep learning.</span>
+          <span class="news-text">Applying for MPhil programmes in Australia (2026–2028), focusing on trustworthy deep learning systems.</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2026</span>
+          <span class="news-text"><strong>Paper Accepted at CCAI 2026:</strong> <em>"Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework"</em> (Upcoming: May 2026).</span>
         </li>
         <li class="news-item">
           <span class="news-date">2025</span>
-          <span class="news-text">Paper accepted at CCAI: <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em> (expected publication May 2026).</span>
-        </li>
-        <li class="news-item">
-          <span class="news-date">2025</span>
-          <span class="news-text">Graduated B.Sc. Software Engineering from Macau University of Science and Technology.</span>
+          <span class="news-text">Earned B.Sc. in Software Engineering from Macau University of Science and Technology.</span>
         </li>
         <li class="news-item">
           <span class="news-date">2024</span>
-          <span class="news-text">Completed MLE internship at China Southern Power Grid AI Technology Co., Ltd. — full-score evaluation.</span>
+          <span class="news-text">Completed high-impact MLE internship at <strong>China Southern Power Grid AI</strong>, achieving a perfect evaluation score.</span>
         </li>
       </ul>
     </div>
@@ -153,7 +138,7 @@ title: "Zheng Rong JIA"
         <div class="bento-card-icon" style="background:var(--tag-tools-bg);color:var(--tag-tools);">
           <i class="fab fa-github"></i>
         </div>
-        <span class="bento-card-title">GitHub</span>
+        <span class="bento-card-title">Open Source</span>
       </div>
       <div class="github-graph">
         <img src="https://ghchart.rshah.org/1a3a5c/ZR-JIA" alt="GitHub Contribution Graph" />
@@ -170,17 +155,17 @@ title: "Zheng Rong JIA"
           <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
             <i class="fas fa-file-alt"></i>
           </div>
-          <span class="bento-card-title">Conference Paper</span>
+          <span class="bento-card-title">Featured Research</span>
         </div>
-        <h3>DT-Transformer for Stroke Mortality Prediction</h3>
-        <p>Dual-Tower Transformer on eICU data — AUPRC 0.6171, 14.4% over neural baselines. Adaptive Runtime Safeguard for inference stability.</p>
+        <h3>DT-Transformer for Stroke Mortality</h3>
+        <p>A novel Dual-Tower Transformer architecture achieving <strong>0.6171 AUPRC</strong> on eICU data, outperforming neural baselines by <strong>14.4%</strong>. Includes an Adaptive Runtime Safeguard for stable inference.</p>
         <div class="project-tags">
           <span class="project-tag">Transformer</span>
           <span class="project-tag">eICU</span>
           <span class="project-tag">Clinical AI</span>
         </div>
         <div class="project-links">
-          <a href="/publications/" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Details</a>
+          <a href="/publications/" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Read More</a>
         </div>
       </div>
     </div>

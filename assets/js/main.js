@@ -7,4 +7,32 @@ document.addEventListener('DOMContentLoaded', function () {
       links.classList.toggle('open');
     });
   }
+
+  // Dark Mode Toggle
+  var themeToggle = document.querySelector('.theme-toggle');
+  var icon = themeToggle ? themeToggle.querySelector('i') : null;
+  var html = document.documentElement;
+
+  // Check saved theme or system preference
+  var savedTheme = localStorage.getItem('theme');
+  var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+    html.setAttribute('data-theme', 'dark');
+    if (icon) icon.classList.replace('fa-moon', 'fa-sun');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      if (html.getAttribute('data-theme') === 'dark') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        if (icon) icon.classList.replace('fa-sun', 'fa-moon');
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        if (icon) icon.classList.replace('fa-moon', 'fa-sun');
+      }
+    });
+  }
 });

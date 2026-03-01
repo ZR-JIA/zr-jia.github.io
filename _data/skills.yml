@@ -1,0 +1,67 @@
+- name: Python
+  class: ai
+  weight: 700
+  size: 14px
+
+- name: PyTorch
+  class: ai
+  weight: 700
+  size: 14px
+
+- name: Transformer
+  class: ai
+  weight: 700
+  size: 14px
+
+- name: XGBoost
+  class: ai
+  weight: 700
+  size: 14px
+
+- name: Scikit-learn
+  class: ai
+
+- name: LSTM
+  class: ai
+
+- name: GRU
+  class: ai
+
+- name: Pandas
+  class: data
+
+- name: NumPy
+  class: data
+
+- name: Matplotlib
+  class: data
+
+- name: Seaborn
+  class: data
+
+- name: C
+  class: backend
+
+- name: C++
+  class: backend
+
+- name: Java
+  class: backend
+
+- name: SQL
+  class: backend
+
+- name: HTML
+  class: frontend
+
+- name: JavaScript
+  class: frontend
+
+- name: MATLAB
+  class: tools
+
+- name: LaTeX
+  class: tools
+
+- name: Git
+  class: tools

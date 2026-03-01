@@ -17,7 +17,7 @@ title: "Publications"
         <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
           <i class="fas fa-book"></i>
         </div>
-        <span class="bento-card-title">Conference Paper &middot; CCAI 2025</span>
+        <span class="bento-card-title">Conference Paper &middot; CCAI 2026</span>
       </div>
 
       <h2 style="font-size:20px;margin-bottom:8px;color:var(--color-text);">Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</h2>
@@ -26,7 +26,7 @@ title: "Publications"
         <strong>Zhengrong Jia*</strong>, Kwong-Cheong Wong*
       </p>
       <p style="font-size:14px;color:var(--color-text-tertiary);font-style:italic;margin-bottom:16px;">
-        CCAI (China Conference on Artificial Intelligence), 2025
+        The 6th International Conference on Computer Communication and Artificial Intelligence (CCAI), 2026
       </p>
 
       <div style="background:var(--color-bg);border-radius:var(--radius-sm);padding:16px 20px;margin-bottom:16px;">
@@ -138,14 +138,14 @@ title: "Publications"
       </div>
       <p style="font-size:13px;color:var(--color-text-secondary);margin-bottom:12px;">If you find this work useful, please cite:</p>
       <div style="background:var(--color-bg);border-radius:var(--radius-sm);padding:16px 20px;font-family:'Courier New',monospace;font-size:13px;line-height:1.7;color:var(--color-text-secondary);overflow-x:auto;">
-        <pre style="margin:0;white-space:pre-wrap;">@inproceedings{jia2025dttransformer,
+        <pre style="margin:0;white-space:pre-wrap;">@inproceedings{jia2026dttransformer,
   title     = {Deep Learning for Stroke Mortality Prediction
                in eICU: A Dual-Tower Transformer Framework},
   author    = {Jia, Zhengrong and Wong, Kwong-Cheong},
-  booktitle = {Proceedings of CCAI (China Conference on
-               Artificial Intelligence)},
-  year      = {2025},
-  note      = {Accepted. Expected publication May 2026}
+  booktitle = {Proceedings of the 6th International Conference on
+               Computer Communication and Artificial Intelligence (CCAI)},
+  year      = {2026},
+  note      = {Accepted. To appear in May 2026}
 }</pre>
       </div>
     </div>
