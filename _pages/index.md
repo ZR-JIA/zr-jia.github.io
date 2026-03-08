@@ -12,7 +12,7 @@ title: "Zheng Rong JIA"
     <!-- Profile Card -->
     <div class="bento-card bento-span-2">
       <div class="hero-card">
-        <div class="hero-avatar">ZR</div>
+        <img src="/assets/images/avatar.jpg" alt="Zheng Rong JIA" class="hero-avatar">
         <div class="hero-info">
           <h1>Zheng Rong JIA</h1>
           <p class="hero-subtitle">AI Researcher · Incoming MPhil Candidate (2026)</p>
@@ -25,6 +25,7 @@ title: "Zheng Rong JIA"
             <a href="https://github.com/ZR-JIA" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/zhengrong-jia-866456374" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://orcid.org/0009-0007-8829-6713" class="social-icon" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" class="social-icon" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
             <a href="mailto:zhengrong.jia.academic@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
           </div>
         </div>

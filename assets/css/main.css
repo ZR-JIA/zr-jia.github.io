@@ -291,14 +291,6 @@ img {
   border-radius: 24px;
   object-fit: cover;
   flex-shrink: 0;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-lighter));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
 }
 
 .hero-info h1 {

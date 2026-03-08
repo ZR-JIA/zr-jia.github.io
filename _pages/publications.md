@@ -37,11 +37,11 @@ title: "Publications"
       </div>
 
       <div class="pub-links" style="flex-wrap:wrap;">
-        <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> Preprint (coming soon)</a>
-        <a href="https://github.com/ZR-JIA" class="btn btn-outline"><i class="fab fa-github"></i> Code (coming soon)</a>
+        <span class="btn btn-outline" style="cursor:default;opacity:0.5;"><i class="fas fa-file-pdf"></i> Preprint (coming soon)</span>
+        <span class="btn btn-outline" style="cursor:default;opacity:0.5;"><i class="fab fa-github"></i> Code (coming soon)</span>
         <a href="/slides/" class="btn btn-outline"><i class="fas fa-file-powerpoint"></i> Slides</a>
         <a href="https://orcid.org/0009-0007-8829-6713" class="btn btn-outline"><i class="fab fa-orcid"></i> ORCID</a>
-        <a href="https://scholar.google.com" class="btn btn-outline"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" class="btn btn-outline"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
       </div>
     </div>
 
