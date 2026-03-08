@@ -1,27 +1,34 @@
-# Personal GitHub Pages Website
+# Zheng Rong JIA — Personal Website
 
-A Jekyll-based personal website using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme. Designed as a professional hub integrating GitHub, LinkedIn, ORCID, and Google Scholar.
+A Jekyll-based personal academic website. Designed as a professional hub integrating GitHub, LinkedIn, ORCID, and Google Scholar.
+
+**Live site:** [https://zr-jia.github.io](https://zr-jia.github.io)
 
 ## Structure
 
 ```
-├── _config.yml          # Site configuration (author, links, theme)
+├── _config.yml            # Site configuration (title, URL, plugins)
+├── Gemfile                # Ruby dependencies
 ├── _data/
-│   └── navigation.yml   # Navigation bar + external profile links
+│   ├── navigation.yml     # Navigation bar + external profile links
+│   └── skills.yml         # Tech stack data (used on homepage)
+├── _includes/
+│   ├── navbar.html        # Navigation bar component
+│   └── footer.html        # Footer component
+├── _layouts/
+│   ├── default.html       # Base layout
+│   └── page.html          # Page layout
 ├── _pages/
-│   ├── index.md          # Homepage (About, Tech Stack, Latest Research)
-│   ├── publications.md   # Academic publications (ORCID aggregation)
-│   ├── projects.md       # Projects with [Code] and [Slides] links
-│   ├── slides.md         # Slides collection listing
-│   └── blog.md           # Blog posts listing
-├── _slides/              # Presentation content (Markdown)
-├── _projects/            # Project detail pages
-├── _posts/               # Blog posts
+│   ├── index.md           # Homepage (Profile, Tech Stack, Latest Research)
+│   ├── publications.md    # Publications & Research
+│   ├── slides.md          # Slides & Presentations
+│   └── cv.md              # Curriculum Vitae
 ├── assets/
-│   ├── images/           # Avatar, teasers, etc.
-│   ├── slides/           # PDF slide files
-│   └── papers/           # PDF paper files
-├── Gemfile               # Ruby dependencies
+│   ├── css/main.css       # Stylesheet
+│   ├── js/main.js         # JavaScript
+│   ├── images/            # Images (avatar, teasers, etc.)
+│   ├── papers/            # PDF paper files
+│   └── slides/            # PDF slide files
 └── README.md
 ```
 
@@ -39,27 +46,17 @@ bundle exec jekyll serve
 ```
 Visit [http://localhost:4000](http://localhost:4000)
 
-### 3. Customize
-1. Edit `_config.yml` — Replace all `yourusername`, `Your Name`, and placeholder URLs
-2. Add your avatar to `assets/images/avatar.jpg`
-3. Update `_pages/publications.md` with your real papers
-4. Update `_pages/projects.md` with your real projects
-5. Add slide PDFs to `assets/slides/`
-
-### 4. Deploy to GitHub Pages
+### 3. Deploy to GitHub Pages
 ```bash
-git init
 git add .
-git commit -m "Initial professional release: Integrated Website with ORCID, LinkedIn, and GitHub"
-git remote add origin https://github.com/yourusername/yourusername.github.io.git
-git push -u origin main
+git commit -m "Update site"
+git push origin main
 ```
 
 ## Customization Notes
 
-- **Theme skin:** Change `minimal_mistakes_skin` in `_config.yml` (options: default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise)
-- **Sidebar links:** Edit `author.links` in `_config.yml`
 - **Navigation:** Edit `_data/navigation.yml`
-- **Add a new project:** Create a new `.md` file in `_projects/`
-- **Add a new slide:** Create a new `.md` file in `_slides/`
-- **Add a blog post:** Create a new `.md` file in `_posts/` with format `YYYY-MM-DD-title.md`
+- **Tech stack tags:** Edit `_data/skills.yml`
+- **Add/edit a page:** Create or modify `.md` files in `_pages/`
+- **Add papers/slides:** Place PDF files in `assets/papers/` or `assets/slides/`
+
