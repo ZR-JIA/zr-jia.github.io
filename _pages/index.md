@@ -15,11 +15,12 @@ title: "Zheng Rong JIA"
         <img src="/assets/images/avatar.jpg" alt="Zheng Rong JIA" class="hero-avatar">
         <div class="hero-info">
           <h1>Zheng Rong JIA</h1>
-          <p class="hero-subtitle">AI Researcher · Incoming MPhil Candidate (2026)</p>
+          <p class="hero-subtitle">AI Researcher · MPhil Applicant (2026 Intake)</p>
           <p class="hero-bio">
-            I specialize in <strong>Clinical AI</strong> and <strong>Deep Learning</strong>, developing trustworthy models for critical healthcare applications. 
-            Recently, I developed a novel <strong>Dual-Tower Transformer</strong> for stroke mortality prediction, demonstrating superior performance over neural baselines.
-            With a solid foundation in Software Engineering, I am dedicated to bridging the gap between theoretical AI and real-world medical impact.
+            I specialize in <strong>Clinical AI</strong> and <strong>Deep Learning</strong>, developing trustworthy models for critical healthcare applications.
+            Recently, I designed a novel <strong>Dual-Tower Transformer</strong> for stroke mortality prediction, achieving a <strong>14.4% AUPRC improvement</strong> over neural baselines.
+            Grounded in 4+ years of full-stack software engineering — spanning Vue.js, Java Spring Boot, REST APIs, SQL, and Docker — I build end-to-end systems that carry research from prototype to deployment.
+            Beyond healthcare AI, I am actively exploring <strong>Deep Reinforcement Learning</strong> for sequential decision-making and the use of <strong>Graph Neural Networks</strong> to assist in the discovery and verification of mathematical conjectures in graph theory.
           </p>
           <div class="social-icons">
             <a href="https://github.com/ZR-JIA" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -43,7 +44,7 @@ title: "Zheng Rong JIA"
       <div class="stats-grid">
         <div class="stat-item">
           <div class="stat-number">1</div>
-          <div class="stat-label">Top-Tier Paper</div>
+          <div class="stat-label">Accepted Paper</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">0.617</div>
@@ -67,19 +68,47 @@ title: "Zheng Rong JIA"
         </div>
         <span class="bento-card-title">Technical Arsenal</span>
       </div>
-      <div class="tag-cloud">
-        {% for skill in site.data.skills %}
-          <span class="tag-chip {{ skill.class }}" {% if skill.weight %}style="font-weight:{{ skill.weight }};font-size:{{ skill.size }};"{% endif %}>
-            {{ skill.name }}
-          </span>
-        {% endfor %}
-      </div>
-      <div style="margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;">
-        <span style="font-family:'Inter',sans-serif;font-size:11px;display:flex;align-items:center;gap:4px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--tag-ai);display:inline-block;"></span> AI / ML</span>
-        <span style="font-family:'Inter',sans-serif;font-size:11px;display:flex;align-items:center;gap:4px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--tag-data);display:inline-block;"></span> Data</span>
-        <span style="font-family:'Inter',sans-serif;font-size:11px;display:flex;align-items:center;gap:4px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--tag-backend);display:inline-block;"></span> Languages</span>
-        <span style="font-family:'Inter',sans-serif;font-size:11px;display:flex;align-items:center;gap:4px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--tag-frontend);display:inline-block;"></span> Web</span>
-        <span style="font-family:'Inter',sans-serif;font-size:11px;display:flex;align-items:center;gap:4px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--tag-tools);display:inline-block;"></span> Tools</span>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:4px;">
+        <div style="display:grid;grid-template-columns:130px 1fr;align-items:start;gap:10px;">
+          <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding-top:4px;">Languages</span>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;">
+            <span class="tag-chip backend" style="font-weight:700;">Python</span>
+            <span class="tag-chip backend">Java</span>
+            <span class="tag-chip backend">C / C++</span>
+            <span class="tag-chip backend">SQL</span>
+            <span class="tag-chip backend">JavaScript</span>
+          </div>
+        </div>
+        <div style="height:1px;background:var(--color-border);opacity:.5;"></div>
+        <div style="display:grid;grid-template-columns:130px 1fr;align-items:start;gap:10px;">
+          <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding-top:4px;">ML Frameworks</span>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;">
+            <span class="tag-chip ai" style="font-weight:700;">PyTorch</span>
+            <span class="tag-chip ai">Scikit-learn</span>
+            <span class="tag-chip ai">XGBoost</span>
+            <span class="tag-chip ai">YOLOv8</span>
+          </div>
+        </div>
+        <div style="height:1px;background:var(--color-border);opacity:.5;"></div>
+        <div style="display:grid;grid-template-columns:130px 1fr;align-items:start;gap:10px;">
+          <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding-top:4px;">Architectures</span>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;">
+            <span class="tag-chip ai" style="font-weight:700;">Transformer</span>
+            <span class="tag-chip ai">LSTM</span>
+            <span class="tag-chip ai">GRU</span>
+            <span class="tag-chip ai">CNN (YOLO)</span>
+          </div>
+        </div>
+        <div style="height:1px;background:var(--color-border);opacity:.5;"></div>
+        <div style="display:grid;grid-template-columns:130px 1fr;align-items:start;gap:10px;">
+          <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.06em;padding-top:4px;">DevOps & Tools</span>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;">
+            <span class="tag-chip tools">Git</span>
+            <span class="tag-chip tools">Docker</span>
+            <span class="tag-chip tools">Linux</span>
+            <span class="tag-chip tools">LaTeX</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -116,7 +145,7 @@ title: "Zheng Rong JIA"
         </li>
         <li class="news-item">
           <span class="news-date">2026</span>
-          <span class="news-text">Applying for MPhil programmes in Australia (2026–2028), focusing on trustworthy deep learning systems.</span>
+          <span class="news-text">Pursuing MPhil admission at Australian universities (2026–2028), with a research focus on trustworthy deep learning systems for healthcare.</span>
         </li>
         <li class="news-item">
           <span class="news-date">2026</span>
@@ -149,8 +178,41 @@ title: "Zheng Rong JIA"
       </div>
     </div>
 
-    <!-- Featured Publication -->
-    <div class="bento-card">
+    <!-- Research Interests Card — span-3: occupies its own full row -->
+    <div class="bento-card bento-span-3">
+      <div class="bento-card-header">
+        <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
+          <i class="fas fa-compass"></i>
+        </div>
+        <span class="bento-card-title">Research Interests</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:4px;">
+        <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <span style="background:var(--tag-ai-bg);color:var(--tag-ai);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-heartbeat"></i></span>
+            <strong style="font-size:14px;">Trustworthy Clinical AI</strong>
+          </div>
+          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Reliable deep learning on EHR tabular data; uncertainty quantification, out-of-distribution detection, and interpretable attention mechanisms for high-stakes medical decision support.</p>
+        </div>
+        <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <span style="background:var(--tag-data-bg);color:var(--tag-data);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-robot"></i></span>
+            <strong style="font-size:14px;">Deep Reinforcement Learning</strong>
+          </div>
+          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Policy optimization in complex sequential decision environments; exploring model-based RL and reward shaping in game-theoretic and planning scenarios where sparse reward signals challenge vanilla policy gradient methods.</p>
+        </div>
+        <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <span style="background:var(--tag-frontend-bg);color:var(--tag-frontend);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-project-diagram"></i></span>
+            <strong style="font-size:14px;">AI for Mathematical Discovery</strong>
+          </div>
+          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Applying Graph Neural Networks to explore open conjectures in graph theory — learning structural invariants, generating candidate counter-examples, and augmenting combinatorial proof search with learned heuristics.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Publication — span-2 + Experience span-1 = full row -->
+    <div class="bento-card bento-span-2">
       <div class="project-card">
         <div class="bento-card-header">
           <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
@@ -171,7 +233,7 @@ title: "Zheng Rong JIA"
       </div>
     </div>
 
-    <!-- Experience Card -->
+    <!-- Experience Card — span-1, pairs with Featured Publication span-2 above -->
     <div class="bento-card">
       <div class="bento-card-header">
         <div class="bento-card-icon" style="background:var(--tag-data-bg);color:var(--tag-data);">
@@ -187,6 +249,9 @@ title: "Zheng Rong JIA"
           <p class="edu-year">Jul – Aug 2024 · Guangzhou</p>
         </div>
       </div>
+      <p style="font-size:13px;color:var(--color-text-secondary);margin-top:10px;line-height:1.7;">
+        Fine-tuned <strong>YOLOv8</strong> for automated circuit-breaker state recognition on inspection robots; curated a <strong>60 GB</strong> multi-province equipment image dataset. Earned full score (100/100) on evaluation.
+      </p>
     </div>
 
   </div>
