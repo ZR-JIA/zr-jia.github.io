@@ -16,11 +16,10 @@ title: "Zheng Rong JIA"
         <div class="hero-info">
           <h1>Zheng Rong JIA</h1>
           <p class="hero-subtitle">AI Researcher · MPhil Applicant (2026 Intake)</p>
-          <p class="hero-bio" style="display:flex;flex-direction:column;gap:10px;">
-            <span>AI Researcher specializing in <strong>Clinical Deep Learning</strong> — building trustworthy models for high-stakes healthcare applications.</span>
-            <span style="display:flex;align-items:baseline;gap:6px;"><span style="color:var(--color-accent);font-weight:700;white-space:nowrap;">&#x25B6;</span> Designed a <strong>Dual-Tower Transformer</strong> for stroke mortality prediction, achieving <strong>+14.4% AUPRC</strong> over neural baselines (CCAI 2026).</span>
-            <span style="display:flex;align-items:baseline;gap:6px;"><span style="color:var(--tag-backend);font-weight:700;white-space:nowrap;">&#x25B6;</span> 4+ years of full-stack engineering: <strong>Vue.js · Spring Boot · REST API · SQL · Docker</strong> — from prototype to production.</span>
-            <span style="display:flex;align-items:baseline;gap:6px;"><span style="color:var(--tag-tools);font-weight:700;white-space:nowrap;">&#x25B6;</span> Exploring <strong>Deep RL</strong> for sequential decision-making and <strong>GNNs</strong> for mathematical conjecture discovery.</span>
+          <p class="hero-bio" style="display:flex;flex-direction:column;gap:12px;">
+            <span>I specialize in <strong>Clinical AI</strong> and <strong>Deep Learning</strong>, developing trustworthy models for critical healthcare applications. Recently, I designed a novel <strong>Dual-Tower Transformer</strong> for stroke mortality prediction, achieving a <strong>14.4% AUPRC improvement</strong> over neural baselines, accepted at CCAI 2026.</span>
+            <span>Grounded in 4+ years of full-stack software engineering — spanning <strong>Vue.js, Java Spring Boot, REST APIs, SQL, and Docker</strong> — I build end-to-end systems that carry research from prototype to deployment.</span>
+            <span>Beyond healthcare AI, I am actively exploring <strong>Deep Reinforcement Learning</strong> for sequential decision-making and <strong>Graph Neural Networks</strong> for the discovery and verification of mathematical conjectures in graph theory.</span>
           </p>
           <div class="social-icons">
             <a href="https://github.com/ZR-JIA" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
