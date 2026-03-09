@@ -9,6 +9,9 @@ Gemfile.lock
 .DS_Store
 
 # Sensitive documents - DO NOT upload
-*.pdf
 conference.pdf
 ZhengrongJIA-CV.pdf
+Harvard_GSAS_CV.pdf
+
+# Allow curated PDFs in assets/papers/
+!assets/papers/*.pdf

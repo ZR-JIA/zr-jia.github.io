@@ -7,9 +7,14 @@ title: "CV"
 <div class="container">
   <div class="page-header" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
     <h1>Curriculum Vitae</h1>
-    <span class="btn btn-outline" style="font-size:15px;padding:12px 28px;cursor:default;opacity:0.6;">
-      <i class="fas fa-download"></i> CV PDF (updating soon)
-    </span>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="/assets/papers/CV_ZhengRong_JIA.pdf" target="_blank" class="btn btn-primary" style="font-size:15px;padding:12px 28px;">
+        <i class="fas fa-external-link-alt"></i> View PDF
+      </a>
+      <a href="/assets/papers/CV_ZhengRong_JIA.pdf" download="CV_ZhengRong_JIA.pdf" class="btn btn-outline" style="font-size:15px;padding:12px 28px;">
+        <i class="fas fa-download"></i> Download
+      </a>
+    </div>
   </div>
 
   <div class="bento-grid">
