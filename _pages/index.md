@@ -12,7 +12,7 @@ title: "Zheng Rong JIA"
     <!-- Profile Card -->
     <div class="bento-card bento-span-2">
       <div class="hero-card">
-        <img src="/assets/images/avatar.jpg" alt="Zheng Rong JIA" class="hero-avatar">
+        <img src="/assets/images/avatar.jpg" alt="Zheng Rong JIA" class="hero-avatar" width="400" height="400">
         <div class="hero-info">
           <h1>Zheng Rong JIA</h1>
           <p class="hero-subtitle">AI Researcher · MPhil Applicant (2026 Intake)</p>

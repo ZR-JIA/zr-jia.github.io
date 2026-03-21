@@ -31,5 +31,8 @@ kramdown:
   hard_wrap: false
   auto_ids: true
 
+# Analytics
+google_analytics: "G-NK9PCN4QNX"
+
 # Encoding
 encoding: "utf-8"
