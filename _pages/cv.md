@@ -2,6 +2,7 @@
 layout: default
 permalink: /cv/
 title: "CV"
+description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertise in deep learning, clinical AI, and full-stack engineering."
 ---
 
 <div class="container">

@@ -2,6 +2,7 @@
 layout: default
 permalink: /slides/
 title: "Slides"
+description: "Slide decks and presentations by Zheng Rong JIA, including conference slides for CCAI 2026."
 ---
 
 <div class="container">

@@ -2,6 +2,7 @@
 layout: default
 permalink: /
 title: "Zheng Rong JIA"
+description: "AI researcher specializing in Clinical AI and Deep Learning. MPhil applicant (2026 intake). Paper accepted at CCAI 2026."
 ---
 
 <div class="container">
@@ -170,7 +171,8 @@ title: "Zheng Rong JIA"
         <span class="bento-card-title">Open Source</span>
       </div>
       <div class="github-graph">
-        <img src="https://ghchart.rshah.org/1a3a5c/ZR-JIA" alt="GitHub Contribution Graph" />
+        <img src="https://ghchart.rshah.org/1a3a5c/ZR-JIA" alt="GitHub Contribution Graph" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span style="display:none;font-size:13px;color:var(--color-text-tertiary);font-family:'Inter',sans-serif;">Contribution graph unavailable</span>
         <a href="https://github.com/ZR-JIA" class="github-graph-link">
           <i class="fab fa-github"></i> View Profile
         </a>

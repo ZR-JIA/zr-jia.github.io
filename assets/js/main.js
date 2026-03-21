@@ -13,13 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var icon = themeToggle ? themeToggle.querySelector('i') : null;
   var html = document.documentElement;
 
-  // Check saved theme or system preference
-  var savedTheme = localStorage.getItem('theme');
-  var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
-    html.setAttribute('data-theme', 'dark');
-    if (icon) icon.classList.replace('fa-moon', 'fa-sun');
+  // Sync icon with theme already applied by inline <head> script
+  if (html.getAttribute('data-theme') === 'dark' && icon) {
+    icon.classList.replace('fa-moon', 'fa-sun');
   }
 
   if (themeToggle) {

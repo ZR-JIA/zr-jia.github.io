@@ -2,6 +2,7 @@
 layout: default
 permalink: /publications/
 title: "Publications"
+description: "Research publications by Zheng Rong JIA, including the DT-Transformer paper on stroke mortality prediction accepted at CCAI 2026."
 ---
 
 <div class="container">

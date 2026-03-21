@@ -1,67 +1,113 @@
+# Languages
 - name: Python
-  class: ai
-  weight: 700
-  size: 14px
-
-- name: PyTorch
-  class: ai
-  weight: 700
-  size: 14px
-
-- name: Transformer
-  class: ai
-  weight: 700
-  size: 14px
-
-- name: XGBoost
-  class: ai
-  weight: 700
-  size: 14px
-
-- name: Scikit-learn
-  class: ai
-
-- name: LSTM
-  class: ai
-
-- name: GRU
-  class: ai
-
-- name: Pandas
-  class: data
-
-- name: NumPy
-  class: data
-
-- name: Matplotlib
-  class: data
-
-- name: Seaborn
-  class: data
-
-- name: C
-  class: backend
-
-- name: C++
+  category: languages
   class: backend
 
 - name: Java
+  category: languages
+  class: backend
+
+- name: C / C++
+  category: languages
   class: backend
 
 - name: SQL
+  category: languages
   class: backend
 
-- name: HTML
-  class: frontend
-
 - name: JavaScript
+  category: languages
+  class: backend
+
+# ML Frameworks
+- name: PyTorch
+  category: ml_frameworks
+  class: ai
+
+- name: Scikit-learn
+  category: ml_frameworks
+  class: ai
+
+- name: XGBoost
+  category: ml_frameworks
+  class: ai
+
+- name: YOLOv8
+  category: ml_frameworks
+  class: ai
+
+- name: NumPy
+  category: ml_frameworks
+  class: ai
+
+- name: Pandas
+  category: ml_frameworks
+  class: ai
+
+# Model Architectures
+- name: Transformer
+  category: architectures
+  class: ai
+
+- name: LSTM
+  category: architectures
+  class: ai
+
+- name: GRU
+  category: architectures
+  class: ai
+
+- name: MLP
+  category: architectures
+  class: ai
+
+- name: CNN (YOLO)
+  category: architectures
+  class: ai
+
+# Data & Visualisation
+- name: Matplotlib
+  category: data_viz
+  class: data
+
+- name: Seaborn
+  category: data_viz
+  class: data
+
+- name: OpenCV
+  category: data_viz
+  class: data
+
+# Web & Systems
+- name: Vue.js
+  category: web_systems
   class: frontend
 
-- name: MATLAB
+- name: Spring Boot
+  category: web_systems
+  class: frontend
+
+- name: REST API
+  category: web_systems
+  class: frontend
+
+- name: HTML / CSS
+  category: web_systems
+  class: frontend
+
+# DevOps & Tools
+- name: Git
+  category: devops
+  class: tools
+
+- name: Docker
+  category: devops
+  class: tools
+
+- name: Linux
+  category: devops
   class: tools
 
 - name: LaTeX
-  class: tools
-
-- name: Git
+  category: devops
   class: tools
