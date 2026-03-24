@@ -54,6 +54,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Email copy-to-clipboard
+  var emailLink = document.querySelector('a[href^="mailto:"].hero-contact-link');
+  if (emailLink) {
+    emailLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      var email = this.href.replace('mailto:', '');
+      navigator.clipboard.writeText(email).then(function () {
+        var span = emailLink.querySelector('span');
+        var original = span.textContent;
+        span.textContent = '已複製';
+        emailLink.style.background = 'var(--color-primary)';
+        emailLink.style.color = '#fff';
+        setTimeout(function () {
+          span.textContent = original;
+          emailLink.style.background = '';
+          emailLink.style.color = '';
+        }, 1800);
+      });
+    });
+  }
+
   // Dark Mode Toggle
   var themeToggle = document.querySelector('.theme-toggle');
   var icon = themeToggle ? themeToggle.querySelector('i') : null;
