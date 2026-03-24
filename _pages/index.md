@@ -62,6 +62,37 @@ description: "AI researcher specializing in Clinical AI and Deep Learning. MPhil
       </a>
     </div>
 
+    <!-- Publications Card — full-width, right below hero row -->
+    <div class="bento-card bento-span-3 pub-core-card">
+      <div class="pub-core-header">
+        <div class="bento-card-header" style="margin-bottom:0;">
+          <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <span class="bento-card-title">Publications</span>
+        </div>
+        <span class="pub-badge-ei"><i class="fas fa-check-circle"></i> Accepted · CCAI 2026 · EI-Indexed</span>
+      </div>
+      <p class="pub-core-title">"Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework"</p>
+      <p class="pub-core-authors">
+        <span class="pub-author-self">Zheng Rong JIA</span><sup>*</sup>,&nbsp;Kwong-Cheong Wong<sup>*</sup>
+      </p>
+      <p class="pub-core-note"><sup>*</sup>Corresponding author</p>
+      <div class="pub-core-actions">
+        <a href="https://drive.google.com/file/d/1yl0XyzkV9QuHWtkpBu8RyXFypU3Ptb8b/view?usp=sharing"
+           class="btn btn-primary pub-btn" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-pdf"></i> PDF (Preprint)
+        </a>
+        <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke"
+           class="btn btn-outline pub-btn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> Code (GitHub)
+        </a>
+        <a href="/publications/" class="btn btn-outline pub-btn">
+          <i class="fas fa-arrow-right"></i> Full Details
+        </a>
+      </div>
+    </div>
+
     <!-- Tech Stack Card -->
     <div class="bento-card bento-span-2">
       <div class="bento-card-header">
@@ -214,30 +245,8 @@ description: "AI researcher specializing in Clinical AI and Deep Learning. MPhil
       </div>
     </div>
 
-    <!-- Featured Publication — span-2 + Experience span-1 = full row -->
-    <div class="bento-card bento-span-2">
-      <div class="project-card">
-        <div class="bento-card-header">
-          <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
-            <i class="fas fa-file-alt"></i>
-          </div>
-          <span class="bento-card-title">Featured Research</span>
-        </div>
-        <h3>DT-Transformer for Stroke Mortality</h3>
-        <p>A novel Dual-Tower Transformer architecture achieving <strong>0.6171 AUPRC</strong> on eICU data, outperforming neural baselines by <strong>14.4%</strong>. Includes an Adaptive Runtime Safeguard for stable inference.</p>
-        <div class="project-tags">
-          <span class="project-tag">Transformer</span>
-          <span class="project-tag">eICU</span>
-          <span class="project-tag">Clinical AI</span>
-        </div>
-        <div class="project-links">
-          <a href="/publications/" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Read More</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Experience Card — span-1, pairs with Featured Publication span-2 above -->
-    <div class="bento-card">
+    <!-- Experience Card -->
+    <div class="bento-card bento-span-3">
       <div class="bento-card-header">
         <div class="bento-card-icon" style="background:var(--tag-data-bg);color:var(--tag-data);">
           <i class="fas fa-briefcase"></i>
