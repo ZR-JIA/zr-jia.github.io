@@ -248,22 +248,60 @@ description: "AI researcher specializing in Clinical AI and Deep Learning. MPhil
     <!-- Experience Card -->
     <div class="bento-card bento-span-3">
       <div class="bento-card-header">
-        <div class="bento-card-icon" style="background:var(--tag-data-bg);color:var(--tag-data);">
-          <i class="fas fa-briefcase"></i>
+        <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
+          <i class="fas fa-flask"></i>
         </div>
-        <span class="bento-card-title">Experience</span>
+        <span class="bento-card-title">Experience & Projects</span>
       </div>
-      <div class="edu-item">
-        <div class="edu-icon"><i class="fas fa-robot"></i></div>
-        <div class="edu-details">
-          <h3>MLE Intern</h3>
-          <p class="edu-school">China Southern Power Grid AI</p>
-          <p class="edu-year">Jul – Aug 2024 · Guangzhou</p>
+      <div class="cv-timeline">
+
+        <!-- 1. Medical AI Research -->
+        <div class="cv-timeline-item">
+          <div class="cv-timeline-dot" style="background:var(--tag-ai);"></div>
+          <div class="cv-timeline-content">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;">
+              <h3 style="font-size:15px;margin-bottom:2px;">Lead Researcher &mdash; Medical AI</h3>
+              <span style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-accent);background:var(--color-accent-soft);padding:3px 10px;border-radius:6px;font-weight:600;">Aug 2025 – Present</span>
+            </div>
+            <p style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-text-tertiary);margin-bottom:8px;">Independent · Clinical AI · Stroke Mortality Prediction · eICU</p>
+            <ul style="font-size:13px;color:var(--color-text-secondary);padding-left:18px;line-height:1.8;margin:0;">
+              <li>Designed a Dual-Tower Transformer achieving <strong>AUPRC of 0.6171</strong> — a 14.4% improvement over neural baselines — on the multicenter eICU database (200k+ records)</li>
+              <li>Integrated an <strong>Adaptive Runtime Safeguard</strong> for out-of-distribution detection at inference time, ensuring clinical deployment safety</li>
+              <li>Paper accepted at <strong>CCAI 2026</strong> (EI-indexed)</li>
+            </ul>
+          </div>
         </div>
+
+        <!-- 2. Undergraduate Thesis -->
+        <div class="cv-timeline-item">
+          <div class="cv-timeline-dot" style="background:var(--tag-ai);"></div>
+          <div class="cv-timeline-content">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;">
+              <h3 style="font-size:15px;margin-bottom:2px;">Time-Series Forecasting &mdash; Undergraduate Thesis</h3>
+              <span style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-text-tertiary);background:var(--color-bg);padding:3px 10px;border-radius:6px;font-weight:600;">2023 – 2024</span>
+            </div>
+            <p style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-text-tertiary);margin-bottom:8px;">Python · PyTorch · LSTM · Pandas · NumPy</p>
+            <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.8;margin:0;">
+              Built an <strong>LSTM</strong>-based sequential forecasting model with a full preprocessing pipeline (normalization, sliding-window construction, data-leakage-free splits), achieving <strong>1.42% MAPE</strong> on the held-out test set.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Internship -->
+        <div class="cv-timeline-item">
+          <div class="cv-timeline-dot" style="background:var(--tag-backend);"></div>
+          <div class="cv-timeline-content">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;">
+              <h3 style="font-size:15px;margin-bottom:2px;">MLE Intern &mdash; China Southern Power Grid AI</h3>
+              <span style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-text-tertiary);background:var(--color-bg);padding:3px 10px;border-radius:6px;font-weight:600;">Jul – Aug 2024 · Guangzhou</span>
+            </div>
+            <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.8;margin-top:6px;margin-bottom:0;">
+              Fine-tuned YOLOv8 for inspection robots; built and maintained a <strong>60 GB</strong> multi-province industrial image dataset. Evaluation score: 100/100.
+            </p>
+          </div>
+        </div>
+
       </div>
-      <p style="font-size:13px;color:var(--color-text-secondary);margin-top:10px;line-height:1.7;">
-        Fine-tuned <strong>YOLOv8</strong> for automated circuit-breaker state recognition on inspection robots; curated a <strong>60 GB</strong> multi-province equipment image dataset. Earned full score (100/100) on evaluation.
-      </p>
     </div>
 
   </div>

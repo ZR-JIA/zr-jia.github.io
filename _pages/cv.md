@@ -266,9 +266,9 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             </div>
             <p style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-text-tertiary);margin-bottom:8px;">Python · PyTorch · LSTM · GRU · MLP · Scikit-learn · Pandas · NumPy · Matplotlib · Seaborn</p>
             <ul style="font-size:13px;color:var(--color-text-secondary);padding-left:18px;line-height:1.8;">
-              <li>Designed and trained <strong>LSTM, GRU, and vanilla RNN</strong> models for sequential data prediction, conducting systematic ablation studies to compare sequence length, hidden unit size, and dropout configurations</li>
+              <li>Designed and trained <strong>LSTM, GRU, and vanilla RNN</strong> models for sequential data prediction; best LSTM configuration achieved <strong>1.42% MAPE</strong> on the held-out test set</li>
               <li>Built a full data preprocessing pipeline: missing-value imputation, min-max normalization, sliding-window feature construction, and train/val/test splitting with no data leakage</li>
-              <li>Benchmarked deep sequence models against classical baselines (MLP, Linear Regression, XGBoost) using RMSE, MAE, and R² metrics; produced publication-quality visualizations with Matplotlib and Seaborn</li>
+              <li>Benchmarked deep sequence models against classical baselines (MLP, Linear Regression, XGBoost) using RMSE, MAE, and MAPE; produced publication-quality visualizations with Matplotlib and Seaborn</li>
               <li>Implemented early stopping, learning-rate scheduling, and gradient clipping to stabilize RNN training on long sequences</li>
             </ul>
           </div>
