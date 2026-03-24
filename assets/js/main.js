@@ -60,10 +60,11 @@ document.addEventListener('DOMContentLoaded', function () {
     emailLink.addEventListener('click', function (e) {
       e.preventDefault();
       var email = this.href.replace('mailto:', '');
-      navigator.clipboard.writeText(email).then(function () {
-        var span = emailLink.querySelector('span');
-        var original = span.textContent;
-        span.textContent = '已複製';
+      var span = emailLink.querySelector('span');
+      var original = span.textContent;
+
+      function showCopied() {
+        span.textContent = 'Copied!';
         emailLink.style.background = 'var(--color-primary)';
         emailLink.style.color = '#fff';
         setTimeout(function () {
@@ -71,8 +72,27 @@ document.addEventListener('DOMContentLoaded', function () {
           emailLink.style.background = '';
           emailLink.style.color = '';
         }, 1800);
-      });
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(showCopied).catch(function () {
+          fallbackCopy(email, showCopied);
+        });
+      } else {
+        fallbackCopy(email, showCopied);
+      }
     });
+  }
+
+  function fallbackCopy(text, callback) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;top:-9999px;left:-9999px;opacity:0;';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try { document.execCommand('copy'); callback(); } catch (err) {}
+    document.body.removeChild(ta);
   }
 
   // Dark Mode Toggle
