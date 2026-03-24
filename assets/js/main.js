@@ -60,14 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
     emailLink.addEventListener('click', function (e) {
       e.preventDefault();
       var email = this.href.replace('mailto:', '');
-      var span = emailLink.querySelector('span');
-      var original = span.textContent;
 
       function showCopied() {
-        span.textContent = 'Copied!';
         emailLink.classList.add('copied');
         setTimeout(function () {
-          span.textContent = original;
           emailLink.classList.remove('copied');
         }, 1800);
       }
