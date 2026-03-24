@@ -65,12 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       function showCopied() {
         span.textContent = 'Copied!';
-        emailLink.style.background = 'var(--color-primary)';
-        emailLink.style.color = '#fff';
+        emailLink.classList.add('copied');
         setTimeout(function () {
           span.textContent = original;
-          emailLink.style.background = '';
-          emailLink.style.color = '';
+          emailLink.classList.remove('copied');
         }, 1800);
       }
 

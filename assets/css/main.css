@@ -970,6 +970,20 @@ img {
   }
 }
 
+/* ---- Email copy animation ---- */
+@keyframes email-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.12); }
+  70%  { transform: scale(0.96); }
+  100% { transform: scale(1); }
+}
+
+.hero-contact-link.copied {
+  background: var(--color-primary) !important;
+  color: #fff !important;
+  animation: email-pop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
 /* ---- Utility ---- */
 .mt-0 { margin-top: 0; }
 .mt-1 { margin-top: 8px; }
