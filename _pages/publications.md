@@ -38,8 +38,8 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
       </div>
 
       <div class="pub-links" style="flex-wrap:wrap;">
-        <span class="btn btn-outline" style="cursor:default;opacity:0.5;"><i class="fas fa-file-pdf"></i> Preprint (coming soon)</span>
-        <span class="btn btn-outline" style="cursor:default;opacity:0.5;"><i class="fab fa-github"></i> Code (coming soon)</span>
+        <a href="https://drive.google.com/file/d/1yl0XyzkV9QuHWtkpBu8RyXFypU3Ptb8b/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> PDF (Preprint)</a>
+        <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code (GitHub)</a>
         <a href="/slides/" class="btn btn-outline"><i class="fas fa-file-powerpoint"></i> Slides</a>
         <a href="https://orcid.org/0009-0007-8829-6713" class="btn btn-outline"><i class="fab fa-orcid"></i> ORCID</a>
         <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" class="btn btn-outline"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
@@ -115,9 +115,9 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
           </ul>
         </div>
         <div>
-          <h4 style="font-family:'Inter',sans-serif;font-size:14px;color:var(--color-primary);margin-bottom:8px;"><i class="fab fa-github" style="margin-right:6px;"></i> Code Repository</h4>
+          <h4 style="font-family:'Inter',sans-serif;font-size:14px;color:var(--color-primary);margin-bottom:8px;"><i class="fab fa-github" style="margin-right:6px;"></i> <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);">Code Repository</a></h4>
           <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.8;margin-bottom:8px;">
-            Source code, training scripts, and evaluation pipeline will be released upon publication. Repository will include:
+            Open-source implementation available on GitHub. Repository includes:
           </p>
           <ul style="font-size:13px;color:var(--color-text-secondary);padding-left:18px;line-height:1.8;">
             <li>PyTorch model implementation</li>
