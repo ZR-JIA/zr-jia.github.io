@@ -16,18 +16,20 @@ description: "AI researcher specializing in Clinical AI and Deep Learning. MPhil
         <img src="/assets/images/avatar.jpg" alt="Zheng Rong JIA" class="hero-avatar" width="400" height="400">
         <div class="hero-info">
           <h1>Zheng Rong JIA</h1>
-          <p class="hero-subtitle">AI Researcher · MPhil Applicant (2026 Intake)</p>
-          <p class="hero-bio" style="display:flex;flex-direction:column;gap:12px;">
-            <span>I specialize in <strong>Clinical AI</strong> and <strong>Deep Learning</strong>, developing trustworthy models for critical healthcare applications. Recently, I designed a novel <strong>Dual-Tower Transformer</strong> for stroke mortality prediction, achieving a <strong>14.4% AUPRC improvement</strong> over neural baselines, accepted at CCAI 2026.</span>
-            <span>Grounded in 4+ years of full-stack software engineering — spanning <strong>Vue.js, Java Spring Boot, REST APIs, SQL, and Docker</strong> — I build end-to-end systems that carry research from prototype to deployment.</span>
-            <span>Beyond healthcare AI, I am actively exploring <strong>Deep Reinforcement Learning</strong> for sequential decision-making and <strong>Graph Neural Networks</strong> for the discovery and verification of mathematical conjectures in graph theory.</span>
-          </p>
-          <div class="social-icons">
-            <a href="https://github.com/ZR-JIA" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/zhengrong-jia-866456374" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://orcid.org/0009-0007-8829-6713" class="social-icon" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
-            <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" class="social-icon" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            <a href="mailto:zhengrong.jia.academic@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <p class="hero-subtitle">Medical AI &amp; Predictive Modeling · Independent Researcher</p>
+          <div class="hero-contacts">
+            <a href="mailto:zhengrong.jia.academic@gmail.com" class="hero-contact-link">
+              <i class="fas fa-envelope"></i><span>zhengrong.jia.academic@gmail.com</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" class="hero-contact-link">
+              <i class="fas fa-graduation-cap"></i><span>Google Scholar</span>
+            </a>
+            <a href="https://github.com/ZR-JIA" class="hero-contact-link">
+              <i class="fab fa-github"></i><span>GitHub</span>
+            </a>
+            <a href="https://orcid.org/0009-0007-8829-6713" class="hero-contact-link">
+              <i class="fab fa-orcid"></i><span>ORCID</span>
+            </a>
           </div>
         </div>
       </div>
