@@ -61,7 +61,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
     </div>
 
     <!-- Languages Card -->
-    <div class="bento-card">
+    <div class="bento-card bento-span-tablet-full">
       <div class="bento-card-header">
         <div class="bento-card-icon" style="background:var(--tag-frontend-bg);color:var(--tag-frontend);">
           <i class="fas fa-language"></i>

@@ -1035,7 +1035,8 @@ img {
     grid-column: span 1;
   }
 
-  .bento-span-3 {
+  .bento-span-3,
+  .bento-span-tablet-full {
     grid-column: span 2;
   }
 }

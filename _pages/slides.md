@@ -26,7 +26,7 @@ description: "Slide decks and presentations by Zheng Rong JIA, including confere
     </div>
 
     <!-- Slide 1: Conference Paper -->
-    <div class="bento-card">
+    <div class="bento-card bento-span-3">
       <div class="slide-preview">
         <div class="slide-thumb" style="background:linear-gradient(135deg, var(--color-primary), var(--color-primary-lighter));position:relative;">
           <i class="fas fa-brain" style="font-size:36px;"></i>
