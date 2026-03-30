@@ -213,37 +213,37 @@ description: "AI researcher specializing in Clinical AI and Deep Learning. MPhil
     </div>
 
     <!-- Research Interests Card — span-3: occupies its own full row -->
-    <div class="bento-card bento-span-3">
-      <div class="bento-card-header">
-        <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
-          <i class="fas fa-compass"></i>
-        </div>
-        <span class="bento-card-title">Research Interests</span>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:4px;">
-        <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-            <span style="background:var(--tag-ai-bg);color:var(--tag-ai);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-heartbeat"></i></span>
-            <strong style="font-size:14px;">Trustworthy Clinical AI</strong>
-          </div>
-          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Reliable deep learning on EHR tabular data; uncertainty quantification, out-of-distribution detection, and interpretable attention mechanisms for high-stakes medical decision support.</p>
-        </div>
-        <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-            <span style="background:var(--tag-data-bg);color:var(--tag-data);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-robot"></i></span>
-            <strong style="font-size:14px;">Deep Reinforcement Learning</strong>
-          </div>
-          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Policy optimization in complex sequential decision environments; exploring model-based RL and reward shaping in game-theoretic and planning scenarios where sparse reward signals challenge vanilla policy gradient methods.</p>
-        </div>
-        <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-            <span style="background:var(--tag-frontend-bg);color:var(--tag-frontend);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-project-diagram"></i></span>
-            <strong style="font-size:14px;">AI for Mathematical Discovery</strong>
-          </div>
-          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Applying Graph Neural Networks to explore open conjectures in graph theory — learning structural invariants, generating candidate counter-examples, and augmenting combinatorial proof search with learned heuristics.</p>
-        </div>
-      </div>
+<div class="bento-card bento-span-3">
+  <div class="bento-card-header">
+    <div class="bento-card-icon" style="background:var(--tag-ai-bg);color:var(--tag-ai);">
+      <i class="fas fa-compass"></i>
     </div>
+    <span class="bento-card-title">Research Interests</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:4px;">
+    <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <span style="background:var(--tag-ai-bg);color:var(--tag-ai);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-heartbeat"></i></span>
+        <strong style="font-size:14px;">Clinical Predictive Modeling</strong>
+      </div>
+      <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Transformer-based temporal modeling on longitudinal EHR data; early warning systems for ICU critical events with missing-data-aware architectures, building on prior work in stroke risk prediction (CCAI 2024).</p>
+    </div>
+    <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <span style="background:var(--tag-data-bg);color:var(--tag-data);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-brain"></i></span>
+        <strong style="font-size:14px;">Medical Image Analysis</strong>
+      </div>
+      <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Vision Transformer and hybrid CNN-ViT architectures for brain MRI segmentation; semi-supervised learning strategies to address annotation scarcity in radiology AI, with focus on multi-class lesion delineation.</p>
+    </div>
+    <div style="background:var(--color-bg);border-radius:10px;padding:16px 18px;border:1px solid var(--color-border);">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <span style="background:var(--tag-frontend-bg);color:var(--tag-frontend);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;"><i class="fas fa-search"></i></span>
+        <strong style="font-size:14px;">Explainable AI for Healthcare</strong>
+      </div>
+      <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0;">Faithfulness evaluation of attention-based saliency methods for deep radiology models; human-in-the-loop clinical validation frameworks to bridge the gap between model accuracy and clinician trust in high-stakes diagnosis.</p>
+    </div>
+  </div>
+</div>
 
     <!-- Experience Card -->
     <div class="bento-card bento-span-3">
