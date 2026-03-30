@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 title: "Zheng Rong JIA"
-description: "AI researcher specializing in Clinical AI and Deep Learning. MPhil applicant (2026 intake). Paper accepted at CCAI 2026."
+description: "Independent AI researcher specializing in Clinical AI and Deep Learning. Paper accepted at CCAI 2026."
 ---
 
 <div class="container">
@@ -26,6 +26,9 @@ description: "AI researcher specializing in Clinical AI and Deep Learning. MPhil
             </a>
             <a href="https://github.com/ZR-JIA" class="hero-contact-link">
               <i class="fab fa-github"></i><span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/zhengrong-jia-866456374" class="hero-contact-link">
+              <i class="fab fa-linkedin"></i><span>LinkedIn</span>
             </a>
             <a href="https://orcid.org/0009-0007-8829-6713" class="hero-contact-link">
               <i class="fab fa-orcid"></i><span>ORCID</span>

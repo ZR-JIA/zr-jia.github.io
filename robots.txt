@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zr-jia.github.io/sitemap.xml

@@ -47,7 +47,7 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
     </div>
 
     <!-- Key Results Card -->
-    <div class="bento-card">
+    <div class="bento-card bento-span-tablet-full">
       <div class="bento-card-header">
         <div class="bento-card-icon" style="background:var(--color-accent-soft);color:var(--color-primary);">
           <i class="fas fa-chart-bar"></i>

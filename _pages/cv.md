@@ -179,49 +179,31 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
         <div style="background:var(--color-bg);border-radius:10px;padding:18px 20px;border:1px solid var(--color-border);">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
             <span style="background:var(--tag-ai-bg);color:var(--tag-ai);width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;"><i class="fas fa-heartbeat"></i></span>
-            <strong style="font-size:14px;">Trustworthy Clinical AI</strong>
+            <strong style="font-size:14px;">Clinical Predictive Modeling</strong>
           </div>
-          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.75;margin:0 0 10px;">
-            My primary research focus. Developing reliable deep learning models on structured EHR and tabular medical data, with emphasis on:
+          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.75;margin:0;">
+            Transformer-based temporal modeling on longitudinal EHR data; early warning systems for ICU critical events with missing-data-aware architectures, building on prior work in stroke risk prediction (CCAI 2026).
           </p>
-          <ul style="font-size:13px;color:var(--color-text-secondary);padding-left:18px;line-height:1.8;margin:0;">
-            <li>Uncertainty quantification and calibration for clinical risk scores</li>
-            <li>Out-of-distribution detection at inference time (Adaptive Runtime Safeguard)</li>
-            <li>Interpretable attention mechanisms for feature attribution in ICU prediction tasks</li>
-            <li>Multi-modal fusion of categorical demographics and continuous vitals</li>
-          </ul>
         </div>
 
         <div style="background:var(--color-bg);border-radius:10px;padding:18px 20px;border:1px solid var(--color-border);">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-            <span style="background:var(--tag-data-bg);color:var(--tag-data);width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;"><i class="fas fa-robot"></i></span>
-            <strong style="font-size:14px;">Deep Reinforcement Learning</strong>
+            <span style="background:var(--tag-data-bg);color:var(--tag-data);width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;"><i class="fas fa-brain"></i></span>
+            <strong style="font-size:14px;">Medical Image Analysis</strong>
           </div>
-          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.75;margin:0 0 10px;">
-            Exploring policy optimization in complex sequential decision environments, particularly:
+          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.75;margin:0;">
+            Vision Transformer and hybrid CNN-ViT architectures for brain MRI segmentation; semi-supervised learning strategies to address annotation scarcity in radiology AI, with focus on multi-class lesion delineation.
           </p>
-          <ul style="font-size:13px;color:var(--color-text-secondary);padding-left:18px;line-height:1.8;margin:0;">
-            <li>Model-based RL and world-model learning for sample efficiency</li>
-            <li>Reward shaping and curriculum learning in sparse-reward game-theoretic settings</li>
-            <li>Actor-Critic architectures (PPO, SAC) applied to combinatorial planning problems</li>
-            <li>Connections between RL policy search and clinical treatment pathway optimization</li>
-          </ul>
         </div>
 
         <div style="background:var(--color-bg);border-radius:10px;padding:18px 20px;border:1px solid var(--color-border);">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-            <span style="background:var(--tag-frontend-bg);color:var(--tag-frontend);width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;"><i class="fas fa-project-diagram"></i></span>
-            <strong style="font-size:14px;">AI for Mathematical Discovery</strong>
+            <span style="background:var(--tag-frontend-bg);color:var(--tag-frontend);width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;"><i class="fas fa-search"></i></span>
+            <strong style="font-size:14px;">Explainable AI for Healthcare</strong>
           </div>
-          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.75;margin:0 0 10px;">
-            Interested in using machine learning to assist the discovery and verification of mathematical conjectures, particularly in graph theory:
+          <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.75;margin:0;">
+            Faithfulness evaluation of attention-based saliency methods for deep radiology models; human-in-the-loop clinical validation frameworks to bridge the gap between model accuracy and clinician trust in high-stakes diagnosis.
           </p>
-          <ul style="font-size:13px;color:var(--color-text-secondary);padding-left:18px;line-height:1.8;margin:0;">
-            <li>Graph Neural Networks for learning structural invariants and graph isomorphism approximation</li>
-            <li>Generating candidate counter-examples to open graph-theoretic conjectures via guided search</li>
-            <li>Learned heuristics for combinatorial proof search and SAT/SMT solver augmentation</li>
-            <li>Inspired by DeepMind&#39;s work on FunSearch and AlphaProof</li>
-          </ul>
         </div>
 
       </div>
