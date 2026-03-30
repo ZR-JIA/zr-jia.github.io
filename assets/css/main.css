@@ -965,6 +965,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .bento-span-2 {
+    grid-column: span 1;
+  }
+
   .bento-span-3 {
     grid-column: span 2;
   }
