@@ -70,7 +70,7 @@ description: "Independent AI researcher specializing in Clinical AI and Deep Lea
           <p class="pub-academic-authors"><span class="pub-author-self">Zheng Rong JIA</span><sup>*</sup>, Kwong-Cheong Wong<sup>*</sup></p>
           <p class="pub-academic-venue">CCAI 2026 (EI-indexed)</p>
           <div class="pub-academic-links">
-            <a href="https://drive.google.com/file/d/1yl0XyzkV9QuHWtkpBu8RyXFypU3Ptb8b/view?usp=sharing" target="_blank" rel="noopener noreferrer">paper</a>
+            <a href="https://drive.google.com/file/d/1ql4aXufCbLLJQqCM2kk7jSLS4_68LIUR/view?usp=sharing" target="_blank" rel="noopener noreferrer">paper</a>
             <span class="pub-link-sep">|</span>
             <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">code</a>
             <span class="pub-link-sep">|</span>

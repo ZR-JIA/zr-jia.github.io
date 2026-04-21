@@ -38,7 +38,7 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
       </div>
 
       <div class="pub-links" style="flex-wrap:wrap;">
-        <a href="https://drive.google.com/file/d/1yl0XyzkV9QuHWtkpBu8RyXFypU3Ptb8b/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> PDF (Preprint)</a>
+        <a href="https://drive.google.com/file/d/1ql4aXufCbLLJQqCM2kk7jSLS4_68LIUR/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> PDF (Preprint)</a>
         <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code (GitHub)</a>
         <a href="/slides/" class="btn btn-outline"><i class="fas fa-file-powerpoint"></i> Slides</a>
         <a href="https://orcid.org/0009-0007-8829-6713" class="btn btn-outline"><i class="fab fa-orcid"></i> ORCID</a>
