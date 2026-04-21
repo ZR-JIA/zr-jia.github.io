@@ -16,3 +16,10 @@ Harvard_GSAS_CV.pdf
 
 # Allow curated PDFs in assets/papers/
 !assets/papers/*.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
