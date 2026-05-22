@@ -55,16 +55,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Email copy-to-clipboard
-  var emailLink = document.querySelector('a[href^="mailto:"].hero-contact-link');
+  var emailLink = document.querySelector('.profile-links a[href^="mailto:"]');
   if (emailLink) {
     emailLink.addEventListener('click', function (e) {
       e.preventDefault();
       var email = this.href.replace('mailto:', '');
+      var originalHTML = emailLink.innerHTML;
 
       function showCopied() {
-        emailLink.classList.add('copied');
+        emailLink.innerHTML = '<i class="fas fa-check"></i>&ensp;Copied!';
         setTimeout(function () {
-          emailLink.classList.remove('copied');
+          emailLink.innerHTML = originalHTML;
         }, 1800);
       }
 
