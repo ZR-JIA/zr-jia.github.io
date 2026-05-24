@@ -17,6 +17,8 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 | `/` | `_pages/index.md` | Homepage: profile, publications, news, research interests |
 | `/publications/` | `_pages/publications.md` | Papers, results table, BibTeX |
 | `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer |
+| `/commentary/` | `_pages/commentary.md` | Research commentary listing |
+| `/commentary/YYYY/MM/DD/slug/` | `_posts/YYYY-MM-DD-slug.md` | Individual commentary post |
 | `/cv/` | `_pages/cv.md` | Full curriculum vitae with PDF download |
 
 ---
@@ -36,13 +38,16 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 │   └── footer.html        # Footer
 ├── _layouts/
 │   ├── default.html       # Base layout (GA4, OG tags, JSON-LD schema)
-│   └── page.html          # Generic page layout
+│   ├── page.html          # Generic page layout
+│   └── post.html          # Commentary post layout
 ├── _pages/
 │   ├── index.md
 │   ├── publications.md
 │   ├── slides.md
+│   ├── commentary.md      # Commentary listing page
 │   ├── cv.md
 │   └── 404.md
+├── _posts/                # Commentary articles (YYYY-MM-DD-slug.md)
 ├── assets/
 │   ├── css/main.css       # Design system (tokens, layout, components)
 │   ├── js/main.js         # Dark mode toggle, interactions
@@ -72,6 +77,26 @@ bundle exec jekyll serve --port 4000
 bundle exec jekyll build
 # → output in _site/
 ```
+
+---
+
+## Commentary Workflow
+
+New posts go in `_posts/` with filename `YYYY-MM-DD-slug.md`:
+
+```markdown
+---
+layout: post
+title: "Your Title"
+date: 2026-05-24
+tags: [clinical-ai]
+excerpt: "One-sentence summary shown on the listing page."
+---
+
+Article body here...
+```
+
+Jekyll auto-generates the URL `/commentary/YYYY/MM/DD/slug/`.
 
 ---
 
