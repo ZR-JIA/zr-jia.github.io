@@ -719,21 +719,18 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ---- Gallery Carousel ---- */
-.carousel-wrap {
-  position: relative;
-  width: 100%;
-  max-width: 720px;
-  margin: 24px 0;
-}
-.carousel-track {
+.carousel { width: 100%; max-width: 720px; margin: 0; }
+
+.carousel-inner {
   position: relative;
   width: 100%;
   aspect-ratio: 3/2;
   overflow: hidden;
   border-radius: 8px;
-  background: #000;
+  background: #111;
 }
-.carousel-track img {
+
+.carousel-inner img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -742,8 +739,9 @@ img { max-width: 100%; height: auto; }
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
+  display: block;
 }
-.carousel-track img.active { opacity: 1; }
+.carousel-inner img.active { opacity: 1; }
 
 .carousel-btn {
   position: absolute;
@@ -755,15 +753,15 @@ img { max-width: 100%; height: auto; }
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.2s;
-  z-index: 2;
+  z-index: 10;
 }
-.carousel-btn:hover { background: rgba(0,0,0,0.72); }
+.carousel-btn:hover { background: rgba(0,0,0,0.75); }
 .carousel-btn.prev { left: 12px; }
 .carousel-btn.next { right: 12px; }
 
@@ -774,11 +772,11 @@ img { max-width: 100%; height: auto; }
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 600;
-  color: rgba(255,255,255,0.85);
-  background: rgba(0,0,0,0.35);
-  padding: 2px 8px;
+  color: rgba(255,255,255,0.9);
+  background: rgba(0,0,0,0.4);
+  padding: 2px 9px;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 10;
 }
 
 .carousel-dots {
