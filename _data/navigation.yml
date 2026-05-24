@@ -5,6 +5,8 @@ main:
     url: /publications/
   - title: "Slides"
     url: /slides/
+  - title: "Gallery"
+    url: /gallery/
   - title: "Commentary"
     url: /commentary/
   - title: "CV"
