@@ -9,6 +9,8 @@ Gemfile.lock
 .DS_Store
 .claude/
 
+TODO.md
+
 # Sensitive documents - DO NOT upload
 conference.pdf
 ZhengrongJIA-CV.pdf
