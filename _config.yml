@@ -10,6 +10,9 @@ repository: "ZR-JIA/zr-jia.github.io"
 include:
   - _pages
 
+exclude:
+  - assets/slides/
+
 # Defaults
 defaults:
   - scope:
