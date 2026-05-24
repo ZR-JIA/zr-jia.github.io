@@ -23,6 +23,7 @@ description: "Slide decks and presentations by Zheng Rong JIA, including confere
           <p class="cv-entry-meta">Presented at CCAI 2026 &mdash; May 24, 2026 &nbsp;·&nbsp; <a href="https://marp.app" target="_blank" rel="noopener noreferrer">Marp</a></p>
           <div class="pub-detail-actions" style="margin-top:10px;">
             <a href="https://drive.google.com/file/d/16FePUDlv0bs38EvAamXJQVxBRFpne3AV/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Slides (PDF)</a>
+            <a href="https://github.com/ZR-JIA/zr-jia.github.io/blob/main/assets/slides/CCAI2026/CCAI2026_Presentation.md" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source (.md)</a>
           </div>
         </div>
       </div>
