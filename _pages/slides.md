@@ -32,12 +32,5 @@ description: "Slide decks and presentations by Zheng Rong JIA, including confere
       </div>
     </section>
 
-    <section class="content-section">
-      <p class="section-label">Slide-as-Code</p>
-      <p style="font-size:15px;color:var(--color-text-secondary);line-height:1.8;">
-        All presentations are authored in Markdown and compiled using <a href="https://marp.app" target="_blank" rel="noopener noreferrer">Marp</a> — version-controlled, reproducible slide decks treated as code artifacts.
-      </p>
-    </section>
-
   </div>
 </div>
