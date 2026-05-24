@@ -17,6 +17,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 | `/` | `_pages/index.md` | Homepage: profile, publications, news, research interests |
 | `/publications/` | `_pages/publications.md` | Papers, results table, BibTeX |
 | `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer |
+| `/gallery/` | `_pages/gallery.md` | Conference photo carousel |
 | `/commentary/` | `_pages/commentary.md` | Research commentary listing |
 | `/commentary/YYYY/MM/DD/slug/` | `_posts/YYYY-MM-DD-slug.md` | Individual commentary post |
 | `/cv/` | `_pages/cv.md` | Full curriculum vitae with PDF download |
@@ -29,12 +30,9 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 .
 ├── _config.yml            # Site config: title, URL, GA4, plugins
 ├── Gemfile                # Ruby gem dependencies
-├── site.webmanifest       # PWA manifest (home screen icon)
-├── _data/
-│   ├── navigation.yml     # Navbar links
-│   └── skills.yml         # Tech stack tags
+├── site.webmanifest       # PWA manifest
 ├── _includes/
-│   ├── navbar.html        # Top navigation bar
+│   ├── navbar.html        # Top navigation bar (hardcoded — edit directly)
 │   └── footer.html        # Footer
 ├── _layouts/
 │   ├── default.html       # Base layout (GA4, OG tags, JSON-LD schema)
@@ -44,6 +42,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 │   ├── index.md
 │   ├── publications.md
 │   ├── slides.md
+│   ├── gallery.md         # Photo carousel page
 │   ├── commentary.md      # Commentary listing page
 │   ├── cv.md
 │   └── 404.md
@@ -51,10 +50,12 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 ├── assets/
 │   ├── css/main.css       # Design system (tokens, layout, components)
 │   ├── js/main.js         # Dark mode toggle, interactions
-│   ├── images/            # avatar.jpg, og-image.png, favicons
+│   ├── images/
+│   │   ├── ccai2026/      # CCAI 2026 conference photos
+│   │   └── ...            # avatar, og-image, favicons
 │   ├── papers/            # CV PDF (tracked in git)
-│   ├── slides/            # Marp source files and assets (excluded from Jekyll build)
-│   └── slides_html/       # Compiled Marp HTML (served by GitHub Pages)
+│   ├── slides/            # Marp source files (excluded from Jekyll build)
+│   └── slides_html/       # Compiled Marp HTML (served via iframe)
 └── README.md
 ```
 
@@ -105,7 +106,6 @@ Jekyll auto-generates the URL `/commentary/YYYY/MM/DD/slug/`.
 Presentations are authored in Markdown using [Marp](https://marp.app) and compiled to a self-contained HTML for embedding.
 
 ```bash
-# Compile Marp source to self-contained HTML
 marp assets/slides/CCAI2026/CCAI2026_Presentation.md \
      --html --allow-local-files \
      -o assets/slides_html/CCAI2026.html
@@ -117,28 +117,25 @@ Source files live in `assets/slides/` (excluded from Jekyll). Compiled HTML live
 
 ## Deployment
 
-Pushing to `main` triggers automatic GitHub Pages deployment.
+Pushing to `main` triggers automatic GitHub Pages deployment (~1–2 min).
 
 ```bash
-git add .
-git commit -m "your message"
 git push origin main
-# → live in ~1-2 minutes at https://zr-jia.github.io
 ```
 
 ---
 
 ## Design System
 
-The site uses a custom academic layout with CSS custom properties (design tokens).
+Custom CSS with design tokens in `assets/css/main.css`.
 
 | Token | Value | Usage |
 |---|---|---|
-| `--color-primary` | `#1a3a5c` | Headings, accents |
-| `--color-surface` | `#ffffff` | Card backgrounds |
-| `--color-bg` | `#f2f2f7` | Page background |
+| `--color-accent` | `#2c4a6e` | Links, active states, borders |
+| `--color-bg` | `#f9f8f5` | Page background |
+| `--color-text` | `#1c1c1c` | Body text |
 
-Dark mode is supported via `[data-theme="dark"]` and toggled by `assets/js/main.js`.
+Dark mode via `[data-theme="dark"]`, toggled by `assets/js/main.js`.
 
 ---
 
@@ -147,10 +144,11 @@ Dark mode is supported via `[data-theme="dark"]` and toggled by `assets/js/main.
 | What | Where |
 |---|---|
 | Profile text & bio | `_pages/index.md` |
-| Navigation links | `_data/navigation.yml` |
+| Navigation links | `_includes/navbar.html` (hardcoded) |
 | CV content | `_pages/cv.md` |
 | CV PDF | Replace `assets/papers/CV_ZhengRong_JIA.pdf` |
 | Publications | `_pages/publications.md` |
+| Conference photos | `assets/images/ccai2026/` |
 | Avatar photo | `assets/images/avatar.jpg` (400×400 recommended) |
 | Social share image | `assets/images/og-image.png` (1200×630) |
 | Site URL / GA4 ID | `_config.yml` |
