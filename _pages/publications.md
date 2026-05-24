@@ -16,7 +16,7 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
       <p class="section-label">Conference Paper · CCAI 2026</p>
 
       <p class="pub-detail-title">Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</p>
-      <p class="pub-detail-authors"><strong>Zhengrong Jia*</strong>, Kwong-Cheong Wong*</p>
+      <p class="pub-detail-authors"><strong>Zhengrong Jia*</strong>, Kwong-Cheong Wong* &nbsp;<span style="display:inline-block;background:#f0c040;color:#5a3e00;font-size:12px;font-weight:700;padding:2px 8px;border-radius:3px;vertical-align:middle;">&#9733; [Award Name]</span></p>
       <p class="pub-detail-venue">The 6th International Conference on Computer Communication and Artificial Intelligence (CCAI), 2026</p>
 
       <div class="pub-detail-actions">

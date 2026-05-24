@@ -45,8 +45,12 @@ description: "Independent AI researcher specializing in Clinical AI and Deep Lea
     <p class="section-label">News</p>
     <ul class="news-list">
       <li class="news-item">
-        <span class="news-date">May 24, 2026</span>
-        <span class="news-text"><strong>Presented at CCAI 2026</strong> &mdash; <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>. <a href="/slides/">Slides</a> now available.</span>
+        <span class="news-date">May 22–24, 2026</span>
+        <span class="news-text"><strong>Received [Award Name] at CCAI 2026</strong> &mdash; Nanjing.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">May 22–24, 2026</span>
+        <span class="news-text"><strong>Attended CCAI 2026</strong> in Nanjing &mdash; delivered oral presentation of <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>. <a href="/slides/">Slides</a> now available. Photos coming soon.</span>
       </li>
       <li class="news-item">
         <span class="news-date">May 2026</span>
