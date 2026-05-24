@@ -4,7 +4,7 @@
 [![Jekyll](https://img.shields.io/badge/Jekyll-3.9-red?style=flat-square&logo=jekyll)](https://jekyllrb.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
-Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep Learning. Built with Jekyll and a fully custom Bento-grid design system — no third-party UI frameworks.
+Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep Learning. Built with Jekyll and a custom academic design system — no third-party UI frameworks.
 
 **Live:** https://zr-jia.github.io
 
@@ -14,9 +14,9 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 
 | Route | File | Description |
 |---|---|---|
-| `/` | `_pages/index.md` | Homepage: profile, tech stack, latest updates, research interests |
-| `/publications/` | `_pages/publications.md` | Papers & research outputs |
-| `/slides/` | `_pages/slides.md` | Presentation slides |
+| `/` | `_pages/index.md` | Homepage: profile, publications, news, research interests |
+| `/publications/` | `_pages/publications.md` | Papers, results table, BibTeX |
+| `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer |
 | `/cv/` | `_pages/cv.md` | Full curriculum vitae with PDF download |
 
 ---
@@ -30,7 +30,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 ├── site.webmanifest       # PWA manifest (home screen icon)
 ├── _data/
 │   ├── navigation.yml     # Navbar links
-│   └── skills.yml         # Tech stack tags (legacy, now inline in pages)
+│   └── skills.yml         # Tech stack tags
 ├── _includes/
 │   ├── navbar.html        # Top navigation bar
 │   └── footer.html        # Footer
@@ -44,11 +44,12 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 │   ├── cv.md
 │   └── 404.md
 ├── assets/
-│   ├── css/main.css       # Full design system (tokens, grid, components)
+│   ├── css/main.css       # Design system (tokens, layout, components)
 │   ├── js/main.js         # Dark mode toggle, interactions
 │   ├── images/            # avatar.jpg, og-image.png, favicons
-│   ├── papers/            # CV and paper PDFs (tracked in git)
-│   └── slides/            # Presentation PDFs
+│   ├── papers/            # CV PDF (tracked in git)
+│   ├── slides/            # Marp source files and assets (excluded from Jekyll build)
+│   └── slides_html/       # Compiled Marp HTML (served by GitHub Pages)
 └── README.md
 ```
 
@@ -74,6 +75,21 @@ bundle exec jekyll build
 
 ---
 
+## Slides Workflow
+
+Presentations are authored in Markdown using [Marp](https://marp.app) and compiled to a self-contained HTML for embedding.
+
+```bash
+# Compile Marp source to self-contained HTML
+marp assets/slides/CCAI2026/CCAI2026_Presentation.md \
+     --html --allow-local-files \
+     -o assets/slides_html/CCAI2026.html
+```
+
+Source files live in `assets/slides/` (excluded from Jekyll). Compiled HTML lives in `assets/slides_html/` (served and embedded via iframe).
+
+---
+
 ## Deployment
 
 Pushing to `main` triggers automatic GitHub Pages deployment.
@@ -89,19 +105,13 @@ git push origin main
 
 ## Design System
 
-The site uses a custom **Bento-grid** layout with CSS custom properties (design tokens).
+The site uses a custom academic layout with CSS custom properties (design tokens).
 
 | Token | Value | Usage |
 |---|---|---|
 | `--color-primary` | `#1a3a5c` | Headings, accents |
 | `--color-surface` | `#ffffff` | Card backgrounds |
 | `--color-bg` | `#f2f2f7` | Page background |
-| `--radius-lg` | `20px` | Card border radius |
-
-**Grid classes:**
-- `.bento-grid` — 3-column CSS Grid
-- `.bento-span-2` — spans 2 columns
-- `.bento-span-3` — full-width row
 
 Dark mode is supported via `[data-theme="dark"]` and toggled by `assets/js/main.js`.
 
@@ -111,7 +121,7 @@ Dark mode is supported via `[data-theme="dark"]` and toggled by `assets/js/main.
 
 | What | Where |
 |---|---|
-| Profile text & bio | `_pages/index.md` — hero card |
+| Profile text & bio | `_pages/index.md` |
 | Navigation links | `_data/navigation.yml` |
 | CV content | `_pages/cv.md` |
 | CV PDF | Replace `assets/papers/CV_ZhengRong_JIA.pdf` |
@@ -124,4 +134,4 @@ Dark mode is supported via `[data-theme="dark"]` and toggled by `assets/js/main.
 
 ## License
 
-MIT © 2025 Zheng Rong JIA
+MIT © 2026 Zheng Rong JIA
