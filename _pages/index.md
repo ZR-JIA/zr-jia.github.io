@@ -50,7 +50,17 @@ description: "Independent AI researcher specializing in Clinical AI and Deep Lea
       </li>
       <li class="news-item">
         <span class="news-date">May 22–24, 2026</span>
-        <span class="news-text"><strong>Attended CCAI 2026</strong> in Nanjing &mdash; delivered oral presentation of <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>. <a href="/slides/">Slides</a> now available. Photos coming soon.</span>
+        <span class="news-text"><strong>Attended CCAI 2026</strong> in Nanjing &mdash; delivered oral presentation of <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>. <a href="/slides/">Slides</a> now available.</span>
+        <div class="photo-grid">
+          <img src="/assets/images/ccai2026/ccai2026-01.jpg" alt="CCAI 2026 Nanjing">
+          <img src="/assets/images/ccai2026/ccai2026-02.jpg" alt="CCAI 2026 Nanjing">
+          <img src="/assets/images/ccai2026/ccai2026-03.jpg" alt="CCAI 2026 Nanjing">
+          <img src="/assets/images/ccai2026/ccai2026-04.jpg" alt="CCAI 2026 Nanjing">
+          <img src="/assets/images/ccai2026/ccai2026-05.jpg" alt="CCAI 2026 Nanjing">
+          <img src="/assets/images/ccai2026/ccai2026-06.jpg" alt="CCAI 2026 Nanjing">
+          <img src="/assets/images/ccai2026/ccai2026-07.jpg" alt="CCAI 2026 Nanjing">
+          <img src="/assets/images/ccai2026/ccai2026-08.jpg" alt="CCAI 2026 Nanjing">
+        </div>
       </li>
       <li class="news-item">
         <span class="news-date">May 2026</span>
