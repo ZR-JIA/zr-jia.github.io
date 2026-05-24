@@ -41,7 +41,14 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
       <div class="cv-entries">
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title">[Award Name]</span>
+            <span class="cv-entry-title">Best Industrial Paper Award</span>
+            <span class="cv-entry-date">May 2026</span>
+          </div>
+          <p class="cv-entry-org">CCAI 2026 &mdash; The 6th International Conference on Computer Communication and Artificial Intelligence, Nanjing</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Best Presentation Award</span>
             <span class="cv-entry-date">May 2026</span>
           </div>
           <p class="cv-entry-org">CCAI 2026 &mdash; The 6th International Conference on Computer Communication and Artificial Intelligence, Nanjing</p>

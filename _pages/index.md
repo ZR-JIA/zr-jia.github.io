@@ -46,7 +46,7 @@ description: "Independent AI researcher specializing in Clinical AI and Deep Lea
     <ul class="news-list">
       <li class="news-item">
         <span class="news-date">May 22–24, 2026</span>
-        <span class="news-text"><strong>Received [Award Name] at CCAI 2026</strong> &mdash; Nanjing.</span>
+        <span class="news-text"><strong>Received Best Industrial Paper Award &amp; Best Presentation Award at CCAI 2026</strong> &mdash; Nanjing.</span>
       </li>
       <li class="news-item">
         <span class="news-date">May 22–24, 2026</span>
