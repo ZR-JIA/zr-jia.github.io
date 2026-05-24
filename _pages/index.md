@@ -30,7 +30,7 @@ description: "Independent AI researcher specializing in Clinical AI and Deep Lea
       <li class="pub-academic-item">
         <p class="pub-academic-title">Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</p>
         <p class="pub-academic-authors"><span class="pub-author-self">Zheng Rong JIA</span><sup>*</sup>, Kwong-Cheong Wong<sup>*</sup></p>
-        <p class="pub-academic-venue">CCAI 2026 (EI-indexed)</p>
+        <p class="pub-academic-venue"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a> (EI-indexed)</p>
         <div class="pub-academic-links">
           <a href="https://drive.google.com/file/d/1ql4aXufCbLLJQqCM2kk7jSLS4_68LIUR/view?usp=sharing" target="_blank" rel="noopener noreferrer">paper</a>
           <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">code</a>
