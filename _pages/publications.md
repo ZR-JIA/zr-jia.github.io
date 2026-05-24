@@ -109,7 +109,7 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
   booktitle = {Proceedings of the 6th International Conference on
                Computer Communication and Artificial Intelligence (CCAI)},
   year      = {2026},
-  note      = {Accepted. To appear in May 2026}
+  note      = {Accepted Feb 2, 2026; Presented at CCAI 2026, May 24, 2026}
 }</pre></div>
     </section>
 

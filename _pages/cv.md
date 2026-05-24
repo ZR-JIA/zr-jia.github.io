@@ -50,7 +50,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <ul>
               <li>Outperformed strongest neural baseline NN (AUPRC 0.5394) and Standard Transformer (0.5279); competitive with XGBoost (0.6467)</li>
               <li>Implemented attention map visualization for clinical interpretability of feature importance</li>
-              <li>Paper accepted at <strong>CCAI 2026</strong> (The 6th International Conference on Computer Communication and Artificial Intelligence, May 2026)</li>
+              <li>Paper accepted and presented at <strong>CCAI 2026</strong> (The 6th International Conference on Computer Communication and Artificial Intelligence, May 24, 2026)</li>
             </ul>
           </div>
         </div>

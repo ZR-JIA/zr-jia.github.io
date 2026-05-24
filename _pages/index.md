@@ -45,12 +45,16 @@ description: "Independent AI researcher specializing in Clinical AI and Deep Lea
     <p class="section-label">News</p>
     <ul class="news-list">
       <li class="news-item">
-        <span class="news-date">2026</span>
+        <span class="news-date">May 24, 2026</span>
+        <span class="news-text"><strong>Presented at CCAI 2026</strong> &mdash; <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>. <a href="/slides/">Slides</a> now available.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">May 2026</span>
         <span class="news-text">Finalizing the open-source release of the <strong>DT-Transformer</strong> framework for reproducible clinical AI research.</span>
       </li>
       <li class="news-item">
-        <span class="news-date">2026</span>
-        <span class="news-text"><strong>Paper accepted at CCAI 2026</strong> &mdash; <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em> (upcoming May 2026).</span>
+        <span class="news-date">Feb 2, 2026</span>
+        <span class="news-text"><strong>Paper accepted at CCAI 2026</strong> &mdash; <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>.</span>
       </li>
       <li class="news-item">
         <span class="news-date">2025</span>
