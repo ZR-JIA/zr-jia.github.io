@@ -8,13 +8,16 @@
   --color-accent-muted: rgba(44, 74, 110, 0.07);
 
   --color-bg: #f9f8f5;
+  --color-surface: #ffffff;
   --color-text: #1c1c1c;
   --color-text-secondary: #5c5c5c;
   --color-text-tertiary: #9a9a9a;
   --color-border: rgba(0, 0, 0, 0.09);
+  --color-shadow: rgba(0, 0, 0, 0.06);
 
   --container-max: 800px;
   --transition: 0.2s ease;
+  --radius-card: 12px;
 }
 
 [data-theme="dark"] {
@@ -23,10 +26,12 @@
   --color-accent-muted: rgba(126, 172, 214, 0.09);
 
   --color-bg: #111111;
+  --color-surface: #1a1a1a;
   --color-text: #e4e4e4;
   --color-text-secondary: #a0a0a0;
   --color-text-tertiary: #666;
   --color-border: rgba(255, 255, 255, 0.09);
+  --color-shadow: rgba(0, 0, 0, 0.3);
 }
 
 /* ---- Skip to content ---- */
@@ -905,6 +910,262 @@ img { max-width: 100%; height: auto; }
 }
 .post-back:hover { color: var(--color-accent); }
 .post-back i { margin-right: 6px; }
+
+/* ============================================
+   Homepage Redesign Components
+   ============================================ */
+
+/* ---- Hero ---- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 64px 0 56px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero-left { flex: 1; min-width: 0; }
+
+.hero-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 14px;
+}
+
+.hero-slogan {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--color-accent);
+  border-left: 3px solid var(--color-accent);
+  padding-left: 14px;
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.hero-identity {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.hero-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+  background: var(--color-accent-muted);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+
+.hero-edu {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  color: var(--color-text-tertiary);
+  margin-bottom: 26px;
+  line-height: 1.6;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 6px 13px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.hero-link:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-accent-muted);
+  text-decoration: none;
+}
+
+.hero-right { flex-shrink: 0; }
+
+.hero-portrait {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid var(--color-border);
+  box-shadow: 0 4px 20px var(--color-shadow);
+}
+
+@media (max-width: 560px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 40px 0 36px;
+  }
+  .hero-portrait { width: 88px; height: 88px; }
+  .hero-name { font-size: 26px; }
+}
+
+/* ---- Interest Cards ---- */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.interest-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 18px 16px;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.interest-card:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-muted);
+}
+
+.interest-icon {
+  font-size: 17px;
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.interest-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.interest-desc {
+  font-size: 12.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ---- Premium Publication Card ---- */
+.pub-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 22px 22px 18px;
+  margin-top: 4px;
+  box-shadow: 0 2px 12px var(--color-shadow);
+}
+
+.pub-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.pub-year-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: var(--color-accent-muted);
+  border: 1px solid var(--color-accent);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.pub-award-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #7a4f00;
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+[data-theme="dark"] .pub-award-badge {
+  color: #fde68a;
+  background: rgba(245,158,11,0.12);
+  border-color: rgba(245,158,11,0.4);
+}
+
+.pub-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.45;
+  margin-bottom: 7px;
+}
+
+.pub-card-authors {
+  font-family: 'Source Serif 4', serif;
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.pub-card-authors strong { color: var(--color-text); font-weight: 600; }
+
+.pub-card-venue {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  color: var(--color-text-tertiary);
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.pub-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+/* ---- Philosophy / About ---- */
+.philosophy-block {
+  border-left: 2px solid var(--color-border);
+  padding-left: 18px;
+}
+
+.philosophy-text {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.85;
+  margin: 0;
+  max-width: 620px;
+}
 
 /* ---- Utility ---- */
 .text-muted { color: var(--color-text-secondary); }
