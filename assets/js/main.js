@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Click outside closes menu
     document.addEventListener('click', function (e) {
-      if (links.classList.contains('open') && !links.contains(e.target) && e.target !== toggle) {
+      if (links.classList.contains('open') && !links.contains(e.target) && !toggle.contains(e.target)) {
         closeMenu();
       }
     });
