@@ -17,11 +17,12 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
 
       <p class="pub-detail-title">Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</p>
       <p class="pub-detail-authors"><strong>Zhengrong Jia*</strong>, Kwong-Cheong Wong* &nbsp;<span style="display:inline-block;background:#f0c040;color:#5a3e00;font-size:12px;font-weight:700;padding:2px 8px;border-radius:3px;vertical-align:middle;">&#9733; Best Industrial Paper</span> <span style="display:inline-block;background:#f0c040;color:#5a3e00;font-size:12px;font-weight:700;padding:2px 8px;border-radius:3px;vertical-align:middle;">&#9733; Best Presentation</span></p>
-      <p class="pub-detail-venue"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">The 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a>, 2026</p>
+      <p class="pub-detail-venue">2026 IEEE 6th International Conference on Computer Communication and Artificial Intelligence (<a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI</a>), Nanjing, China, May 22&ndash;24, 2026, pp. 76&ndash;81. ISBN: 979-8-3315-8247-0</p>
 
       <div class="pub-detail-actions">
         <a href="https://drive.google.com/file/d/1ql4aXufCbLLJQqCM2kk7jSLS4_68LIUR/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> PDF (Preprint)</a>
         <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+        <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Data Pipeline</a>
         <a href="/slides/" class="btn btn-outline"><i class="fas fa-file-powerpoint"></i> Slides</a>
         <a href="https://orcid.org/0009-0007-8829-6713" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-orcid"></i> ORCID</a>
         <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Scholar</a>
@@ -75,7 +76,7 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
           </tr>
         </tbody>
       </table>
-      <p style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-text-tertiary);margin-top:10px;">All reported metrics use 5-fold stratified cross-validation. XGBoost and Random Forest use single-run evaluation.</p>
+      <p style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-text-tertiary);margin-top:10px;">Neural model metrics are aggregated over 5 random seeds on a fixed patient-stratified 70/10/20 split (mean &plusmn; std). XGBoost and Random Forest use single-run evaluation.</p>
     </section>
 
     <section class="content-section">
@@ -93,10 +94,10 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
     <section class="content-section">
       <p class="section-label">Dataset & Reproducibility</p>
       <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.8;margin-bottom:12px;">
-        <strong>eICU Collaborative Research Database</strong> &mdash; Multicenter critical care database (200,859 admissions, 208 hospitals). Stroke cohort extracted with ICD-9 codes 430&ndash;438. Features: demographics, vitals, lab values, GCS scores. Access via <a href="https://eicu-crd.mit.edu/" target="_blank" rel="noopener noreferrer">PhysioNet credentialed access</a>.
+        <strong>eICU Collaborative Research Database</strong> &mdash; Multicenter critical care database (200,859 ICU stays across 208 hospitals). Stroke cohort extracted with ICD-9 codes 430, 431, 433, 434, 436, and 437, restricted to the first 72 hours of each ICU stay. Features: demographics (age, gender, ethnicity) and 94 continuous physiological vitals and lab values, including GCS. Access via <a href="https://eicu-crd.mit.edu/" target="_blank" rel="noopener noreferrer">PhysioNet credentialed access</a>.
       </p>
       <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.8;">
-        Open-source implementation at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke</a>. Repository includes PyTorch model, data preprocessing pipeline, 5-fold cross-validation scripts, and attention visualization tools.
+        Open-source implementation is split across two repositories. Model training &mdash; <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke</a>: PyTorch model, unified training engine covering seven model types, multi-seed experiment runner, Optuna hyperparameter search, and SHAP/LIME explainability. Data pipeline &mdash; <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">Data-Preprocessing-for-eICU</a>: raw eICU extraction, ICD-9 stroke cohort selection, first-72-hour aggregation, and leakage-free patient-stratified splits.
       </p>
     </section>
 
@@ -106,10 +107,14 @@ description: "Research publications by Zheng Rong JIA, including the DT-Transfor
   title     = {Deep Learning for Stroke Mortality Prediction
                in eICU: A Dual-Tower Transformer Framework},
   author    = {Jia, Zhengrong and Wong, Kwong-Cheong},
-  booktitle = {Proceedings of the 6th International Conference on
-               Computer Communication and Artificial Intelligence (CCAI)},
+  booktitle = {2026 IEEE 6th International Conference on
+               Computer Communication and Artificial
+               Intelligence (CCAI)},
+  address   = {Nanjing, China},
+  pages     = {76--81},
   year      = {2026},
-  note      = {Accepted Feb 2, 2026; Presented at CCAI 2026, May 24, 2026}
+  publisher = {IEEE},
+  isbn      = {979-8-3315-8247-0}
 }</pre></div>
     </section>
 

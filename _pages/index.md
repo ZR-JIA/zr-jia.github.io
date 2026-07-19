@@ -98,7 +98,7 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
       </li>
       <li class="news-item">
         <span class="news-date">May 2026</span>
-        <span class="news-text">Finalizing the open-source release of the <strong>DT-Transformer</strong> framework for reproducible clinical AI research.</span>
+        <span class="news-text">Released the <strong>DT-Transformer</strong> framework open-source for reproducible clinical AI research &mdash; <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">training pipeline</a> and <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">data preprocessing pipeline</a>.</span>
       </li>
       <li class="news-item">
         <span class="news-date">Feb 2, 2026</span>

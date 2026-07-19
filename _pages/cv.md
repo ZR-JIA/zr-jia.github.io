@@ -82,18 +82,48 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
       <div class="cv-entries">
         <div class="cv-entry">
           <div class="cv-entry-header">
+            <span class="cv-entry-title">Young Ambassador and Researcher</span>
+            <span class="cv-entry-date">Aug 2025 – Present</span>
+          </div>
+          <p class="cv-entry-org">Asia AI Education and Future Technology Association (AAE) &mdash; Remote / Hong Kong</p>
+          <div class="cv-entry-body">
+            <ul>
+              <li>Collaborate closely with Head Advisor Dr. Kwong-Cheong Wong on deep learning for stroke mortality prediction using the eICU database</li>
+              <li>Represented the association at IEEE CCAI 2026 in Nanjing, where the resulting paper received the Best Industrial Paper and Best Presentation awards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
             <span class="cv-entry-title">Machine Learning Engineer Intern</span>
             <span class="cv-entry-date">Jul – Aug 2024</span>
           </div>
           <p class="cv-entry-org">China Southern Power Grid AI Technology Co., Ltd. &mdash; Guangzhou</p>
-          <p class="cv-entry-meta">Python · PyTorch · YOLOv8 · OpenCV · Pandas · NumPy · Linux</p>
+          <p class="cv-entry-meta">Python · Pandas · NumPy · Matplotlib · Linux</p>
           <div class="cv-entry-body">
             <ul>
-              <li>Developed a computer vision pipeline for power inspection robots to automate circuit breaker state recognition, replacing manual visual inspection on high-voltage lines</li>
-              <li>Fine-tuned YOLOv8 on domain-specific power equipment imagery, achieving reliable detection across varying lighting and weather conditions</li>
-              <li>Built and maintained a <strong>60 GB image dataset</strong> across Guangdong Province substations; standardized annotation formats and automated ingestion scripts</li>
-              <li>Conducted fault-type EDA (Pandas / Matplotlib) to guide class-balanced sampling strategies</li>
+              <li>Processed <strong>60 GB</strong> of multi-province power equipment inspection data to identify equipment fault frequencies and optimize inspection robot algorithms</li>
+              <li>Contributed to the development of closing and splitting functions for power inspection robots to support real-world operational accuracy</li>
+              <li>Conducted fault-type EDA (Pandas / Matplotlib) to guide downstream sampling strategies</li>
               <li><strong>Outcome:</strong> Written commendation from supervising engineer; earned 100/100 on formal internship evaluation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <p class="section-label">Academic Service</p>
+      <div class="cv-entries">
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Reviewer and Program Committee Member</span>
+            <span class="cv-entry-date">2026</span>
+          </div>
+          <p class="cv-entry-org">Pacific Rim International Conference on Artificial Intelligence (PRICAI)</p>
+          <div class="cv-entry-body">
+            <ul>
+              <li>Reviewed four submissions and was subsequently invited to serve as a Program Committee member</li>
             </ul>
           </div>
         </div>
@@ -114,16 +144,16 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <ul>
               <li>Engineered an end-to-end ML pipeline from raw eICU CSV ingestion to model serialization, handling 200k+ patient records with reproducible preprocessing via custom DataLoader classes</li>
               <li>Modular architecture separating data, model, training, and evaluation layers for maintainability</li>
-              <li>Stratified 5-fold cross-validation harness with automated metric logging (AUROC, AUPRC, F1) across all baselines</li>
-              <li>Containerized full training environment with Docker; open-source release in preparation</li>
+              <li>Multi-seed evaluation harness (5 seeds on a fixed patient-stratified split) with automated metric logging (AUROC, AUPRC, F1) across all baselines</li>
+              <li>Containerized full training environment with Docker; released open-source at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke</a> and <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">Data-Preprocessing-for-eICU</a></li>
             </ul>
           </div>
         </div>
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title">Time-Series Prediction System &mdash; Undergraduate AI Project</span>
-            <span class="cv-entry-date">2023 – 2024</span>
+            <span class="cv-entry-title">Time-Series Prediction System &mdash; Final Year Project</span>
+            <span class="cv-entry-date">Sep 2024 – May 2025</span>
           </div>
           <p class="cv-entry-meta">Python · PyTorch · LSTM · GRU · MLP · Scikit-learn · Pandas · NumPy · Matplotlib</p>
           <div class="cv-entry-body">
@@ -138,7 +168,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title">AI-Integrated Web Platform &mdash; B.Sc. Capstone</span>
+            <span class="cv-entry-title">AI-Integrated Web Platform &mdash; Course Project</span>
             <span class="cv-entry-date">2024 – 2025</span>
           </div>
           <p class="cv-entry-meta">Vue.js · Java (Spring Boot) · REST API · SQL · Python · Scikit-learn · Docker</p>
