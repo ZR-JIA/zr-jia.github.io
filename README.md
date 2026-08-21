@@ -20,7 +20,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 | `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer |
 | `/gallery/` | `_pages/gallery.md` | Conference photo carousel |
 | `/commentary/` | `_pages/commentary.md` | Research commentary listing |
-| `/commentary/YYYY/MM/DD/slug/` | `_posts/YYYY-MM-DD-slug.md` | Individual commentary post |
+| `/YYYY/MM/DD/slug.html` | `_posts/YYYY-MM-DD-slug.md` | Individual commentary post |
 | `/cv/` | `_pages/cv.md` | Full curriculum vitae with PDF download |
 
 ---
@@ -29,7 +29,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 
 ```
 .
-├── _config.yml            # Site config: title, URL, GA4, plugins
+├── _config.yml            # Site config: title, URL, GA4, plugins, collections
 ├── Gemfile                # Ruby gem dependencies
 ├── site.webmanifest       # PWA manifest
 ├── _includes/
@@ -44,6 +44,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 │   ├── post.html          # Commentary post layout
 │   └── publication.html   # Paper detail page layout
 ├── _publications/         # One file per paper (drives list, detail page, Cite dialog)
+│   ├── dualtower-ft-pricai.md
 │   ├── dt-transformer-eicu-stroke.md
 │   └── 0000-template.md   # published: false — copy this to add a paper
 ├── _pages/
@@ -57,7 +58,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 ├── _posts/                # Commentary articles (YYYY-MM-DD-slug.md)
 ├── assets/
 │   ├── css/main.css       # Design system (tokens, layout, components)
-│   ├── js/main.js         # Dark mode toggle, interactions
+│   ├── js/main.js         # Dark mode, mobile nav, Cite dialog
 │   ├── images/
 │   │   ├── ccai2026/      # CCAI 2026 conference photos
 │   │   └── ...            # avatar, og-image, favicons
@@ -72,6 +73,12 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 ## Local Development
 
 **Requirements:** Ruby ≥ 2.7, Bundler
+
+> **Note:** the pinned `github-pages` gem set needs an older Ruby. On Ruby 3.2+
+> the build fails with `undefined method 'tainted?'` (removed from Ruby, still
+> called by liquid 4.0.3). Use a version manager (`rbenv`, `asdf`) to run Ruby
+> 3.1 or earlier locally. GitHub Pages builds on its own environment, so this
+> only affects local preview.
 
 ```bash
 # 1. Install dependencies
@@ -105,7 +112,12 @@ excerpt: "One-sentence summary shown on the listing page."
 Article body here...
 ```
 
-Jekyll auto-generates the URL `/commentary/YYYY/MM/DD/slug/`.
+Jekyll generates the URL `/YYYY/MM/DD/slug.html` — its built-in `date` default,
+since no `permalink:` is configured. To nest posts under `/commentary/` instead,
+add `permalink: /commentary/:year/:month/:day/:title/` to `_config.yml`.
+
+Set `published: false` while drafting, or keep the file in `_drafts/` — anything
+in `_posts/` with a past date is built and goes live on the next push.
 
 ---
 
@@ -124,12 +136,28 @@ one file updates **all** of these automatically:
 - the card on the homepage (newest two)
 - the `/publications/` list
 - its own detail page
-- the Cite dialog (IEEE / BibTeX / RIS)
 - `sitemap.xml`
+
+### Citations
 
 Paste the three citation strings straight from the publisher's "Cite This"
 export. Use `>-` for the one-line IEEE reference and `|` for BibTeX and RIS so
 their line breaks survive into the clipboard.
+
+**The Cite button only appears once `citation_ieee` is filled in.** Leave the
+citation fields out for a paper that is accepted but not yet published — no one
+can then copy a citation that is still going to change.
+
+### Papers not yet published
+
+Use `status:` (e.g. `"Accepted &middot; Short Paper"`) to show a badge on the
+card and detail page, and omit `pages`, `doi`, and `url_official` until the
+proceedings exist.
+
+`_config.yml` sets **`future: true`** for exactly this case. Papers are sorted by
+`date:`, which for an accepted paper is the *upcoming* conference date — and
+Jekyll drops future-dated documents from the build unless `future` is on. Do not
+remove that setting or accepted papers will silently vanish from the site.
 
 The body of the file is the detail page — use `<section class="content-section">`
 blocks with a `<p class="section-label">` heading, matching the other pages.
