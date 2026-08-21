@@ -113,4 +113,105 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // Citation Modal
+  var citeModal = document.getElementById('cite-modal');
+  if (citeModal) {
+    var citePanel = citeModal.querySelector('.cite-modal-panel');
+    var citeOutput = document.getElementById('cite-output');
+    var citeTabs = citeModal.querySelectorAll('.cite-tab');
+    var citeCopy = citeModal.querySelector('.cite-copy');
+    var citeSource = null;
+    var citeTrigger = null;
+
+    function citeRender(format) {
+      if (!citeSource) return;
+      var block = citeSource.querySelector('[data-format="' + format + '"]');
+      citeOutput.textContent = block ? block.textContent.trim() : '';
+      citeOutput.scrollTop = 0;
+      citeTabs.forEach(function (tab) {
+        var on = tab.getAttribute('data-format') === format;
+        tab.classList.toggle('active', on);
+        tab.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+    }
+
+    function citeOpen(trigger) {
+      var source = document.getElementById(trigger.getAttribute('data-cite'));
+      if (!source) return;
+      citeSource = source;
+      citeTrigger = trigger;
+      citeModal.hidden = false;
+      void citeModal.offsetWidth; // reflow so the fade runs from the hidden state
+      citeModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      citeRender('ieee');
+      citeOutput.focus();
+    }
+
+    function citeClose() {
+      if (!citeModal.classList.contains('open')) return;
+      citeModal.classList.remove('open');
+      document.body.style.overflow = '';
+      setTimeout(function () {
+        if (!citeModal.classList.contains('open')) citeModal.hidden = true;
+      }, 200);
+      if (citeTrigger) citeTrigger.focus();
+    }
+
+    document.querySelectorAll('.cite-trigger').forEach(function (trigger) {
+      trigger.addEventListener('click', function () { citeOpen(trigger); });
+    });
+
+    citeTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () { citeRender(tab.getAttribute('data-format')); });
+    });
+
+    citeModal.querySelectorAll('[data-cite-close]').forEach(function (el) {
+      el.addEventListener('click', citeClose);
+    });
+
+    // Escape key closes dialog
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') citeClose();
+    });
+
+    // Focus trap: keep Tab inside open dialog
+    citePanel.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab' || !citeModal.classList.contains('open')) return;
+      var focusable = Array.from(citePanel.querySelectorAll('a, button, pre[tabindex]')).filter(function (el) {
+        return !el.disabled && el.offsetParent !== null;
+      });
+      if (focusable.length === 0) return;
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    });
+
+    if (citeCopy) {
+      citeCopy.addEventListener('click', function () {
+        var text = citeOutput.textContent;
+        var originalHTML = citeCopy.innerHTML;
+
+        function showCopied() {
+          citeCopy.innerHTML = '<i class="fas fa-check"></i> Copied!';
+          setTimeout(function () { citeCopy.innerHTML = originalHTML; }, 1800);
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(showCopied).catch(function () {
+            fallbackCopy(text, showCopied);
+          });
+        } else {
+          fallbackCopy(text, showCopied);
+        }
+      });
+    }
+  }
 });

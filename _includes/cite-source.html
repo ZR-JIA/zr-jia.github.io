@@ -1,0 +1,14 @@
+{%- comment -%}
+Hidden citation payload for the Cite dialog. One per publication; the matching
+trigger carries data-cite="cite-<slugified url>". Kept as <pre> so BibTeX and
+RIS line breaks survive verbatim into the clipboard.
+{%- endcomment -%}
+{%- assign pub = include.publication -%}
+{%- assign cite_id = pub.url | slugify -%}
+{%- if pub.citation_ieee %}
+<div class="cite-source" id="cite-{{ cite_id }}" hidden>
+  <pre data-format="ieee">{{ pub.citation_ieee }}</pre>
+  <pre data-format="bibtex">{{ pub.citation_bibtex }}</pre>
+  <pre data-format="ris">{{ pub.citation_ris }}</pre>
+</div>
+{%- endif %}

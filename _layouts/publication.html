@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="page-header">
+    <div>
+      <p class="post-kicker"><a href="{{ '/publications/' | relative_url }}">Publications</a></p>
+      <h1>{{ page.title }}</h1>
+
+      <p class="pub-detail-authors">
+        {{ page.authors_html }}
+        {%- if page.status and page.status != "" %}
+        <span class="pub-status-badge">{{ page.status }}</span>
+        {%- endif %}
+        {%- for award in page.awards %}
+        <span class="pub-award-badge">&#9733; {{ award }}</span>
+        {%- endfor %}
+      </p>
+
+      <p class="pub-detail-venue">
+        {%- if page.url_official -%}
+        <a href="{{ page.url_official }}" target="_blank" rel="noopener noreferrer">{{ page.venue }}</a>
+        {%- else -%}
+        {{ page.venue }}
+        {%- endif -%}
+        {% if page.location %}, {{ page.location }}{% endif %}
+        {%- if page.date_display %}, {{ page.date_display }}{% endif %}
+        {%- if page.pages %}, pp. {{ page.pages }}{% endif %}.
+        {%- if page.doi %} DOI: <a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener noreferrer">{{ page.doi }}</a>{% endif %}
+      </p>
+
+      <div class="pub-detail-actions">
+        {%- for link in page.links -%}
+        {%- assign proto = link.url | slice: 0, 4 %}
+        <a href="{{ link.url }}" class="btn {% if link.primary %}btn-primary{% else %}btn-outline{% endif %}"{% if proto == 'http' %} target="_blank" rel="noopener noreferrer"{% endif %}><i class="{{ link.icon }}"></i> {{ link.label }}</a>
+        {%- endfor %}
+        {%- if page.citation_ieee %}
+        <button type="button" class="btn btn-outline cite-trigger" data-cite="cite-{{ page.url | slugify }}"><i class="fas fa-quote-right"></i> Cite</button>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="page-sections">
+    {{ content }}
+  </div>
+
+  <div class="post-footer">
+    <a href="{{ '/publications/' | relative_url }}" class="post-back"><i class="fas fa-arrow-left"></i> Back to Publications</a>
+  </div>
+</div>
+
+{% include cite-source.html publication=page %}
+{% include cite-modal.html %}

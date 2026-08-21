@@ -1,0 +1,31 @@
+{%- comment -%}
+Publication card. Used by the homepage and the /publications/ list.
+Params: publication (a _publications document).
+Reuses the .pub-card component defined in main.css.
+{%- endcomment -%}
+{%- assign pub = include.publication -%}
+{%- assign cite_id = pub.url | slugify -%}
+<div class="pub-card">
+  <div class="pub-card-meta">
+    <span class="pub-year-badge">{{ pub.venue_short }}</span>
+    {%- if pub.status and pub.status != "" %}
+    <span class="pub-status-badge">{{ pub.status }}</span>
+    {%- endif %}
+    {%- for award in pub.awards %}
+    <span class="pub-award-badge">&#9733; {{ award }}</span>
+    {%- endfor %}
+  </div>
+  <p class="pub-card-title"><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></p>
+  <p class="pub-card-authors">{{ pub.authors_html }}</p>
+  <p class="pub-card-venue">{{ pub.venue_card }}</p>
+  <div class="pub-card-actions">
+    {%- for link in pub.links limit: 2 -%}
+    {%- assign proto = link.url | slice: 0, 4 %}
+    <a href="{{ link.url }}" class="btn {% if link.primary %}btn-primary{% else %}btn-outline{% endif %}"{% if proto == 'http' %} target="_blank" rel="noopener noreferrer"{% endif %}><i class="{{ link.icon }}"></i> {{ link.label }}</a>
+    {%- endfor %}
+    <a href="{{ pub.url | relative_url }}" class="btn btn-outline"><i class="fas fa-info-circle"></i> Details</a>
+    {%- if pub.citation_ieee %}
+    <button type="button" class="btn btn-outline cite-trigger" data-cite="cite-{{ cite_id }}"><i class="fas fa-quote-right"></i> Cite</button>
+    {%- endif %}
+  </div>
+</div>

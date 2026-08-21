@@ -67,21 +67,10 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
   <!-- ── Publications ───────────────────────────── -->
   <section class="content-section">
     <p class="section-label">Publications</p>
-    <div class="pub-card">
-      <div class="pub-card-meta">
-        <span class="pub-year-badge">CCAI 2026</span>
-        <span class="pub-award-badge">&#9733; Best Industrial Paper</span>
-        <span class="pub-award-badge">&#9733; Best Presentation</span>
-      </div>
-      <p class="pub-card-title">Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</p>
-      <p class="pub-card-authors"><strong>Zheng Rong JIA</strong><sup>*</sup>, Kwong-Cheong Wong<sup>*</sup></p>
-      <p class="pub-card-venue">The 6th International Conference on Computer Communication and Artificial Intelligence &middot; Nanjing, May 2026</p>
-      <div class="pub-card-actions">
-        <a href="https://drive.google.com/file/d/1ql4aXufCbLLJQqCM2kk7jSLS4_68LIUR/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-        <a href="/publications/" class="btn btn-outline"><i class="fas fa-info-circle"></i> Details</a>
-      </div>
-    </div>
+    {%- assign pubs = site.publications | sort: "date" | reverse -%}
+    {%- for pub in pubs limit: 2 %}
+    {% include pub-card.html publication=pub %}
+    {%- endfor %}
   </section>
 
   <!-- ── News ───────────────────────────────────── -->
@@ -120,3 +109,8 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
   </section>
 
 </div>
+
+{%- for pub in pubs limit: 2 %}
+{% include cite-source.html publication=pub %}
+{%- endfor %}
+{% include cite-modal.html %}

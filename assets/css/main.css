@@ -496,6 +496,15 @@ img { max-width: 100%; height: auto; }
   align-items: center;
   gap: 6px;
   transition: all var(--transition);
+  /* Reset UA chrome so <button class="btn"> matches <a class="btn">.
+     Keep this at .btn specificity — a button.btn selector would outrank
+     .btn-outline and strip its border. */
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: inherit;
 }
 
 .btn-primary {
@@ -1194,3 +1203,192 @@ img { max-width: 100%; height: auto; }
 .mt-3 { margin-top: 24px; }
 .mb-1 { margin-bottom: 8px; }
 .mb-2 { margin-bottom: 16px; }
+
+/* ---- Publication List ---- */
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.pub-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub-card-title a:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.pub-status-badge {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Inter', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  background: rgba(128, 128, 128, 0.12);
+  border: 1px solid var(--color-border);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* ---- Citation Modal ---- */
+.cite-source { display: none; }
+
+.cite-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.cite-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* display:flex above outranks the UA [hidden] rule, so restate it */
+.cite-modal[hidden] { display: none; }
+
+.cite-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cite-modal-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 640px;
+  max-height: 84vh;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: 0 12px 40px var(--color-shadow);
+  transform: translateY(-8px);
+  transition: transform 0.2s ease;
+}
+
+.cite-modal.open .cite-modal-panel { transform: translateY(0); }
+
+.cite-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cite-modal-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.cite-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-tertiary);
+  font-size: 15px;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color var(--transition), background var(--transition);
+}
+
+.cite-modal-close:hover {
+  color: var(--color-text);
+  background: var(--color-accent-muted);
+}
+
+.cite-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 12px 20px 0;
+}
+
+.cite-tab {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-text-tertiary);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  padding: 6px 12px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.cite-tab:hover { color: var(--color-text-secondary); }
+
+.cite-tab.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.cite-modal-body {
+  padding: 16px 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.cite-output {
+  margin: 0;
+  background: rgba(128, 128, 128, 0.07);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 14px 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+}
+
+.cite-modal-foot {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px 18px;
+}
+
+@media (max-width: 640px) {
+  .cite-modal { padding: 12px; }
+  .cite-modal-panel { max-height: 90vh; }
+  .cite-tabs { padding: 10px 14px 0; }
+  .cite-tab { padding: 6px 9px; font-size: 12px; }
+  .cite-modal-head { padding: 14px 14px 10px; }
+  .cite-modal-body { padding: 12px 14px; }
+  .cite-modal-foot { padding: 0 14px 14px; }
+  .cite-modal-foot .btn { width: 100%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cite-modal,
+  .cite-modal-panel { transition: none; }
+}

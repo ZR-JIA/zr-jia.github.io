@@ -1,0 +1,21 @@
+{%- comment -%}Include once per page. Populated at open time from the matching .cite-source block.{%- endcomment -%}
+<div class="cite-modal" id="cite-modal" hidden>
+  <div class="cite-modal-backdrop" data-cite-close></div>
+  <div class="cite-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cite-modal-title">
+    <div class="cite-modal-head">
+      <p class="cite-modal-title" id="cite-modal-title">Cite This Paper</p>
+      <button type="button" class="cite-modal-close" aria-label="Close" data-cite-close><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cite-tabs" role="tablist" aria-label="Citation format">
+      <button type="button" class="cite-tab active" role="tab" aria-selected="true"  data-format="ieee">IEEE</button>
+      <button type="button" class="cite-tab"        role="tab" aria-selected="false" data-format="bibtex">BibTeX</button>
+      <button type="button" class="cite-tab"        role="tab" aria-selected="false" data-format="ris">RIS</button>
+    </div>
+    <div class="cite-modal-body">
+      <pre class="cite-output" id="cite-output" tabindex="0"></pre>
+    </div>
+    <div class="cite-modal-foot">
+      <button type="button" class="btn btn-primary cite-copy"><i class="fas fa-copy"></i> Copy to clipboard</button>
+    </div>
+  </div>
+</div>

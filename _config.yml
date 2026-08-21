@@ -13,6 +13,17 @@ include:
 exclude:
   - assets/slides/
 
+# Publications are dated by conference date, which is in the future for papers
+# that are accepted but not yet presented. Without this they would be dropped
+# from the build until the conference happens.
+future: true
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+
 # Defaults
 defaults:
   - scope:
@@ -20,6 +31,11 @@ defaults:
       type: pages
     values:
       layout: default
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
 
 # Plugins
 plugins:
