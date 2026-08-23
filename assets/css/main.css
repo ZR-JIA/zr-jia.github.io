@@ -1392,3 +1392,52 @@ img { max-width: 100%; height: auto; }
   .cite-modal,
   .cite-modal-panel { transition: none; }
 }
+
+/* ---- Education Entry (logo + text row) ---- */
+.edu-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* Logo and title link to the same place. The logo is aria-hidden and out of
+   the tab order so screen readers and keyboards get one link, not two. */
+.edu-logo-link {
+  flex-shrink: 0;
+  display: block;
+  line-height: 0;
+  margin-top: 2px;
+}
+
+.edu-logo {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  transition: opacity var(--transition);
+}
+
+.edu-logo-link:hover .edu-logo { opacity: 0.72; }
+
+.edu-body {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Scoped to .edu-entry: .cv-entry-title elsewhere contains an accent-coloured
+   link that must keep its own styling. */
+.edu-entry .cv-entry-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.edu-entry .cv-entry-title a:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .edu-entry { gap: 12px; }
+  .edu-logo { width: 44px; height: 44px; }
+}

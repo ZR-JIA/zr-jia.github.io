@@ -23,14 +23,17 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
     <section class="content-section">
       <p class="section-label">Education</p>
       <div class="cv-entries">
-        <div class="cv-entry">
-          <div class="cv-entry-header">
-            <span class="cv-entry-title">B.Sc. Software Engineering</span>
-            <span class="cv-entry-date">2021 – 2025</span>
-          </div>
-          <p class="cv-entry-org">Macau University of Science and Technology &mdash; Graduated Aug 2025</p>
-          <div class="cv-entry-body" style="margin-top:6px;">
-            <p>Data Structures &amp; Algorithms · Operating Systems · Computer Networks · Database Systems · Software Architecture &amp; Design Patterns · Machine Learning &amp; AI Fundamentals · Full-Stack Web Development · Cloud &amp; Distributed Systems</p>
+        <div class="cv-entry edu-entry">
+          <a class="edu-logo-link" href="https://www.must.edu.mo/en" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+            <img class="edu-logo" src="/assets/images/must-logo.png" alt="" width="56" height="56" loading="lazy">
+          </a>
+          <div class="edu-body">
+            <div class="cv-entry-header">
+              <span class="cv-entry-title"><a href="https://www.must.edu.mo/en" target="_blank" rel="noopener noreferrer">Macau University of Science and Technology</a></span>
+              <span class="cv-entry-date">2021 – 2025</span>
+            </div>
+            <p class="cv-entry-org">B.Sc. Software Engineering, School of Innovation Engineering</p>
+            <p class="cv-entry-meta">Macau, China &middot; Graduated August 2025</p>
           </div>
         </div>
       </div>
