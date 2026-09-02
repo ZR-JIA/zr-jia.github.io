@@ -78,6 +78,14 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
     <p class="section-label">News</p>
     <ul class="news-list">
       <li class="news-item">
+        <span class="news-date">Aug 19, 2026</span>
+        <span class="news-text"><strong>Short paper accepted at <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a></strong> &mdash; <em>DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality</em>. <a href="/publications/dualtower-ft-pricai/">Details</a>.</span>
+      </li>
+      <li class="news-item">
+        <span class="news-date">Jul 15, 2026</span>
+        <span class="news-text">Reviewed four submissions for <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a> and was invited to serve on its <strong>Program Committee</strong>.</span>
+      </li>
+      <li class="news-item">
         <span class="news-date">May 22–24, 2026</span>
         <span class="news-text"><strong>Received Best Industrial Paper Award &amp; Best Presentation Award at <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a></strong> &mdash; Nanjing.</span>
       </li>
