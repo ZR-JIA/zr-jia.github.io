@@ -1,12 +1,12 @@
 # Zheng Rong JIA — Academic Website
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Site-jiazhengrong.com-1a3a5c?style=flat-square&logo=github)](https://jiazhengrong.com)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Site-zr--jia.github.io-1a3a5c?style=flat-square&logo=github)](https://zr-jia.github.io)
 [![Jekyll](https://img.shields.io/badge/Jekyll-3.9-red?style=flat-square&logo=jekyll)](https://jekyllrb.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep Learning. Built with Jekyll and a custom academic design system — no third-party UI frameworks.
 
-**Live:** https://jiazhengrong.com
+**Live:** https://zr-jia.github.io
 
 ---
 
