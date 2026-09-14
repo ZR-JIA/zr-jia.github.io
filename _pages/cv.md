@@ -24,16 +24,30 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
       <p class="section-label">Education</p>
       <div class="cv-entries">
         <div class="cv-entry edu-entry">
+          <a class="edu-logo-link" href="https://www.apu.edu.my/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+            <img class="edu-logo" src="/assets/images/apu-logo.png" alt="" width="56" height="56" loading="lazy">
+          </a>
+          <div class="edu-content">
+            <p class="edu-school"><a href="https://www.apu.edu.my/" target="_blank" rel="noopener noreferrer">Asia Pacific University of Technology &amp; Innovation</a></p>
+            <p class="edu-degree"><a href="https://www.apu.edu.my/course/msc-in-artificial-intelligence" target="_blank" rel="noopener noreferrer">M.Sc. in Artificial Intelligence</a></p>
+          </div>
+          <div class="edu-side">
+            <p class="edu-years">Aug 2026 &mdash; Aug 2027 (expected)</p>
+            <p class="edu-place">Kuala Lumpur, Malaysia</p>
+          </div>
+        </div>
+        <div class="cv-entry edu-entry">
           <a class="edu-logo-link" href="https://www.must.edu.mo/en" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
             <img class="edu-logo" src="/assets/images/must-logo.png" alt="" width="56" height="56" loading="lazy">
           </a>
-          <div class="edu-body">
-            <div class="cv-entry-header">
-              <span class="cv-entry-title"><a href="https://www.must.edu.mo/en" target="_blank" rel="noopener noreferrer">Macau University of Science and Technology</a></span>
-              <span class="cv-entry-date">2021 – 2025</span>
-            </div>
-            <p class="cv-entry-org">B.Sc. Software Engineering, School of Innovation Engineering</p>
-            <p class="cv-entry-meta">Macau, China &middot; Graduated August 2025</p>
+          <div class="edu-content">
+            <p class="edu-school"><a href="https://www.must.edu.mo/en" target="_blank" rel="noopener noreferrer">Macau University of Science and Technology</a></p>
+            <p class="edu-dept">School of Innovation Engineering</p>
+            <p class="edu-degree">B.Sc. in Software Engineering</p>
+          </div>
+          <div class="edu-side">
+            <p class="edu-years">2021 &mdash; Aug 2025</p>
+            <p class="edu-place">Macau, China</p>
           </div>
         </div>
       </div>
@@ -88,7 +102,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <span class="cv-entry-title">Young Ambassador and Researcher</span>
             <span class="cv-entry-date">Aug 2025 – Present</span>
           </div>
-          <p class="cv-entry-org">Asia AI Education and Future Technology Association (AAE) &mdash; Remote / Hong Kong</p>
+          <p class="cv-entry-org"><a href="https://aae.com.hk/" target="_blank" rel="noopener noreferrer">Asia AI Education and Future Technology Association (AAE)</a> &mdash; Remote / Hong Kong</p>
           <div class="cv-entry-body">
             <ul>
               <li>Collaborate closely with Head Advisor Dr. Kwong-Cheong Wong on deep learning for stroke mortality prediction using the eICU database</li>
@@ -270,6 +284,10 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
         <div class="skill-row">
           <span class="skill-category">Email</span>
           <span class="skill-items"><a href="mailto:zhengrong.jia.academic@gmail.com">zhengrong.jia.academic@gmail.com</a></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Email (APU)</span>
+          <span class="skill-items"><a href="mailto:TP195417@mail.apu.edu.my">TP195417@mail.apu.edu.my</a></span>
         </div>
         <div class="skill-row">
           <span class="skill-category">GitHub</span>

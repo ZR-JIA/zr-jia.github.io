@@ -12,12 +12,20 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
     <div class="hero-left">
       <h1 class="hero-name">Zheng Rong JIA</h1>
       <p class="hero-slogan">I learn for the future.</p>
-      <div class="hero-identity">
-        <span class="hero-tag">Medical AI</span>
-        <span class="hero-tag">Predictive Modeling</span>
-        <span class="hero-tag">Independent Researcher</span>
+      <div class="hero-roles">
+        <div class="hero-role">
+          <p class="hero-role-label">MSc Student</p>
+          <p class="hero-role-value"><a href="https://www.apu.edu.my/" target="_blank" rel="noopener noreferrer">Asia Pacific University</a></p>
+        </div>
+        <div class="hero-role">
+          <p class="hero-role-label">Young Ambassador &amp; Researcher</p>
+          <p class="hero-role-value"><a href="https://aae.com.hk/" target="_blank" rel="noopener noreferrer">Asia AI Education &amp; Future Technology Association</a></p>
+        </div>
+        <div class="hero-role">
+          <p class="hero-role-label">Research Focus</p>
+          <p class="hero-role-value">Clinical AI &middot; Deep Learning on EHR</p>
+        </div>
       </div>
-      <p class="hero-edu">B.Sc. Software Engineering &middot; Macau University of Science and Technology, 2025</p>
       <div class="hero-links">
         <a href="mailto:zhengrong.jia.academic@gmail.com" class="hero-link"><i class="fas fa-envelope"></i> Email</a>
         <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fas fa-graduation-cap"></i> Scholar</a>
@@ -112,7 +120,7 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
   <section class="content-section">
     <p class="section-label">About</p>
     <div class="philosophy-block">
-      <p class="philosophy-text">I am drawn to problems where machine learning meets real clinical stakes — where a model's failure is not an accuracy number but a missed diagnosis. My work focuses on building deep learning systems for electronic health records that are not only accurate, but interpretable and honest about their limits. I believe the most durable research is reproducible, open, and built with the long game in mind.</p>
+      <p class="philosophy-text">I am drawn to problems where machine learning meets <strong>real clinical stakes</strong> — where a model's failure is not an accuracy number but <strong>a missed diagnosis</strong>. My work focuses on building deep learning systems for electronic health records that are not only accurate, but <strong>interpretable and honest about their limits</strong>. I believe the most durable research is <strong>reproducible, open</strong>, and built with the long game in mind.</p>
     </div>
   </section>
 

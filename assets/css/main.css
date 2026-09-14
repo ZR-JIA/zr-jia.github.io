@@ -15,6 +15,10 @@
   --color-border: rgba(0, 0, 0, 0.09);
   --color-shadow: rgba(0, 0, 0, 0.06);
 
+  --color-gold: #7a4f00;
+  --color-gold-bg: #fef3c7;
+  --color-gold-line: #f59e0b;
+
   --container-max: 800px;
   --transition: 0.2s ease;
   --radius-card: 12px;
@@ -32,6 +36,10 @@
   --color-text-tertiary: #666;
   --color-border: rgba(255, 255, 255, 0.09);
   --color-shadow: rgba(0, 0, 0, 0.3);
+
+  --color-gold: #fde68a;
+  --color-gold-bg: rgba(245, 158, 11, 0.12);
+  --color-gold-line: rgba(245, 158, 11, 0.4);
 }
 
 /* ---- Skip to content ---- */
@@ -968,31 +976,45 @@ img { max-width: 100%; height: auto; }
   line-height: 1.5;
 }
 
-.hero-identity {
+/* Affiliation strip: tiny uppercase label over a value, one mini-column per role. */
+.hero-roles {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
-  margin-bottom: 14px;
+  gap: 10px 26px;
+  margin-bottom: 22px;
 }
 
-.hero-tag {
+.hero-role {
+  min-width: 0;
+}
+
+.hero-role-label {
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  color: var(--color-accent);
-  background: var(--color-accent-muted);
-  padding: 4px 10px;
-  border-radius: 20px;
-  border: 1px solid transparent;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-text-tertiary);
+  margin-bottom: 3px;
 }
 
-.hero-edu {
+.hero-role-value {
   font-family: 'Inter', sans-serif;
   font-size: 12.5px;
-  color: var(--color-text-tertiary);
-  margin-bottom: 26px;
-  line-height: 1.6;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  line-height: 1.45;
+}
+
+.hero-role-value a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.hero-role-value a:hover { text-decoration: underline; }
+
+@media (max-width: 560px) {
+  .hero-roles { gap: 10px 18px; }
 }
 
 .hero-links {
@@ -1135,18 +1157,13 @@ img { max-width: 100%; height: auto; }
   font-family: 'Inter', sans-serif;
   font-size: 10.5px;
   font-weight: 700;
-  color: #7a4f00;
-  background: #fef3c7;
-  border: 1px solid #f59e0b;
+  color: var(--color-gold);
+  background: var(--color-gold-bg);
+  border: 1px solid var(--color-gold-line);
   padding: 2px 8px;
   border-radius: 4px;
 }
 
-[data-theme="dark"] .pub-award-badge {
-  color: #fde68a;
-  background: rgba(245,158,11,0.12);
-  border-color: rgba(245,158,11,0.4);
-}
 
 .pub-card-title {
   font-family: 'Inter', sans-serif;
@@ -1393,17 +1410,17 @@ img { max-width: 100%; height: auto; }
   .cite-modal-panel { transition: none; }
 }
 
-/* ---- Education Entry (logo + text row) ---- */
+/* ---- Education Entry (logo | content | years+place) ---- */
 .edu-entry {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr) auto;
+  align-items: start;
   gap: 16px;
 }
 
-/* Logo and title link to the same place. The logo is aria-hidden and out of
-   the tab order so screen readers and keyboards get one link, not two. */
+/* Logo and school name link to the same place. The logo is aria-hidden and out
+   of the tab order so screen readers and keyboards get one link, not two. */
 .edu-logo-link {
-  flex-shrink: 0;
   display: block;
   line-height: 0;
   margin-top: 2px;
@@ -1419,25 +1436,74 @@ img { max-width: 100%; height: auto; }
 
 .edu-logo-link:hover .edu-logo { opacity: 0.72; }
 
-.edu-body {
-  flex: 1;
-  min-width: 0;
+.edu-school {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.4;
+  margin-bottom: 3px;
 }
 
-/* Scoped to .edu-entry: .cv-entry-title elsewhere contains an accent-coloured
-   link that must keep its own styling. */
-.edu-entry .cv-entry-title a {
+.edu-school a {
   color: inherit;
   text-decoration: none;
   transition: color var(--transition);
 }
 
-.edu-entry .cv-entry-title a:hover {
+.edu-school a:hover {
   color: var(--color-accent);
   text-decoration: none;
 }
 
+.edu-dept {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 2px;
+}
+
+.edu-degree {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.edu-side {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.edu-years {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  margin-bottom: 2px;
+}
+
+.edu-place {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+}
+
 @media (max-width: 640px) {
-  .edu-entry { gap: 12px; }
+  /* Drop to two columns; years and place flow under the text block. */
+  .edu-entry {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 12px;
+  }
   .edu-logo { width: 44px; height: 44px; }
+  .edu-side {
+    grid-column: 2;
+    text-align: left;
+    white-space: normal;
+    margin-top: 6px;
+  }
+}
+
+/* Inline emphasis in the About paragraph: darker, not heavier-looking. */
+.philosophy-text strong {
+  font-weight: 600;
+  color: var(--color-text);
 }
