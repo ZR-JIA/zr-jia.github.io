@@ -27,7 +27,6 @@
   --color-text-secondary: var(--ink-mid);
   --color-text-tertiary: var(--ink-soft);
   --color-border: var(--rule);
-  --color-shadow: rgba(23, 20, 15, 0.06);
 
   --color-gold: #7a4f00;
   --color-gold-bg: #fef3c7;
@@ -35,7 +34,6 @@
 
   --container-max: 800px;
   --transition: 0.2s ease;
-  --radius-card: 12px;
 }
 
 [data-theme="dark"] {
@@ -51,7 +49,6 @@
   --rule-mid: #565040;
   --seal: #dd7460;
 
-  --color-shadow: rgba(0, 0, 0, 0.3);
 
   --color-gold: #fde68a;
   --color-gold-bg: rgba(245, 158, 11, 0.12);
@@ -66,7 +63,6 @@
   background: var(--color-text);
   color: var(--color-bg);
   padding: 10px 18px;
-  border-radius: 4px;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -80,6 +76,7 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
+  border-radius: 0; /* rounded corners are the most obvious template tell */
   box-sizing: border-box;
 }
 
@@ -222,7 +219,6 @@ img { max-width: 100%; height: auto; }
 .profile-avatar {
   width: 108px;
   height: 108px;
-  border-radius: 6px;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -355,7 +351,6 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
   border: 1px solid var(--color-accent);
   padding: 2px 9px;
-  border-radius: 3px;
   transition: all var(--transition);
 }
 
@@ -517,7 +512,6 @@ img { max-width: 100%; height: auto; }
   font-size: 13px;
   font-weight: 500;
   padding: 7px 16px;
-  border-radius: 5px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -613,7 +607,6 @@ img { max-width: 100%; height: auto; }
   background: var(--color-accent-muted);
   border-left: 3px solid var(--color-accent);
   padding: 16px 20px;
-  border-radius: 0 4px 4px 0;
 }
 
 .abstract-block p {
@@ -661,7 +654,6 @@ img { max-width: 100%; height: auto; }
 .code-block {
   background: rgba(128, 128, 128, 0.07);
   border: 1px solid var(--color-border);
-  border-radius: 4px;
   padding: 16px 20px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 13px;
@@ -776,7 +768,6 @@ img { max-width: 100%; height: auto; }
   width: 100%;
   aspect-ratio: 3/2;
   overflow: hidden;
-  border-radius: 8px;
   background: #111;
 }
 
@@ -804,7 +795,6 @@ img { max-width: 100%; height: auto; }
   border: none;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   font-size: 15px;
   cursor: pointer;
   display: flex;
@@ -827,7 +817,6 @@ img { max-width: 100%; height: auto; }
   color: rgba(255,255,255,0.9);
   background: rgba(0,0,0,0.4);
   padding: 2px 9px;
-  border-radius: 10px;
   z-index: 10;
   pointer-events: none;
 }
@@ -841,7 +830,6 @@ img { max-width: 100%; height: auto; }
 .carousel-dot {
   width: 7px;
   height: 7px;
-  border-radius: 50%;
   background: var(--color-border);
   border: none;
   cursor: pointer;
@@ -903,7 +891,6 @@ img { max-width: 100%; height: auto; }
   color: var(--color-text-secondary);
   background: var(--color-accent-muted);
   padding: 2px 7px;
-  border-radius: 3px;
 }
 
 .post-content {
@@ -937,7 +924,6 @@ img { max-width: 100%; height: auto; }
   font-size: 13px;
   background: var(--color-accent-muted);
   padding: 1px 5px;
-  border-radius: 3px;
 }
 
 .post-footer {
@@ -1046,7 +1032,6 @@ img { max-width: 100%; height: auto; }
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   padding: 6px 13px;
-  border-radius: 20px;
   text-decoration: none;
   transition: all var(--transition);
   white-space: nowrap;
@@ -1063,11 +1048,9 @@ img { max-width: 100%; height: auto; }
 .hero-portrait {
   width: 148px;
   height: 148px;
-  border-radius: 50%;
   object-fit: cover;
   display: block;
   border: 3px solid var(--color-border);
-  box-shadow: 0 4px 20px var(--color-shadow);
 }
 
 @media (max-width: 560px) {
@@ -1092,16 +1075,13 @@ img { max-width: 100%; height: auto; }
 .interest-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
   padding: 18px 16px;
-  transition: border-color var(--transition), background var(--transition), transform var(--transition), box-shadow var(--transition);
+  transition: border-color var(--transition), background var(--transition);
 }
 
 .interest-card:hover {
   border-color: var(--color-accent);
   background: var(--color-accent-muted);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px var(--color-shadow);
 }
 
 .interest-icon {
@@ -1131,16 +1111,12 @@ img { max-width: 100%; height: auto; }
 .pub-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
   padding: 22px 22px 18px;
   margin-top: 4px;
-  box-shadow: 0 2px 12px var(--color-shadow);
-  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+  transition: border-color var(--transition);
 }
 
 .pub-card:hover {
-  box-shadow: 0 6px 24px var(--color-shadow);
-  transform: translateY(-2px);
   border-color: var(--color-accent);
 }
 
@@ -1162,7 +1138,6 @@ img { max-width: 100%; height: auto; }
   background: var(--color-accent-muted);
   border: 1px solid var(--color-accent);
   padding: 2px 8px;
-  border-radius: 4px;
 }
 
 .pub-award-badge {
@@ -1173,7 +1148,6 @@ img { max-width: 100%; height: auto; }
   background: var(--color-gold-bg);
   border: 1px solid var(--color-gold-line);
   padding: 2px 8px;
-  border-radius: 4px;
 }
 
 
@@ -1263,7 +1237,6 @@ img { max-width: 100%; height: auto; }
   background: rgba(128, 128, 128, 0.12);
   border: 1px solid var(--color-border);
   padding: 2px 8px;
-  border-radius: 4px;
 }
 
 /* ---- Citation Modal ---- */
@@ -1311,8 +1284,6 @@ img { max-width: 100%; height: auto; }
   max-height: 84vh;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
-  box-shadow: 0 12px 40px var(--color-shadow);
   transform: translateY(-8px);
   transition: transform 0.2s ease;
 }
@@ -1344,7 +1315,6 @@ img { max-width: 100%; height: auto; }
   font-size: 15px;
   line-height: 1;
   padding: 4px 6px;
-  border-radius: 4px;
   transition: color var(--transition), background var(--transition);
 }
 
@@ -1389,7 +1359,6 @@ img { max-width: 100%; height: auto; }
   margin: 0;
   background: rgba(128, 128, 128, 0.07);
   border: 1px solid var(--color-border);
-  border-radius: 4px;
   padding: 14px 16px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 12.5px;
