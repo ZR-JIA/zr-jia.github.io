@@ -3,17 +3,31 @@
    ============================================ */
 
 :root {
-  --color-accent: #2c4a6e;
-  --color-accent-light: #3d6491;
-  --color-accent-muted: rgba(44, 74, 110, 0.07);
+  /* 在場 Broadsheet palette: warm paper, warm ink, hairline rules, and one
+     accent (seal) reserved for hairline-scale details. */
+  --paper: #f4f1e9;
+  --paper-tint: #eeeade;
+  --paper-deep: #e6e0ce;
+  --ink: #17140f;
+  --ink-mid: #453f34;
+  --ink-soft: #655d50;
+  --rule: #cec7b6;
+  --rule-mid: #a9a08b;
+  --seal: #8a1c11;
 
-  --color-bg: #f9f8f5;
-  --color-surface: #ffffff;
-  --color-text: #1c1c1c;
-  --color-text-secondary: #5c5c5c;
-  --color-text-tertiary: #9a9a9a;
-  --color-border: rgba(0, 0, 0, 0.09);
-  --color-shadow: rgba(0, 0, 0, 0.06);
+  /* The site's own names resolve through the palette. Structure is drawn in
+     ink; colour is not used to signal hierarchy. */
+  --color-accent: var(--ink);
+  --color-accent-light: var(--ink-mid);
+  --color-accent-muted: var(--paper-deep);
+
+  --color-bg: var(--paper);
+  --color-surface: var(--paper);
+  --color-text: var(--ink);
+  --color-text-secondary: var(--ink-mid);
+  --color-text-tertiary: var(--ink-soft);
+  --color-border: var(--rule);
+  --color-shadow: rgba(23, 20, 15, 0.06);
 
   --color-gold: #7a4f00;
   --color-gold-bg: #fef3c7;
@@ -25,16 +39,18 @@
 }
 
 [data-theme="dark"] {
-  --color-accent: #7eacd6;
-  --color-accent-light: #9ec0e6;
-  --color-accent-muted: rgba(126, 172, 214, 0.09);
+  /* Night edition: warm black, not neutral black. The seal is re-chosen for
+     the dark ground rather than inverted, which would leave it unreadable. */
+  --paper: #14120e;
+  --paper-tint: #1b1814;
+  --paper-deep: #252119;
+  --ink: #f2ede2;
+  --ink-mid: #c6bfb0;
+  --ink-soft: #968d7c;
+  --rule: #3a352b;
+  --rule-mid: #565040;
+  --seal: #dd7460;
 
-  --color-bg: #111111;
-  --color-surface: #1a1a1a;
-  --color-text: #e4e4e4;
-  --color-text-secondary: #a0a0a0;
-  --color-text-tertiary: #666;
-  --color-border: rgba(255, 255, 255, 0.09);
   --color-shadow: rgba(0, 0, 0, 0.3);
 
   --color-gold: #fde68a;
@@ -47,8 +63,8 @@
   position: absolute;
   top: -48px;
   left: 16px;
-  background: var(--color-accent);
-  color: #fff;
+  background: var(--color-text);
+  color: var(--color-bg);
   padding: 10px 18px;
   border-radius: 4px;
   font-family: 'Inter', sans-serif;
@@ -58,7 +74,7 @@
   transition: top 0.2s ease;
   text-decoration: none;
 }
-.skip-to-content:focus { top: 0; color: #fff; }
+.skip-to-content:focus { top: 0; color: var(--color-bg); }
 
 /* ---- Reset & Base ---- */
 *, *::before, *::after {
@@ -92,14 +108,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: color var(--transition);
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--rule-mid);
+  text-underline-offset: 3px;
+  transition: text-decoration-color var(--transition);
 }
 
 a:hover {
-  color: var(--color-accent-light);
-  text-decoration: underline;
+  color: var(--color-text);
+  text-decoration-color: currentColor;
 }
 
 img { max-width: 100%; height: auto; }
@@ -516,25 +535,23 @@ img { max-width: 100%; height: auto; }
 }
 
 .btn-primary {
-  background: var(--color-accent);
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: var(--color-accent-light);
-  color: #fff;
-  text-decoration: none;
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
+  padding: 6px 15px; /* 2px border + 6px = the outline button's 1px + 7px */
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--color-accent);
-  border: 1.5px solid var(--color-accent);
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
 }
 
+/* paper-deep is the palette's only interactive fill */
+.btn-primary:hover,
 .btn-outline:hover {
-  background: var(--color-accent);
-  color: #fff;
+  background: var(--paper-deep);
+  color: var(--color-text);
   text-decoration: none;
 }
 
@@ -1006,12 +1023,7 @@ img { max-width: 100%; height: auto; }
   line-height: 1.45;
 }
 
-.hero-role-value a {
-  color: var(--color-accent);
-  text-decoration: none;
-}
-
-.hero-role-value a:hover { text-decoration: underline; }
+.hero-role-value a { color: var(--color-text); }
 
 @media (max-width: 560px) {
   .hero-roles { gap: 10px 18px; }
