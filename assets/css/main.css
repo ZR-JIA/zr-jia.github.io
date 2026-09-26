@@ -28,6 +28,9 @@
   --color-text-tertiary: var(--ink-soft);
   --color-border: var(--rule);
 
+  --font-display: "Bodoni Moda", Didot, "Times New Roman", serif;
+  --font-text: "Source Serif 4", Georgia, serif;
+
   --color-gold: #7a4f00;
   --color-gold-bg: #fef3c7;
   --color-gold-line: #f59e0b;
@@ -63,7 +66,7 @@
   background: var(--color-text);
   color: var(--color-bg);
   padding: 10px 18px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 14px;
   font-weight: 600;
   z-index: 9999;
@@ -88,7 +91,7 @@ html {
 }
 
 body {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: var(--font-text);
   color: var(--color-text);
   background: var(--color-bg);
   font-size: 16px;
@@ -98,8 +101,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-weight: 700;
   line-height: 1.3;
   color: var(--color-text);
 }
@@ -156,7 +159,7 @@ img { max-width: 100%; height: auto; }
 .navbar-brand:hover { text-decoration: none; }
 
 .navbar-name {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-weight: 600;
   font-size: 14px;
   color: var(--color-text);
@@ -170,7 +173,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .navbar-links a {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13px;
   font-weight: 500;
   color: var(--color-text-secondary);
@@ -232,7 +235,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .profile-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 14px;
   color: var(--color-text-secondary);
   font-weight: 400;
@@ -245,7 +248,7 @@ img { max-width: 100%; height: auto; }
   flex-wrap: wrap;
   align-items: center;
   gap: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13px;
 }
 
@@ -278,7 +281,7 @@ img { max-width: 100%; height: auto; }
 .content-section:last-child { border-bottom: none; }
 
 .section-label {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 10.5px;
   font-weight: 700;
   text-transform: uppercase;
@@ -308,7 +311,7 @@ img { max-width: 100%; height: auto; }
 .pub-academic-item:last-child { border-bottom: none; }
 
 .pub-academic-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 15px;
   font-weight: 600;
   color: var(--color-text);
@@ -317,7 +320,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-academic-authors {
-  font-family: 'Source Serif 4', serif;
+  font-family: var(--font-text);
   font-size: 14px;
   color: var(--color-text-secondary);
   margin-bottom: 2px;
@@ -329,7 +332,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-academic-venue {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13px;
   color: var(--color-text-tertiary);
   font-style: italic;
@@ -344,7 +347,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-academic-links a {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   font-weight: 500;
   color: var(--color-accent);
@@ -376,7 +379,7 @@ img { max-width: 100%; height: auto; }
 .news-item:last-child { border-bottom: none; }
 
 .news-date {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   font-weight: 600;
   color: var(--color-text-tertiary);
@@ -402,7 +405,7 @@ img { max-width: 100%; height: auto; }
 .research-item:last-child { border-bottom: none; }
 
 .research-name {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 14px;
   font-weight: 600;
   color: var(--color-text);
@@ -435,14 +438,14 @@ img { max-width: 100%; height: auto; }
 }
 
 .cv-entry-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 15px;
   font-weight: 600;
   color: var(--color-text);
 }
 
 .cv-entry-date {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   color: var(--color-text-tertiary);
   white-space: nowrap;
@@ -450,14 +453,14 @@ img { max-width: 100%; height: auto; }
 }
 
 .cv-entry-org {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13px;
   color: var(--color-text-secondary);
   margin-bottom: 2px;
 }
 
 .cv-entry-meta {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   color: var(--color-text-tertiary);
   margin-bottom: 8px;
@@ -494,21 +497,21 @@ img { max-width: 100%; height: auto; }
 .skill-row:last-child { border-bottom: none; }
 
 .skill-category {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   color: var(--color-text-tertiary);
   font-weight: 500;
 }
 
 .skill-items {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 14px;
   color: var(--color-text-secondary);
 }
 
 /* ---- Buttons ---- */
 .btn {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13px;
   font-weight: 500;
   padding: 7px 16px;
@@ -556,10 +559,10 @@ img { max-width: 100%; height: auto; }
 }
 
 .page-header h1 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: 800;
   color: var(--color-text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .page-header-actions {
@@ -574,7 +577,7 @@ img { max-width: 100%; height: auto; }
 
 /* ---- Publication Detail ---- */
 .pub-detail-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 20px;
   font-weight: 700;
   color: var(--color-text);
@@ -589,7 +592,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-detail-venue {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 14px;
   color: var(--color-text-tertiary);
   font-style: italic;
@@ -627,7 +630,7 @@ img { max-width: 100%; height: auto; }
 .pub-table thead tr { border-bottom: 2px solid var(--color-border); }
 
 .pub-table th {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-weight: 600;
   color: var(--color-text-secondary);
   font-size: 12px;
@@ -677,7 +680,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .footer-content p {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   color: var(--color-text-tertiary);
 }
@@ -811,7 +814,7 @@ img { max-width: 100%; height: auto; }
   position: absolute;
   bottom: 12px;
   right: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   font-weight: 600;
   color: rgba(255,255,255,0.9);
@@ -848,7 +851,7 @@ img { max-width: 100%; height: auto; }
 .commentary-item:last-child { border-bottom: none; }
 
 .commentary-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 17px;
   font-weight: 600;
   color: var(--color-text);
@@ -869,7 +872,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .post-kicker {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -883,7 +886,7 @@ img { max-width: 100%; height: auto; }
 .post-meta { margin-top: 8px; }
 
 .post-tag {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -932,7 +935,7 @@ img { max-width: 100%; height: auto; }
   border-top: 1px solid var(--color-border);
 }
 .post-back {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13px;
   font-weight: 500;
   color: var(--color-text-secondary);
@@ -959,17 +962,17 @@ img { max-width: 100%; height: auto; }
 .hero-left { flex: 1; min-width: 0; }
 
 .hero-name {
-  font-family: 'Inter', sans-serif;
-  font-size: 34px;
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
   line-height: 1.1;
   color: var(--color-text);
   margin-bottom: 14px;
 }
 
 .hero-slogan {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: var(--font-text);
   font-size: 18px;
   font-style: italic;
   color: var(--color-accent);
@@ -992,7 +995,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .hero-role-label {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1002,7 +1005,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .hero-role-value {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12.5px;
   font-weight: 500;
   color: var(--color-text-secondary);
@@ -1025,7 +1028,7 @@ img { max-width: 100%; height: auto; }
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12.5px;
   font-weight: 500;
   color: var(--color-text-secondary);
@@ -1091,7 +1094,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .interest-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13.5px;
   font-weight: 600;
   color: var(--color-text);
@@ -1104,7 +1107,7 @@ img { max-width: 100%; height: auto; }
   color: var(--color-text-secondary);
   line-height: 1.55;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
 }
 
 /* ---- Premium Publication Card ---- */
@@ -1129,7 +1132,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-year-badge {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -1141,7 +1144,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-award-badge {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 10.5px;
   font-weight: 700;
   color: var(--color-gold);
@@ -1152,7 +1155,7 @@ img { max-width: 100%; height: auto; }
 
 
 .pub-card-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 15.5px;
   font-weight: 600;
   color: var(--color-text);
@@ -1161,7 +1164,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-card-authors {
-  font-family: 'Source Serif 4', serif;
+  font-family: var(--font-text);
   font-size: 13.5px;
   color: var(--color-text-secondary);
   margin-bottom: 4px;
@@ -1171,7 +1174,7 @@ img { max-width: 100%; height: auto; }
 .pub-card-authors strong { color: var(--color-text); font-weight: 600; }
 
 .pub-card-venue {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12.5px;
   color: var(--color-text-tertiary);
   font-style: italic;
@@ -1191,7 +1194,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .philosophy-text {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: var(--font-text);
   font-size: 15px;
   color: var(--color-text-secondary);
   line-height: 1.85;
@@ -1228,7 +1231,7 @@ img { max-width: 100%; height: auto; }
 .pub-status-badge {
   display: inline-block;
   vertical-align: middle;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -1300,7 +1303,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .cite-modal-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 14px;
   font-weight: 700;
   color: var(--color-text);
@@ -1330,7 +1333,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .cite-tab {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12.5px;
   font-weight: 600;
   color: var(--color-text-tertiary);
@@ -1418,7 +1421,7 @@ img { max-width: 100%; height: auto; }
 .edu-logo-link:hover .edu-logo { opacity: 0.72; }
 
 .edu-school {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 15px;
   font-weight: 600;
   color: var(--color-text);
@@ -1438,14 +1441,14 @@ img { max-width: 100%; height: auto; }
 }
 
 .edu-dept {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13px;
   color: var(--color-text-secondary);
   margin-bottom: 2px;
 }
 
 .edu-degree {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 13px;
   color: var(--color-text-secondary);
 }
@@ -1456,14 +1459,14 @@ img { max-width: 100%; height: auto; }
 }
 
 .edu-years {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   color: var(--color-text-tertiary);
   margin-bottom: 2px;
 }
 
 .edu-place {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-text);
   font-size: 12px;
   color: var(--color-text-tertiary);
 }
