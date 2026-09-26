@@ -76,9 +76,11 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
   <section class="content-section">
     <p class="section-label">Publications</p>
     {%- assign pubs = site.publications | sort: "date" | reverse -%}
-    {%- for pub in pubs limit: 2 %}
-    {% include pub-card.html publication=pub %}
-    {%- endfor %}
+    <div class="pub-list">
+      {%- for pub in pubs limit: 2 %}
+      {% include pub-card.html publication=pub %}
+      {%- endfor %}
+    </div>
   </section>
 
   <!-- ── News ───────────────────────────────────── -->

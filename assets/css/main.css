@@ -31,9 +31,6 @@
   --font-display: "Bodoni Moda", Didot, "Times New Roman", serif;
   --font-text: "Source Serif 4", Georgia, serif;
 
-  --color-gold: #7a4f00;
-  --color-gold-bg: #fef3c7;
-  --color-gold-line: #f59e0b;
 
   --container-max: 800px;
   --transition: 0.2s ease;
@@ -53,9 +50,6 @@
   --seal: #dd7460;
 
 
-  --color-gold: #fde68a;
-  --color-gold-bg: rgba(245, 158, 11, 0.12);
-  --color-gold-line: rgba(245, 158, 11, 0.4);
 }
 
 /* ---- Skip to content ---- */
@@ -1140,55 +1134,62 @@ img { max-width: 100%; height: auto; }
 
 /* ---- Premium Publication Card ---- */
 .pub-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  padding: 22px 22px 18px;
-  margin-top: 4px;
-  transition: border-color var(--transition);
+  position: relative;
+  /* The hover fill bleeds past the column so text never sits flush against
+     it. Rules are drawn on the list or inset below, so they stay aligned
+     with the column. */
+  margin: 0 -14px;
+  padding: 22px 14px 24px;
+  transition: background-color var(--transition);
 }
 
-.pub-card:hover {
-  border-color: var(--color-accent);
+/* separator between rows, inset back to the column width */
+.pub-card + .pub-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14px;
+  right: 14px;
+  border-top: 1px solid var(--rule);
 }
+
+.pub-card:hover { background: var(--paper-deep); }
 
 .pub-card-meta {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px 14px;
   margin-bottom: 10px;
   flex-wrap: wrap;
 }
 
+/* Badges become stamps: small tracked capitals, no box. */
 .pub-year-badge {
   font-family: var(--font-text);
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 10.6px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-accent);
-  background: var(--color-accent-muted);
-  border: 1px solid var(--color-accent);
-  padding: 2px 8px;
+  color: var(--color-text);
 }
 
 .pub-award-badge {
   font-family: var(--font-text);
-  font-size: 10.5px;
-  font-weight: 700;
-  color: var(--color-gold);
-  background: var(--color-gold-bg);
-  border: 1px solid var(--color-gold-line);
-  padding: 2px 8px;
+  font-size: 10.6px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--seal); /* the palette's one accent, used at label scale */
 }
 
 
 .pub-card-title {
   font-family: var(--font-text);
-  font-size: 15.5px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 700;
   color: var(--color-text);
-  line-height: 1.45;
-  margin-bottom: 7px;
+  line-height: 1.4;
+  margin-bottom: 8px;
 }
 
 .pub-card-authors {
@@ -1203,7 +1204,7 @@ img { max-width: 100%; height: auto; }
 
 .pub-card-venue {
   font-family: var(--font-text);
-  font-size: 12.5px;
+  font-size: 13.6px;
   color: var(--color-text-tertiary);
   font-style: italic;
   margin-bottom: 14px;
@@ -1242,8 +1243,8 @@ img { max-width: 100%; height: auto; }
 .pub-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 4px;
+  border-top: 2px solid var(--color-text); /* heavy rule: a set starts here */
+  border-bottom: 1px solid var(--rule);
 }
 
 .pub-card-title a {
@@ -1252,23 +1253,24 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-card-title a:hover {
-  color: var(--color-accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--rule-mid);
 }
 
 .pub-status-badge {
   display: inline-block;
   vertical-align: middle;
   font-family: var(--font-text);
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 10.6px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-text-secondary);
-  background: rgba(128, 128, 128, 0.12);
-  border: 1px solid var(--color-border);
-  padding: 2px 8px;
+  color: var(--color-text-tertiary);
 }
+
+/* stamps set inline after the author line on a detail page */
+.pub-detail-authors .pub-award-badge,
+.pub-detail-authors .pub-status-badge { margin-left: 10px; }
 
 /* ---- Citation Modal ---- */
 .cite-source { display: none; }
