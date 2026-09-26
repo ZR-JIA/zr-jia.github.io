@@ -147,6 +147,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
   height: 50px;
 }
 
@@ -159,11 +160,12 @@ img { max-width: 100%; height: auto; }
 .navbar-brand:hover { text-decoration: none; }
 
 .navbar-name {
-  font-family: var(--font-text);
-  font-weight: 600;
-  font-size: 14px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
   color: var(--color-text);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .navbar-links {
@@ -174,16 +176,23 @@ img { max-width: 100%; height: auto; }
 
 .navbar-links a {
   font-family: var(--font-text);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 10.8px;
+  font-weight: 600;
+  /* Tighter than the system's 0.24em: six labels must fit an 800px column */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
   color: var(--color-text-secondary);
-  padding: 5px 12px;
-  transition: color var(--transition);
-  text-decoration: none;
+  padding: 5px 6px;
+  transition: color var(--transition), text-decoration-color var(--transition);
+  /* underline drawn under the text only, so padding does not stretch it */
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 6px;
 }
 
-.navbar-links a:hover { color: var(--color-accent); text-decoration: none; }
-.navbar-links a.active { color: var(--color-accent); }
+.navbar-links a:hover,
+.navbar-links a.active { color: var(--color-text); text-decoration-color: currentColor; }
 
 .navbar-toggle {
   display: none;
@@ -380,8 +389,11 @@ img { max-width: 100%; height: auto; }
 
 .news-date {
   font-family: var(--font-text);
-  font-size: 12px;
+  font-size: 10.8px;
   font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-tertiary);
   white-space: nowrap;
   flex-shrink: 0;
@@ -446,7 +458,11 @@ img { max-width: 100%; height: auto; }
 
 .cv-entry-date {
   font-family: var(--font-text);
-  font-size: 12px;
+  font-size: 10.8px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-tertiary);
   white-space: nowrap;
   flex-shrink: 0;
@@ -512,8 +528,10 @@ img { max-width: 100%; height: auto; }
 /* ---- Buttons ---- */
 .btn {
   font-family: var(--font-text);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 10.8px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   padding: 7px 16px;
   text-decoration: none;
   display: inline-flex;
@@ -703,30 +721,9 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ---- Responsive ---- */
-@media (max-width: 640px) {
-  .container { padding: 0 18px; }
-  .navbar-container { padding: 0 18px; }
-
-  .profile-section {
-    flex-direction: column;
-    padding: 36px 0 32px;
-    gap: 20px;
-  }
-
-  .profile-avatar { width: 80px; height: 80px; }
-  .profile-info h1 { font-size: 22px; }
-
-  .profile-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .profile-links a {
-    padding: 0;
-    border-right: none;
-  }
-
+/* The six tracked, uppercase nav labels need ~770px. Collapse to the menu
+   below 800px rather than 640px, or the bar overflows at tablet widths. */
+@media (max-width: 800px) {
   .navbar-links {
     display: flex;
     flex-direction: column;
@@ -753,6 +750,31 @@ img { max-width: 100%; height: auto; }
     pointer-events: auto;
   }
   .navbar-toggle { display: block; }
+}
+
+@media (max-width: 640px) {
+  .container { padding: 0 18px; }
+  .navbar-container { padding: 0 18px; }
+
+  .profile-section {
+    flex-direction: column;
+    padding: 36px 0 32px;
+    gap: 20px;
+  }
+
+  .profile-avatar { width: 80px; height: 80px; }
+  .profile-info h1 { font-size: 22px; }
+
+  .profile-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .profile-links a {
+    padding: 0;
+    border-right: none;
+  }
 
   .skill-row { grid-template-columns: 1fr; gap: 3px; }
   .cv-entry-header { flex-direction: column; gap: 2px; }
@@ -996,10 +1018,10 @@ img { max-width: 100%; height: auto; }
 
 .hero-role-label {
   font-family: var(--font-text);
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 10.6px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.16em;
   color: var(--color-text-tertiary);
   margin-bottom: 3px;
 }
@@ -1021,29 +1043,28 @@ img { max-width: 100%; height: auto; }
 .hero-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 8px 22px;
 }
 
 .hero-link {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   font-family: var(--font-text);
-  font-size: 12.5px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--color-text-secondary);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  padding: 6px 13px;
-  text-decoration: none;
-  transition: all var(--transition);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-mid);
+  text-underline-offset: 5px;
+  transition: color var(--transition), text-decoration-color var(--transition);
   white-space: nowrap;
 }
 .hero-link:hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
-  background: var(--color-accent-muted);
-  text-decoration: none;
+  color: var(--color-text);
+  text-decoration-color: currentColor;
 }
 
 .hero-right { flex-shrink: 0; }
@@ -1460,14 +1481,22 @@ img { max-width: 100%; height: auto; }
 
 .edu-years {
   font-family: var(--font-text);
-  font-size: 12px;
+  font-size: 10.8px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-tertiary);
   margin-bottom: 2px;
 }
 
 .edu-place {
   font-family: var(--font-text);
-  font-size: 12px;
+  font-size: 10.8px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-tertiary);
 }
 
