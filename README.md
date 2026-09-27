@@ -190,13 +190,51 @@ git push origin main
 
 ## Design System
 
-Custom CSS with design tokens in `assets/css/main.css`.
+The site follows **在場 Broadsheet** (Zaichang Broadsheet), a newspaper
+typesetting system: hierarchy comes from type size, rules and white space,
+not from colour, boxes or shadows. Tokens live in `assets/css/main.css`.
 
-| Token | Value | Usage |
+### Rules
+
+1. **No rounded corners.** `border-radius: 0` is set at the universal reset.
+2. **No shadows.** Separation is drawn with rules; emphasis comes from size.
+3. **One accent.** `--seal` appears only at label scale: award stamps and the
+   focus ring. Everything structural is drawn in ink.
+4. **Three rule weights.** A 1px hairline separates, a 2px ink rule opens a
+   set (the publication list, the news chronicle), and a 3px double rule
+   closes the page as its colophon.
+5. **Warm paper, not white.** Dark mode is warm black, not neutral black.
+6. **Links are underlined, not coloured.** With no link colour, the underline
+   is what marks a link.
+
+### Colour
+
+| Token | Day | Night | Use |
+|---|---|---|---|
+| `--paper` | `#f4f1e9` | `#14120e` | Page background |
+| `--paper-deep` | `#e6e0ce` | `#252119` | The only interactive fill (hover) |
+| `--ink` | `#17140f` | `#f2ede2` | Headings and primary text |
+| `--ink-mid` | `#453f34` | `#c6bfb0` | Body text |
+| `--ink-soft` | `#655d50` | `#968d7c` | Labels and dates |
+| `--rule` | `#cec7b6` | `#3a352b` | Hairlines |
+| `--rule-mid` | `#a9a08b` | `#565040` | Heavier hairlines and underlines |
+| `--seal` | `#8a1c11` | `#dd7460` | The single accent |
+
+The older `--color-*` names still exist and resolve through these tokens, so
+component rules did not need renaming.
+
+### Type
+
+| Token | Face | Use |
 |---|---|---|
-| `--color-accent` | `#2c4a6e` | Links, active states, borders |
-| `--color-bg` | `#f9f8f5` | Page background |
-| `--color-text` | `#1c1c1c` | Body text |
+| `--font-display` | Bodoni Moda | Headings, section rules, the site name |
+| `--font-text` | Source Serif 4 | Everything else, labels included |
+
+Labels (navigation, dates, buttons, stamps) are small, tracked, uppercase
+serif. Source Serif 4 is loaded with its optical-size axis, which keeps it
+sturdy at the 10-12px sizes those labels use.
+
+All text passes WCAG AA in both themes; the lowest pair is 5.7:1.
 
 Dark mode via `[data-theme="dark"]`, toggled by `assets/js/main.js`.
 
