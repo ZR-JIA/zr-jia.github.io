@@ -159,7 +159,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           <p class="cv-entry-meta">Python · PyTorch · Scikit-learn · Pandas · Docker · Linux</p>
           <div class="cv-entry-body">
             <ul>
-              <li>Engineered an end-to-end ML pipeline from raw eICU CSV ingestion to model serialization, handling 200k+ patient records with reproducible preprocessing via custom DataLoader classes</li>
+              <li>Engineered an end-to-end ML pipeline from raw eICU CSV ingestion (200,859 ICU stays) to model serialization, with reproducible preprocessing via custom DataLoader classes</li>
               <li>Modular architecture separating data, model, training, and evaluation layers for maintainability</li>
               <li>Multi-seed evaluation harness (5 seeds on a fixed patient-stratified split) with automated metric logging (AUROC, AUPRC, F1) across all baselines</li>
               <li>Containerized full training environment with Docker; released open-source at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke</a> and <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">Data-Preprocessing-for-eICU</a></li>
