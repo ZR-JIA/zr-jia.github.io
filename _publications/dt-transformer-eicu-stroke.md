@@ -100,7 +100,7 @@ citation_ris: |
       </tr>
     </tbody>
   </table>
-  <p style="font-family:'Inter',sans-serif;font-size:12px;color:var(--color-text-tertiary);margin-top:10px;">Neural model metrics are aggregated over 5 random seeds on a fixed patient-stratified 70/10/20 split (mean &plusmn; std). XGBoost and Random Forest use single-run evaluation.</p>
+  <p style="font-size:12px;color:var(--color-text-tertiary);margin-top:10px;">Neural model metrics are aggregated over 5 random seeds on a fixed patient-stratified 70/10/20 split (mean &plusmn; std). XGBoost and Random Forest use single-run evaluation.</p>
 </section>
 
 <section class="content-section">
@@ -112,7 +112,7 @@ citation_ris: |
     <li><strong>Adaptive Runtime Safeguard</strong> &mdash; Rule-based clamping and sanitization of physiological outliers, applied online in the data loader before tensors reach the GPU</li>
     <li><strong>Attention Visualization</strong> &mdash; Heatmaps over input features for clinical interpretability</li>
   </ul>
-  <p style="font-family:'Inter',sans-serif;font-size:13px;color:var(--color-text-tertiary);margin-top:14px;">Stack: Python &middot; PyTorch &middot; Scikit-learn &middot; XGBoost &middot; Pandas &middot; NumPy</p>
+  <p style="font-size:13px;color:var(--color-text-tertiary);margin-top:14px;">Stack: Python &middot; PyTorch &middot; Scikit-learn &middot; XGBoost &middot; Pandas &middot; NumPy</p>
 </section>
 
 <section class="content-section">

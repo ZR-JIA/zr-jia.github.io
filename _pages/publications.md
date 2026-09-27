@@ -22,7 +22,7 @@ description: "Peer-reviewed publications by Zheng Rong JIA on clinical AI, deep 
         {%- endfor %}
       </div>
       {%- else %}
-      <p style="font-family:'Inter',sans-serif;font-size:14px;color:var(--color-text-tertiary);">No publications listed yet.</p>
+      <p style="font-size:14px;color:var(--color-text-tertiary);">No publications listed yet.</p>
       {%- endif %}
     </section>
   </div>
