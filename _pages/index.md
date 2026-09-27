@@ -45,27 +45,22 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
     <p class="section-label">Research Interests</p>
     <div class="interests-grid">
       <div class="interest-card">
-        <div class="interest-icon"><i class="fas fa-heartbeat"></i></div>
         <p class="interest-title">Medical AI</p>
         <p class="interest-desc">Deep learning on EHR data for ICU risk stratification and clinical decision support</p>
       </div>
       <div class="interest-card">
-        <div class="interest-icon"><i class="fas fa-chart-line"></i></div>
         <p class="interest-title">Predictive Modeling</p>
         <p class="interest-desc">Transformer-based temporal models for early warning systems in critical care</p>
       </div>
       <div class="interest-card">
-        <div class="interest-icon"><i class="fas fa-database"></i></div>
         <p class="interest-title">Health Informatics</p>
         <p class="interest-desc">Multicenter clinical databases, missing-data-aware architectures, reproducible pipelines</p>
       </div>
       <div class="interest-card">
-        <div class="interest-icon"><i class="fas fa-brain"></i></div>
         <p class="interest-title">Explainable AI</p>
         <p class="interest-desc">Attention-based saliency and faithfulness evaluation for clinical interpretability</p>
       </div>
       <div class="interest-card">
-        <div class="interest-icon"><i class="fas fa-dna"></i></div>
         <p class="interest-title">Digital Biomarkers</p>
         <p class="interest-desc">Feature importance analysis and physiological signal modeling for mortality prediction</p>
       </div>
