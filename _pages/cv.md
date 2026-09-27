@@ -78,7 +78,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
       <div class="cv-entries">
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title">Independent Researcher &mdash; Clinical AI</span>
+            <span class="cv-entry-title">Lead Researcher &mdash; Medical AI &amp; Predictive Modeling</span>
             <span class="cv-entry-date">Aug 2025 – Present</span>
           </div>
           <p class="cv-entry-meta">Deep Learning on Tabular EHR Data · Stroke Mortality Prediction</p>
