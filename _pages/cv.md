@@ -102,7 +102,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <span class="cv-entry-title">Young Ambassador and Researcher</span>
             <span class="cv-entry-date">Aug 2025 – Present</span>
           </div>
-          <p class="cv-entry-org"><a href="https://aae.com.hk/" target="_blank" rel="noopener noreferrer">Asia AI Education and Future Technology Association (AAE)</a> &mdash; Remote / Hong Kong</p>
+          <p class="cv-entry-org"><a href="https://aae.com.hk/" target="_blank" rel="noopener noreferrer">Asia AI Education and Future Technology Association (AAE)</a> &mdash; Remote / Hong Kong, China</p>
           <div class="cv-entry-body">
             <ul>
               <li>Collaborate closely with Head Advisor Dr. Kwong-Cheong Wong on deep learning for stroke mortality prediction using the eICU database</li>
