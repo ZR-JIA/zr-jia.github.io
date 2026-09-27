@@ -37,17 +37,17 @@
 }
 
 [data-theme="dark"] {
-  /* Night edition: warm black, not neutral black. The seal is re-chosen for
+  /* Night edition: ink black with warm-white type. The seal is re-chosen for
      the dark ground rather than inverted, which would leave it unreadable. */
-  --paper: #14120e;
-  --paper-tint: #1b1814;
-  --paper-deep: #252119;
-  --ink: #f2ede2;
-  --ink-mid: #c6bfb0;
-  --ink-soft: #968d7c;
-  --rule: #3a352b;
-  --rule-mid: #565040;
-  --seal: #dd7460;
+  --paper: #0b0b0b;
+  --paper-tint: #121212;
+  --paper-deep: #1c1c1c;
+  --ink: #f2f0eb;
+  --ink-mid: #c9c6bf;
+  --ink-soft: #98948d;
+  --rule: #262626;
+  --rule-mid: #3f3f3f;
+  --seal: #e0806b;
 
 
 }
@@ -64,6 +64,10 @@ body::after {
   opacity: 0.05;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
 }
+
+/* The night edition prints no grain: on ink black the noise reads as grey
+   dust rather than paper. */
+[data-theme="dark"] body::after { display: none; }
 
 @media print {
   body::after { display: none; }

@@ -203,7 +203,8 @@ not from colour, boxes or shadows. Tokens live in `assets/css/main.css`.
 4. **Three rule weights.** A 1px hairline separates, a 2px ink rule opens a
    set (the publication list, the news chronicle), and a 3px double rule
    closes the page as its colophon.
-5. **Warm paper, not white.** Dark mode is warm black, not neutral black.
+5. **Warm paper, not white.** Dark mode is ink black with warm-white type,
+   and drops the newsprint grain.
 6. **Links are underlined, not coloured.** With no link colour, the underline
    is what marks a link.
 
@@ -211,14 +212,14 @@ not from colour, boxes or shadows. Tokens live in `assets/css/main.css`.
 
 | Token | Day | Night | Use |
 |---|---|---|---|
-| `--paper` | `#f4f1e9` | `#14120e` | Page background |
-| `--paper-deep` | `#e6e0ce` | `#252119` | The only interactive fill (hover) |
-| `--ink` | `#17140f` | `#f2ede2` | Headings and primary text |
-| `--ink-mid` | `#453f34` | `#c6bfb0` | Body text |
-| `--ink-soft` | `#655d50` | `#968d7c` | Labels and dates |
-| `--rule` | `#cec7b6` | `#3a352b` | Hairlines |
-| `--rule-mid` | `#a9a08b` | `#565040` | Heavier hairlines and underlines |
-| `--seal` | `#8a1c11` | `#dd7460` | The single accent |
+| `--paper` | `#f4f1e9` | `#0b0b0b` | Page background |
+| `--paper-deep` | `#e6e0ce` | `#1c1c1c` | The only interactive fill (hover) |
+| `--ink` | `#17140f` | `#f2f0eb` | Headings and primary text |
+| `--ink-mid` | `#453f34` | `#c9c6bf` | Body text |
+| `--ink-soft` | `#655d50` | `#98948d` | Labels and dates |
+| `--rule` | `#cec7b6` | `#262626` | Hairlines |
+| `--rule-mid` | `#a9a08b` | `#3f3f3f` | Heavier hairlines and underlines |
+| `--seal` | `#8a1c11` | `#e0806b` | The single accent |
 
 The older `--color-*` names still exist and resolve through these tokens, so
 component rules did not need renaming.
