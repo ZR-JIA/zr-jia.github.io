@@ -1,6 +1,6 @@
 ---
 title: "Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework"
-description: "DT-Transformer, a dual-tower Transformer for stroke mortality prediction on the multicenter eICU database. Best Industrial Paper and Best Presentation at IEEE CCAI 2026."
+description: "DT-Transformer, a dual-tower Transformer for stroke mortality prediction on the multicenter eICU database. Best Industrial Paper Award and Best Presentation Award at IEEE CCAI 2026."
 authors: "Zhengrong Jia*, Kwong-Cheong Wong*"
 authors_html: "<strong>Zhengrong Jia</strong><sup>*</sup>, Kwong-Cheong Wong<sup>*</sup>"
 venue: "2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)"
@@ -13,8 +13,8 @@ pages: "76&ndash;81"
 doi: "10.1109/CCAI69603.2026.11641950"
 url_official: "https://ieeexplore.ieee.org/document/11641950/"
 awards:
-  - "Best Industrial Paper"
-  - "Best Presentation"
+  - "Best Industrial Paper Award"
+  - "Best Presentation Award"
 links:
   - { label: "IEEE Xplore",   icon: "fas fa-external-link-alt",  url: "https://ieeexplore.ieee.org/document/11641950/", primary: true }
   - { label: "Code",          icon: "fab fa-github",             url: "https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" }

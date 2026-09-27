@@ -106,7 +106,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           <div class="cv-entry-body">
             <ul>
               <li>Collaborated closely with Head Advisor Dr. Kwong-Cheong Wong on deep learning for stroke mortality prediction using the eICU database</li>
-              <li>Represented the association at IEEE CCAI 2026 in Nanjing, where the resulting paper received the Best Industrial Paper and Best Presentation awards</li>
+              <li>Represented the association at IEEE CCAI 2026 in Nanjing, where the resulting paper received the Best Industrial Paper Award and the Best Presentation Award</li>
             </ul>
           </div>
         </div>
