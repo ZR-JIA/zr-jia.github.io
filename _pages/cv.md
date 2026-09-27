@@ -83,7 +83,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           </div>
           <p class="cv-entry-meta">Deep Learning on Tabular EHR Data · Stroke Mortality Prediction</p>
           <div class="cv-entry-body">
-            <p>Designed and implemented a <strong>Dual-Tower Transformer (DT-Transformer)</strong> for in-hospital stroke mortality prediction using the multicenter eICU Collaborative Research Database. The architecture decouples categorical demographics from numerical vitals into separate encoding towers, achieving an <strong>AUPRC of 0.6171</strong> (std 0.006) — a <strong>14.4% relative improvement</strong> over the strongest neural baseline. An <strong>Adaptive Runtime Safeguard</strong> clamps physiological outliers online within the data loader, ensuring stable, crash-free inference.</p>
+            <p>Designed and implemented a <strong>Dual-Tower Transformer (DT-Transformer)</strong> for in-hospital stroke mortality prediction using the multicenter eICU Collaborative Research Database. The architecture decouples categorical demographics from numerical vitals into separate encoding towers, achieving an <strong>AUPRC of 0.6171</strong> (&plusmn; 0.0058 over five seeds) — a <strong>14.4% relative improvement</strong> over the strongest neural baseline. An <strong>Adaptive Runtime Safeguard</strong> clamps physiological outliers online within the data loader, ensuring stable, crash-free inference.</p>
             <ul>
               <li>Outperformed strongest neural baseline NN (AUPRC 0.5394) and Standard Transformer (0.5279); competitive with XGBoost (0.6467)</li>
               <li>Implemented attention map visualization for clinical interpretability of feature importance</li>
