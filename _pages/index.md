@@ -117,7 +117,7 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
   <section class="content-section">
     <p class="section-label">About</p>
     <div class="philosophy-block">
-      <p class="philosophy-text">I am drawn to problems where machine learning meets <strong>real clinical stakes</strong> — where a model's failure is not an accuracy number but <strong>a missed diagnosis</strong>. My work focuses on building deep learning systems for electronic health records that are not only accurate, but <strong>interpretable and honest about their limits</strong>. I believe the most durable research is <strong>reproducible, open</strong>, and built with the long game in mind.</p>
+      <p class="philosophy-text">When machine learning meets <strong>real clinical stakes</strong>, a model's failure is not an accuracy number but <strong>a missed diagnosis</strong>. Those are the problems I am drawn to. My work focuses on building deep learning systems for electronic health records that are not only accurate, but <strong>interpretable and honest about their limits</strong>. I believe the most durable research is <strong>reproducible, open</strong>, and built with the long game in mind.</p>
     </div>
   </section>
 
