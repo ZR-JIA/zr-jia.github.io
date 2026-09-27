@@ -780,7 +780,24 @@ img { max-width: 100%; height: auto; }
     transform: translateY(0);
     pointer-events: auto;
   }
-  .navbar-toggle { display: block; }
+
+  /* Menu and theme buttons sit together at the right. The menu button's
+     auto margin takes the free space, so the name stays left. It precedes
+     the menu in the markup, so Tab moves from it straight into the open
+     menu; the visual order matches the focus order. */
+  .navbar-container { gap: 2px; }
+  .navbar-toggle,
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .navbar-toggle { margin-left: auto; }
 }
 
 @media (max-width: 640px) {
