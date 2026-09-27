@@ -227,7 +227,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
       <div class="skills-table">
         <div class="skill-row">
           <span class="skill-category">Mandarin</span>
-          <span class="skill-items">Fluent (Native)</span>
+          <span class="skill-items">Native</span>
         </div>
         <div class="skill-row">
           <span class="skill-category">English</span>
