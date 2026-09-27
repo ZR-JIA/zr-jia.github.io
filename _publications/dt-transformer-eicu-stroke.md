@@ -53,7 +53,7 @@ citation_ris: |
 <section class="content-section">
   <p class="section-label">Abstract</p>
   <div class="abstract-block">
-    <p>We propose a novel Dual-Tower Transformer (DT-Transformer) for stroke mortality prediction on the multicenter eICU Collaborative Research Database. The decoupled architecture processes categorical demographics and numerical vitals through separate tower pathways, each equipped with Self-Attention, before fusing representations for final prediction. The model achieves an AUPRC of 0.6171 &mdash; a 14.4% improvement over the strongest neural baseline. An Adaptive Runtime Safeguard is integrated for inference stability against physiological outliers, and attention map visualizations provide clinical interpretability.</p>
+    <p>We propose a novel Dual-Tower Transformer (DT-Transformer) for stroke mortality prediction on the multicenter eICU Collaborative Research Database. The decoupled architecture encodes categorical demographics with learnable embeddings and numerical vitals with a Transformer encoder built on multi-head self-attention, then fuses the two representations for final prediction. The model achieves an AUPRC of 0.6171 &mdash; a 14.4% relative improvement over the strongest neural baseline. An Adaptive Runtime Safeguard is integrated for inference stability against physiological outliers, and attention map visualizations provide clinical interpretability.</p>
   </div>
 </section>
 
@@ -107,7 +107,7 @@ citation_ris: |
   <p class="section-label">Architecture &amp; Methodology</p>
   <ul style="font-size:14px;color:var(--color-text-secondary);padding-left:20px;line-height:1.9;">
     <li><strong>Dual-Tower Design</strong> &mdash; Separate encoding pathways for categorical (demographics) and numerical (vitals) features</li>
-    <li><strong>Self-Attention Layers</strong> &mdash; Each tower applies multi-head Self-Attention for intra-modality feature interaction</li>
+    <li><strong>Self-Attention (Numerical Tower)</strong> &mdash; A two-layer Transformer encoder models interactions among the 94 continuous features; the categorical tower uses learnable embeddings</li>
     <li><strong>Late Fusion</strong> &mdash; Tower outputs concatenated before classification head</li>
     <li><strong>Adaptive Runtime Safeguard</strong> &mdash; Detects out-of-distribution inputs at inference time for clinical safety</li>
     <li><strong>Attention Visualization</strong> &mdash; Heatmaps over input features for clinical interpretability</li>
