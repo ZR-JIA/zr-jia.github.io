@@ -57,7 +57,6 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
         <p class="interest-desc">Multicenter clinical databases, leakage-free cohort pipelines, and open code</p>
       </div>
     </div>
-    <p class="interest-planned"><span class="planned-label">Planned &middot; MSc</span>Medical image analysis: Vision Transformer and hybrid CNN-ViT architectures for brain MRI segmentation.</p>
   </section>
 
   <!-- ── Publications ───────────────────────────── -->

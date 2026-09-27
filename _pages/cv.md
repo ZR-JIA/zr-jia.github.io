@@ -261,8 +261,8 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           <p class="research-name">Reproducible Pipelines</p>
           <p class="research-desc">Multicenter clinical databases, leakage-free cohort construction, and open-source code.</p>
         </li>
-        <li class="research-item research-item--planned">
-          <p class="research-name">Medical Image Analysis<span class="planned-label">Planned &middot; MSc</span></p>
+        <li class="research-item">
+          <p class="research-name">Medical Image Analysis</p>
           <p class="research-desc">Vision Transformer and hybrid CNN-ViT architectures for brain MRI segmentation; semi-supervised learning strategies to address annotation scarcity in radiology AI, with focus on multi-class lesion delineation.</p>
         </li>
       </ul>

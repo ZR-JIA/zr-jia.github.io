@@ -451,35 +451,6 @@ img { max-width: 100%; height: auto; }
   line-height: 1.65;
 }
 
-/* A direction with no published work behind it yet. Per the system's draft
-   entries, it changes typeface rather than colour: italic body text in
-   place of a bold title, so its shape says it is not an entry yet. */
-.research-item--planned .research-name {
-  font-weight: 400;
-  font-style: italic;
-  color: var(--color-text-secondary);
-}
-
-.interest-planned {
-  padding-top: 14px;
-  border-top: 1px solid var(--rule);
-  font-size: 14px;
-  font-style: italic;
-  line-height: 1.6;
-  color: var(--color-text-secondary);
-}
-
-.planned-label {
-  font-style: normal;
-  font-size: 10.6px;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--seal);
-  margin-right: 12px;
-}
-
-.research-name .planned-label { margin: 0 0 0 12px; }
 
 /* ---- CV Entries ---- */
 .cv-entries { display: flex; flex-direction: column; }
