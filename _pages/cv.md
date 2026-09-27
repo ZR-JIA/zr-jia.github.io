@@ -112,7 +112,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
         </div>
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title">Machine Learning Engineer Intern</span>
+            <span class="cv-entry-title">Machine Learning Engineering Intern</span>
             <span class="cv-entry-date">Jul – Aug 2024</span>
           </div>
           <p class="cv-entry-org">China Southern Power Grid AI Technology Co., Ltd. &mdash; Guangzhou</p>
@@ -121,8 +121,6 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <ul>
               <li>Processed <strong>60 GB</strong> of multi-province power equipment inspection data to identify equipment fault frequencies and optimize inspection robot algorithms</li>
               <li>Contributed to the development of closing and splitting functions for power inspection robots to support real-world operational accuracy</li>
-              <li>Conducted fault-type EDA (Pandas / Matplotlib) to guide downstream sampling strategies</li>
-              <li><strong>Outcome:</strong> Written commendation from supervising engineer; earned 100/100 on formal internship evaluation</li>
             </ul>
           </div>
         </div>
