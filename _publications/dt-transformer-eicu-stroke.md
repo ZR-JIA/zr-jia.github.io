@@ -109,7 +109,7 @@ citation_ris: |
     <li><strong>Dual-Tower Design</strong> &mdash; Separate encoding pathways for categorical (demographics) and numerical (vitals) features</li>
     <li><strong>Self-Attention (Numerical Tower)</strong> &mdash; A two-layer Transformer encoder models interactions among the 94 continuous features; the categorical tower uses learnable embeddings</li>
     <li><strong>Late Fusion</strong> &mdash; Tower outputs concatenated before classification head</li>
-    <li><strong>Adaptive Runtime Safeguard</strong> &mdash; Detects out-of-distribution inputs at inference time for clinical safety</li>
+    <li><strong>Adaptive Runtime Safeguard</strong> &mdash; Rule-based clamping and sanitization of physiological outliers, applied online in the data loader before tensors reach the GPU</li>
     <li><strong>Attention Visualization</strong> &mdash; Heatmaps over input features for clinical interpretability</li>
   </ul>
   <p style="font-family:'Inter',sans-serif;font-size:13px;color:var(--color-text-tertiary);margin-top:14px;">Stack: Python &middot; PyTorch &middot; Scikit-learn &middot; XGBoost &middot; Pandas &middot; NumPy</p>
