@@ -32,7 +32,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <p class="edu-degree"><a href="https://www.apu.edu.my/course/msc-in-artificial-intelligence" target="_blank" rel="noopener noreferrer">M.Sc. in Artificial Intelligence</a></p>
           </div>
           <div class="edu-side">
-            <p class="edu-years">Aug 2026 &mdash; Aug 2027 (expected)</p>
+            <p class="edu-years">Aug 2026 – Aug 2027 (expected)</p>
             <p class="edu-place">Kuala Lumpur, Malaysia</p>
           </div>
         </div>
@@ -46,7 +46,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <p class="edu-degree">B.Sc. in Software Engineering</p>
           </div>
           <div class="edu-side">
-            <p class="edu-years">2021 &mdash; Aug 2025</p>
+            <p class="edu-years">2021 – Aug 2025</p>
             <p class="edu-place">Macau, China</p>
           </div>
         </div>
