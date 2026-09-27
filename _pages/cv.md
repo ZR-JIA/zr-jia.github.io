@@ -216,35 +216,6 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
       </div>
     </section>
 
-    <section class="content-section">
-      <p class="section-label">Technical Skills</p>
-      <div class="skills-table">
-        <div class="skill-row">
-          <span class="skill-category">Languages</span>
-          <span class="skill-items">Python · Java · C / C++ · SQL · JavaScript</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">ML Frameworks</span>
-          <span class="skill-items">PyTorch · Scikit-learn · XGBoost · YOLOv8 · NumPy · Pandas</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Architectures</span>
-          <span class="skill-items">Transformer · LSTM · GRU · MLP · CNN (YOLO)</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Data & Viz</span>
-          <span class="skill-items">Matplotlib · Seaborn · OpenCV</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Web & Systems</span>
-          <span class="skill-items">Vue.js · Spring Boot · REST API · HTML / CSS</span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">DevOps & Tools</span>
-          <span class="skill-items">Git · Docker · Linux · LaTeX</span>
-        </div>
-      </div>
-    </section>
 
     <section class="content-section">
       <p class="section-label">Research Interests</p>
