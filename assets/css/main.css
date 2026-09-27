@@ -635,16 +635,13 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 28px;
 }
 
-.abstract-block {
-  background: var(--color-accent-muted);
-  border-left: 3px solid var(--color-accent);
-  padding: 16px 20px;
-}
+.abstract-block { max-width: 34em; }
 
 .abstract-block p {
-  font-size: 14px;
+  font-size: 17px;
+  font-style: italic;
   color: var(--color-text-secondary);
-  line-height: 1.8;
+  line-height: 1.72;
   margin: 0;
 }
 
@@ -952,9 +949,9 @@ img { max-width: 100%; height: auto; }
 .post-content p { margin-bottom: 20px; }
 .post-content p:last-child { margin-bottom: 0; }
 .post-content blockquote {
-  border-left: 3px solid var(--color-accent);
+  border-left: 1px solid var(--rule-mid);
   margin: 24px 0;
-  padding: 4px 20px;
+  padding: 2px 0 2px 20px;
   color: var(--color-text-secondary);
   font-style: italic;
 }
@@ -1012,9 +1009,7 @@ img { max-width: 100%; height: auto; }
   font-family: var(--font-text);
   font-size: 18px;
   font-style: italic;
-  color: var(--color-accent);
-  border-left: 3px solid var(--color-accent);
-  padding-left: 14px;
+  color: var(--color-text-secondary);
   margin-bottom: 22px;
   line-height: 1.5;
 }
@@ -1230,18 +1225,14 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ---- Philosophy / About ---- */
-.philosophy-block {
-  border-left: 2px solid var(--color-border);
-  padding-left: 18px;
-}
+.philosophy-block { max-width: 34em; }
 
 .philosophy-text {
   font-family: var(--font-text);
-  font-size: 15px;
+  font-size: 17px;
   color: var(--color-text-secondary);
-  line-height: 1.85;
+  line-height: 1.72;
   margin: 0;
-  max-width: 620px;
 }
 
 /* ---- Utility ---- */
