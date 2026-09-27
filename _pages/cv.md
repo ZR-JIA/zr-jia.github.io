@@ -187,7 +187,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title">Personal Academic Website &mdash; <a href="https://github.com/ZR-JIA" style="font-weight:500;font-size:13px;">github.com/ZR-JIA</a></span>
+            <span class="cv-entry-title">Personal Academic Website &mdash; <a href="https://zr-jia.github.io/" style="font-weight:500;font-size:13px;">zr-jia.github.io</a></span>
             <span class="cv-entry-date">2025 – Present</span>
           </div>
           <p class="cv-entry-meta">Jekyll · Liquid · CSS Custom Properties · JavaScript · GitHub Pages</p>
