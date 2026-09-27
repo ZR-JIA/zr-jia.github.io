@@ -270,6 +270,10 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           <span class="skill-category">ORCID</span>
           <span class="skill-items"><a href="https://orcid.org/0009-0007-8829-6713" target="_blank" rel="noopener noreferrer">0009-0007-8829-6713</a></span>
         </div>
+        <div class="skill-row">
+          <span class="skill-category">Google Scholar</span>
+          <span class="skill-items"><a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Zheng Rong JIA</a></span>
+        </div>
       </div>
     </section>
 
