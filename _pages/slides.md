@@ -17,7 +17,7 @@ description: "Slide decks and presentations by Zheng Rong JIA, including confere
       <div class="cv-entries">
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title">DT-Transformer for Stroke Mortality Prediction</span>
+            <span class="cv-entry-title">Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</span>
             <span class="cv-entry-date">CCAI 2026</span>
           </div>
           <p class="cv-entry-meta"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a> &mdash; May 24, 2026 &middot; Nanjing</p>
