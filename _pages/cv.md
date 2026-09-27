@@ -242,7 +242,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
         </div>
         <div class="skill-row">
           <span class="skill-category">English</span>
-          <span class="skill-items">Intermediate &mdash; academic reading &amp; writing proficient</span>
+          <span class="skill-items">Upper-Intermediate</span>
         </div>
       </div>
     </section>
