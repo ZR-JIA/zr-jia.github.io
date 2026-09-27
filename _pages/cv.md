@@ -182,13 +182,8 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <span class="cv-entry-title">AI-Integrated Web Platform &mdash; Course Project</span>
             <span class="cv-entry-date">2024 – 2025</span>
           </div>
-          <p class="cv-entry-meta">Vue.js · Java (Spring Boot) · REST API · SQL · Python · Scikit-learn · Docker</p>
           <div class="cv-entry-body">
-            <ul>
-              <li>Built a full-stack system with Vue.js SPA frontend, Java Spring Boot RESTful backend, and embedded Python ML microservice via REST</li>
-              <li>Integrated trained Scikit-learn classification model for on-demand inference without re-training overhead</li>
-              <li>JWT-based auth with role-based access control; deployed via Docker Compose on Linux server</li>
-            </ul>
+            <p>Full-stack web platform with a Vue.js front end, a Spring Boot REST back end and a Python microservice serving a trained scikit-learn classifier, with JWT role-based access control and Docker Compose deployment.</p>
           </div>
         </div>
 
