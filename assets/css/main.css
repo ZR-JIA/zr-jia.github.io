@@ -592,7 +592,12 @@ img { max-width: 100%; height: auto; }
 
 /* Article headlines (a paper or post title under its kicker) run to ~100
    characters; a long headline is set smaller, as newspapers do. */
-.post-kicker + h1 { font-size: clamp(22px, 2.4vw + 13px, 32px); }
+.post-kicker + h1 {
+  font-size: clamp(22px, 2.4vw + 13px, 32px);
+  /* the 1.12 line height removed the leading that used to separate the
+     headline from the byline under it */
+  margin-bottom: 12px;
+}
 
 .page-header-actions {
   display: flex;
