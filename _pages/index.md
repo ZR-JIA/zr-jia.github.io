@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 title: "Zheng Rong JIA"
-description: "Independent AI researcher specializing in Clinical AI and deep learning on electronic health records. First author, CCAI 2026."
+description: "AI researcher specializing in Clinical AI and deep learning on electronic health records. First author, CCAI 2026 (published in IEEE Xplore) and PRICAI 2026 (short paper, accepted)."
 ---
 
 <div class="container">
