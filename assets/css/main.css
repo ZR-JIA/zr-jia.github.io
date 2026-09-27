@@ -375,17 +375,19 @@ img { max-width: 100%; height: auto; }
 .pub-link-sep { display: none; }
 
 /* ---- News List ---- */
-.news-list { list-style: none; }
-
-.news-item {
-  display: flex;
-  gap: 20px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--color-border);
-  align-items: baseline;
+.news-list {
+  list-style: none;
+  border-top: 2px solid var(--color-text); /* heavy rule: the record starts here */
 }
 
-.news-item:last-child { border-bottom: none; }
+/* A chronicle: dates in one column, entries in the next, a hairline between
+   them. Tabular dates align down the column so intervals can be read off. */
+.news-item {
+  display: grid;
+  grid-template-columns: 138px minmax(0, 1fr);
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
 
 .news-date {
   font-family: var(--font-text);
@@ -395,16 +397,18 @@ img { max-width: 100%; height: auto; }
   text-transform: uppercase;
   font-variant-numeric: tabular-nums;
   color: var(--color-text-tertiary);
-  white-space: nowrap;
-  flex-shrink: 0;
-  min-width: 32px;
+  line-height: 1.9;
 }
 
 .news-text {
-  font-size: 15px;
-  color: var(--color-text);
-  line-height: 1.65;
+  padding-left: 26px;
+  border-left: 1px solid var(--rule);
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
 }
+
+.news-text strong { color: var(--color-text); }
 
 /* ---- Research List ---- */
 .research-list { list-style: none; }
@@ -760,6 +764,9 @@ img { max-width: 100%; height: auto; }
 }
 
 @media (max-width: 640px) {
+  .news-item { grid-template-columns: 1fr; gap: 4px; padding: 16px 0; }
+  .news-date { line-height: 1.5; }
+  .news-text { padding-left: 0; border-left: 0; }
   .section-label { font-size: 15px; letter-spacing: 0.12em; text-indent: 0.12em; gap: 14px; }
   .container { padding: 0 18px; }
   .navbar-container { padding: 0 18px; }
