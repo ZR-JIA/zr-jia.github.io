@@ -169,17 +169,11 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <span class="cv-entry-title">Time-Series Prediction System &mdash; Final Year Project</span>
+            <span class="cv-entry-title">Power Load Forecasting &mdash; Final Year Project</span>
             <span class="cv-entry-date">Sep 2024 – May 2025</span>
           </div>
-          <p class="cv-entry-meta">Python · PyTorch · LSTM · GRU · MLP · Scikit-learn · Pandas · NumPy · Matplotlib</p>
           <div class="cv-entry-body">
-            <ul>
-              <li>Designed and trained LSTM, GRU, and vanilla RNN models; best LSTM configuration achieved <strong>1.42% MAPE</strong> on the held-out test set</li>
-              <li>Built full preprocessing pipeline: missing-value imputation, normalization, sliding-window construction, leakage-free splits</li>
-              <li>Benchmarked against MLP, Linear Regression, and XGBoost baselines with publication-quality visualizations (Matplotlib / Seaborn)</li>
-              <li>Implemented early stopping, learning-rate scheduling, and gradient clipping to stabilize RNN training</li>
-            </ul>
+            <p>Multi-timescale LSTM for daily, weekly and quarterly power load forecasting, with an interactive decision-support system: 1.42% MAPE on daily predictions and 82% higher quarterly accuracy than ARIMA.</p>
           </div>
         </div>
 
