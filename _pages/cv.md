@@ -250,16 +250,20 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
       <p class="section-label">Research Interests</p>
       <ul class="research-list">
         <li class="research-item">
-          <p class="research-name">Clinical Predictive Modeling</p>
-          <p class="research-desc">Transformer-based temporal modeling on longitudinal EHR data; early warning systems for ICU critical events with missing-data-aware architectures, building on prior work in stroke risk prediction (CCAI 2026).</p>
+          <p class="research-name">Clinical Prediction</p>
+          <p class="research-desc">Deep learning on electronic health records for ICU risk stratification and mortality prediction, building on work in stroke mortality prediction on the multicenter eICU database (CCAI 2026; PRICAI 2026, accepted).</p>
         </li>
         <li class="research-item">
-          <p class="research-name">Medical Image Analysis</p>
+          <p class="research-name">Trustworthy Clinical AI</p>
+          <p class="research-desc">Inference-time safeguards against physiological outliers, and attention-based interpretability that a clinician can check.</p>
+        </li>
+        <li class="research-item">
+          <p class="research-name">Reproducible Pipelines</p>
+          <p class="research-desc">Multicenter clinical databases, leakage-free cohort construction, and open-source code.</p>
+        </li>
+        <li class="research-item research-item--planned">
+          <p class="research-name">Medical Image Analysis<span class="planned-label">Planned &middot; MSc</span></p>
           <p class="research-desc">Vision Transformer and hybrid CNN-ViT architectures for brain MRI segmentation; semi-supervised learning strategies to address annotation scarcity in radiology AI, with focus on multi-class lesion delineation.</p>
-        </li>
-        <li class="research-item">
-          <p class="research-name">Explainable AI for Healthcare</p>
-          <p class="research-desc">Faithfulness evaluation of attention-based saliency methods for deep radiology models; human-in-the-loop clinical validation frameworks bridging model accuracy and clinician trust in high-stakes diagnosis.</p>
         </li>
       </ul>
     </section>

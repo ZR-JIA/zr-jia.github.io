@@ -23,7 +23,7 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
         </div>
         <div class="hero-role">
           <p class="hero-role-label">Research Focus</p>
-          <p class="hero-role-value">Clinical AI &middot; Deep Learning on EHR</p>
+          <p class="hero-role-value">Clinical Prediction &middot; Trustworthy Clinical AI &middot; Reproducible Pipelines</p>
         </div>
       </div>
       <div class="hero-links">
@@ -45,26 +45,19 @@ description: "Independent AI researcher specializing in Clinical AI and deep lea
     <p class="section-label">Research Interests</p>
     <div class="interests-grid">
       <div class="interest-card">
-        <p class="interest-title">Medical AI</p>
-        <p class="interest-desc">Deep learning on EHR data for ICU risk stratification and clinical decision support</p>
+        <p class="interest-title">Clinical Prediction</p>
+        <p class="interest-desc">Deep learning on electronic health records for ICU risk stratification and mortality prediction</p>
       </div>
       <div class="interest-card">
-        <p class="interest-title">Predictive Modeling</p>
-        <p class="interest-desc">Transformer-based temporal models for early warning systems in critical care</p>
+        <p class="interest-title">Trustworthy Clinical AI</p>
+        <p class="interest-desc">Inference-time safeguards against physiological outliers, and attention-based interpretability a clinician can check</p>
       </div>
       <div class="interest-card">
-        <p class="interest-title">Health Informatics</p>
-        <p class="interest-desc">Multicenter clinical databases, missing-data-aware architectures, reproducible pipelines</p>
-      </div>
-      <div class="interest-card">
-        <p class="interest-title">Explainable AI</p>
-        <p class="interest-desc">Attention-based saliency and faithfulness evaluation for clinical interpretability</p>
-      </div>
-      <div class="interest-card">
-        <p class="interest-title">Digital Biomarkers</p>
-        <p class="interest-desc">Feature importance analysis and physiological signal modeling for mortality prediction</p>
+        <p class="interest-title">Reproducible Pipelines</p>
+        <p class="interest-desc">Multicenter clinical databases, leakage-free cohort pipelines, and open code</p>
       </div>
     </div>
+    <p class="interest-planned"><span class="planned-label">Planned &middot; MSc</span>Medical image analysis: Vision Transformer and hybrid CNN-ViT architectures for brain MRI segmentation.</p>
   </section>
 
   <!-- ── Publications ───────────────────────────── -->
