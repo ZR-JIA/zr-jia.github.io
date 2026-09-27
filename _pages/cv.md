@@ -115,7 +115,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <span class="cv-entry-title">Machine Learning Engineering Intern</span>
             <span class="cv-entry-date">Jul – Aug 2024</span>
           </div>
-          <p class="cv-entry-org">China Southern Power Grid AI Technology Co., Ltd. &mdash; Guangzhou</p>
+          <p class="cv-entry-org">China Southern Power Grid &mdash; Guangzhou</p>
           <p class="cv-entry-meta">Python · Pandas · NumPy · Matplotlib · Linux</p>
           <div class="cv-entry-body">
             <ul>
