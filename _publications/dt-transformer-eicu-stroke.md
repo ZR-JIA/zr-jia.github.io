@@ -1,11 +1,11 @@
 ---
 title: "Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework"
-description: "DT-Transformer, a dual-tower Transformer for stroke mortality prediction on the multicenter eICU database. Best Industrial Paper Award and Best Presentation Award at IEEE CCAI 2026."
+description: "DT-Transformer, a dual-tower Transformer for stroke mortality prediction on the multicenter eICU database. Best Industrial Paper Award and Best Presentation Award at CCAI 2026."
 authors: "Zhengrong Jia*, Kwong-Cheong Wong*"
 authors_html: "<strong>Zhengrong Jia</strong><sup>*</sup>, Kwong-Cheong Wong<sup>*</sup>"
 venue: "2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)"
 venue_short: "CCAI 2026"
-venue_card: "The 6th International Conference on Computer Communication and Artificial Intelligence &middot; Nanjing, May 2026"
+venue_card: "2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI) &middot; Nanjing, May 2026"
 location: "Nanjing, China"
 date: 2026-05-22
 date_display: "May 22&ndash;24, 2026"

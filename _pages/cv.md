@@ -61,14 +61,14 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <span class="cv-entry-title">Best Industrial Paper Award</span>
             <span class="cv-entry-date">May 2026</span>
           </div>
-          <p class="cv-entry-org"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a> &mdash; The 6th International Conference on Computer Communication and Artificial Intelligence, Nanjing</p>
+          <p class="cv-entry-org"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a>, Nanjing</p>
         </div>
         <div class="cv-entry">
           <div class="cv-entry-header">
             <span class="cv-entry-title">Best Presentation Award</span>
             <span class="cv-entry-date">May 2026</span>
           </div>
-          <p class="cv-entry-org"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a> &mdash; The 6th International Conference on Computer Communication and Artificial Intelligence, Nanjing</p>
+          <p class="cv-entry-org"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a>, Nanjing</p>
         </div>
       </div>
     </section>
@@ -87,7 +87,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <ul>
               <li>Outperformed the strongest neural baseline, NN (AUPRC 0.5394), and a standard Transformer (0.5279); tree ensembles still lead (XGBoost 0.6467, Random Forest 0.6236)</li>
               <li>Implemented attention map visualization for clinical interpretability of feature importance</li>
-              <li>Paper accepted and presented at <strong>CCAI 2026</strong> (The 6th International Conference on Computer Communication and Artificial Intelligence, May 24, 2026)</li>
+              <li>Paper accepted and presented on May 24, 2026 at the <strong>2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</strong></li>
             </ul>
           </div>
         </div>
@@ -106,7 +106,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           <div class="cv-entry-body">
             <ul>
               <li>Collaborated closely with Head Advisor Dr. Kwong-Cheong Wong on deep learning for stroke mortality prediction using the eICU database</li>
-              <li>Represented the association at IEEE CCAI 2026 in Nanjing, where the resulting paper received the Best Industrial Paper Award and the Best Presentation Award</li>
+              <li>Represented the association at CCAI 2026 in Nanjing, where the resulting paper received the Best Industrial Paper Award and the Best Presentation Award</li>
             </ul>
           </div>
         </div>
