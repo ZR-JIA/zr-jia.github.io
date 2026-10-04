@@ -239,6 +239,13 @@ All text passes WCAG AA in both themes; the lowest pair is 5.7:1.
 
 Dark mode via `[data-theme="dark"]`, toggled by `assets/js/main.js`.
 
+### Icons
+
+Icons appear only on links, buttons and controls, never as decoration. They
+come from Font Awesome 6.5.1, plus Academicons 1.9.6 for the two marks Font
+Awesome lacks: Web of Science (drawn as the Clarivate mark) and Scopus. Both
+load from cdnjs in `_layouts/default.html`.
+
 ---
 
 ## Customisation
@@ -246,6 +253,7 @@ Dark mode via `[data-theme="dark"]`, toggled by `assets/js/main.js`.
 | What | Where |
 |---|---|
 | Profile text & bio | `_pages/index.md` |
+| Profile links | `_pages/index.md` (hero), `_includes/footer.html`, `_pages/cv.md` (Contact) and the JSON-LD `sameAs` list in `_layouts/default.html` — update all four together |
 | Navigation links | `_includes/navbar.html` (hardcoded) |
 | CV content | `_pages/cv.md` |
 | CV PDF | Replace `assets/papers/CV_ZhengRong_JIA.pdf` |
