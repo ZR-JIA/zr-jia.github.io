@@ -28,7 +28,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
       </div>
       <div class="hero-links">
         <a href="mailto:zhengrong.jia.academic@gmail.com" class="hero-link"><i class="fas fa-envelope"></i> Email</a>
-        <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fas fa-graduation-cap"></i> Scholar</a>
+        <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-google-scholar"></i> Scholar</a>
         <a href="https://github.com/ZR-JIA" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
         <a href="https://www.linkedin.com/in/zhengrong-jia-866456374" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="https://orcid.org/0009-0007-8829-6713" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-orcid"></i> ORCID</a>
