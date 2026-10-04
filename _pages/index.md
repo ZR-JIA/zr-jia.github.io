@@ -32,6 +32,9 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
         <a href="https://github.com/ZR-JIA" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
         <a href="https://www.linkedin.com/in/zhengrong-jia-866456374" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="https://orcid.org/0009-0007-8829-6713" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-orcid"></i> ORCID</a>
+        <a href="https://www.researchgate.net/profile/Zhengrong-Jia-2" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-researchgate"></i> ResearchGate</a>
+        <a href="https://www.webofscience.com/wos/author/record/RFS-2719-2026" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="ai ai-clarivate"></i> Web of Science</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=60820100100" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="ai ai-scopus"></i> Scopus</a>
         <a href="/cv/" class="hero-link"><i class="fas fa-file-alt"></i> CV</a>
       </div>
     </div>

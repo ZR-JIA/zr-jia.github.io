@@ -263,6 +263,18 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           <span class="skill-category">Google Scholar</span>
           <span class="skill-items"><a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Zheng Rong JIA</a></span>
         </div>
+        <div class="skill-row">
+          <span class="skill-category">ResearchGate</span>
+          <span class="skill-items"><a href="https://www.researchgate.net/profile/Zhengrong-Jia-2" target="_blank" rel="noopener noreferrer">Zhengrong Jia</a></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Web of Science</span>
+          <span class="skill-items"><a href="https://www.webofscience.com/wos/author/record/RFS-2719-2026" target="_blank" rel="noopener noreferrer">RFS-2719-2026</a></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Scopus</span>
+          <span class="skill-items"><a href="https://www.scopus.com/authid/detail.uri?authorId=60820100100" target="_blank" rel="noopener noreferrer">60820100100</a></span>
+        </div>
       </div>
     </section>
 
