@@ -35,6 +35,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
         <a href="https://www.researchgate.net/profile/Zhengrong-Jia-2" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-researchgate"></i> ResearchGate</a>
         <a href="https://www.webofscience.com/wos/author/record/RFS-2719-2026" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="ai ai-clarivate"></i> Web of Science</a>
         <a href="https://www.scopus.com/authid/detail.uri?authorId=60820100100" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="ai ai-scopus"></i> Scopus</a>
+        <a href="https://ieeexplore.ieee.org/author/737514430667351" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="ai ai-ieee"></i> IEEE Xplore</a>
         <a href="/cv/" class="hero-link"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
       </div>
     </div>

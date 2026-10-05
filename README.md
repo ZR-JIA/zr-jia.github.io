@@ -242,8 +242,8 @@ Dark mode via `[data-theme="dark"]`, toggled by `assets/js/main.js`.
 ### Icons
 
 Icons appear only on links, buttons and controls, never as decoration. They
-come from Font Awesome 6.5.1, plus Academicons 1.9.6 for the two marks Font
-Awesome lacks: Web of Science (drawn as the Clarivate mark) and Scopus. Both
+come from Font Awesome 6.5.1, plus Academicons 1.9.6 for the marks Font Awesome
+lacks: IEEE, Web of Science (drawn as the Clarivate mark) and Scopus. Both
 load from cdnjs in `_layouts/default.html`.
 
 ---

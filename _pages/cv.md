@@ -275,6 +275,10 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           <span class="skill-category">Scopus</span>
           <span class="skill-items"><a href="https://www.scopus.com/authid/detail.uri?authorId=60820100100" target="_blank" rel="noopener noreferrer">60820100100</a></span>
         </div>
+        <div class="skill-row">
+          <span class="skill-category">IEEE Xplore</span>
+          <span class="skill-items"><a href="https://ieeexplore.ieee.org/author/737514430667351" target="_blank" rel="noopener noreferrer">Zhengrong Jia</a></span>
+        </div>
       </div>
     </section>
 
