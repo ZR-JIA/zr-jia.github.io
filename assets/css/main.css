@@ -1095,13 +1095,22 @@ img { max-width: 100%; height: auto; }
   .hero-roles { gap: 10px 18px; }
 }
 
+/* Inline flow rather than flex, so text-wrap: balance can even out the
+   rows: with ten links, a flex row left the last one stranded on a line of
+   its own at some widths. font-size: 0 drops the spaces between links (each
+   link sets its own size). Each link carries its gap on the left; the
+   container's negative margins pull every row's leading gap, and the last
+   row's bottom gap, back out. The gap goes on the left because overflow on
+   that side never adds a horizontal scrollbar on phones. */
 .hero-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 22px;
+  font-size: 0;
+  text-wrap: balance;
+  margin: 0 0 -8px -22px;
 }
 
 .hero-link {
+  margin: 0 0 8px 22px;
+  vertical-align: top;
   display: inline-flex;
   align-items: center;
   gap: 6px;
