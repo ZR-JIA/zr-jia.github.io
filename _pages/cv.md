@@ -248,36 +248,36 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           <span class="skill-items"><a href="mailto:TP195417@mail.apu.edu.my">TP195417@mail.apu.edu.my</a></span>
         </div>
         <div class="skill-row">
-          <span class="skill-category">GitHub</span>
-          <span class="skill-items"><a href="https://github.com/ZR-JIA" target="_blank" rel="noopener noreferrer">ZR-JIA</a></span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">LinkedIn</span>
-          <span class="skill-items"><a href="https://www.linkedin.com/in/zhengrong-jia-866456374" target="_blank" rel="noopener noreferrer">Zheng Rong JIA</a></span>
+          <span class="skill-category">Google Scholar</span>
+          <span class="skill-items"><a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Zheng Rong JIA</a></span>
         </div>
         <div class="skill-row">
           <span class="skill-category">ORCID</span>
           <span class="skill-items"><a href="https://orcid.org/0009-0007-8829-6713" target="_blank" rel="noopener noreferrer">0009-0007-8829-6713</a></span>
         </div>
         <div class="skill-row">
-          <span class="skill-category">Google Scholar</span>
-          <span class="skill-items"><a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Zheng Rong JIA</a></span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">ResearchGate</span>
-          <span class="skill-items"><a href="https://www.researchgate.net/profile/Zhengrong-Jia-2" target="_blank" rel="noopener noreferrer">Zhengrong Jia</a></span>
-        </div>
-        <div class="skill-row">
-          <span class="skill-category">Web of Science</span>
-          <span class="skill-items"><a href="https://www.webofscience.com/wos/author/record/RFS-2719-2026" target="_blank" rel="noopener noreferrer">RFS-2719-2026</a></span>
+          <span class="skill-category">IEEE Xplore</span>
+          <span class="skill-items"><a href="https://ieeexplore.ieee.org/author/737514430667351" target="_blank" rel="noopener noreferrer">Zhengrong Jia</a></span>
         </div>
         <div class="skill-row">
           <span class="skill-category">Scopus</span>
           <span class="skill-items"><a href="https://www.scopus.com/authid/detail.uri?authorId=60820100100" target="_blank" rel="noopener noreferrer">60820100100</a></span>
         </div>
         <div class="skill-row">
-          <span class="skill-category">IEEE Xplore</span>
-          <span class="skill-items"><a href="https://ieeexplore.ieee.org/author/737514430667351" target="_blank" rel="noopener noreferrer">Zhengrong Jia</a></span>
+          <span class="skill-category">Web of Science</span>
+          <span class="skill-items"><a href="https://www.webofscience.com/wos/author/record/RFS-2719-2026" target="_blank" rel="noopener noreferrer">RFS-2719-2026</a></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">ResearchGate</span>
+          <span class="skill-items"><a href="https://www.researchgate.net/profile/Zhengrong-Jia-2" target="_blank" rel="noopener noreferrer">Zhengrong Jia</a></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">GitHub</span>
+          <span class="skill-items"><a href="https://github.com/ZR-JIA" target="_blank" rel="noopener noreferrer">ZR-JIA</a></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">LinkedIn</span>
+          <span class="skill-items"><a href="https://www.linkedin.com/in/zhengrong-jia-866456374" target="_blank" rel="noopener noreferrer">Zheng Rong JIA</a></span>
         </div>
       </div>
     </section>
