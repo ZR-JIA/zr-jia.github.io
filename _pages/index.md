@@ -74,6 +74,19 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
     </div>
   </section>
 
+  <!-- ── GitHub Activity ────────────────────────── -->
+  <section class="content-section">
+    <p class="section-label">GitHub Activity</p>
+    <div class="gh-activity" data-user="ZR-JIA">
+      <div class="gh-months" aria-hidden="true"></div>
+      <svg class="gh-graph" role="img" aria-label="GitHub contributions over the last year"></svg>
+      <div class="gh-foot">
+        <p class="gh-total"><a href="https://github.com/ZR-JIA" target="_blank" rel="noopener noreferrer">ZR-JIA on GitHub</a></p>
+        <p class="gh-legend" aria-hidden="true">Less <i class="gh-key gh-l0"></i><i class="gh-key gh-l1"></i><i class="gh-key gh-l2"></i><i class="gh-key gh-l3"></i><i class="gh-key gh-l4"></i> More</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ── News ───────────────────────────────────── -->
   <section class="content-section">
     <p class="section-label">News</p>
@@ -123,3 +136,4 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
 {% include cite-source.html publication=pub %}
 {%- endfor %}
 {% include cite-modal.html %}
+<script src="{{ '/assets/js/github-activity.js' | relative_url }}" defer></script>

@@ -1331,6 +1331,84 @@ img { max-width: 100%; height: auto; }
 .pub-detail-authors .pub-award-badge,
 .pub-detail-authors .pub-status-badge { margin-left: 10px; }
 
+/* ---- GitHub Activity ---- */
+/* The contribution grid in ink rather than GitHub green: the seal stays
+   reserved for stamps, so the scale is ink at rising strength over the
+   paper, with empty days in the hover fill. Square corners, like every
+   other box on the page. Drawn by assets/js/github-activity.js. */
+.gh-months {
+  position: relative;
+  height: 18px;
+}
+
+.gh-month {
+  position: absolute;
+  top: 0;
+  font-family: var(--font-text);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.gh-graph {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 686 / 88; /* 53 weeks x 7 days; the script sets the exact ratio */
+}
+
+.gh-cell { fill: var(--ink); }
+.gh-cell.gh-l0 { fill: var(--paper-deep); }
+.gh-cell.gh-l1 { fill-opacity: 0.3; }
+.gh-cell.gh-l2 { fill-opacity: 0.55; }
+.gh-cell.gh-l3 { fill-opacity: 0.78; }
+
+.gh-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px 16px;
+  margin-top: 14px;
+}
+
+.gh-total {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.gh-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-text);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.gh-key {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: var(--ink);
+}
+.gh-key.gh-l0 { background: var(--paper-deep); }
+.gh-key.gh-l1 { opacity: 0.3; }
+.gh-key.gh-l2 { opacity: 0.55; }
+.gh-key.gh-l3 { opacity: 0.78; }
+
+/* If the data cannot be loaded, keep only the link to the profile. */
+.gh-activity.gh-failed .gh-months,
+.gh-activity.gh-failed .gh-graph,
+.gh-activity.gh-failed .gh-legend { display: none; }
+
 /* ---- Citation Modal ---- */
 .cite-source { display: none; }
 
