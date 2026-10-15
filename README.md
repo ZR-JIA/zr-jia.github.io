@@ -144,9 +144,13 @@ Paste the three citation strings straight from the publisher's "Cite This"
 export. Use `>-` for the one-line IEEE reference and `|` for BibTeX and RIS so
 their line breaks survive into the clipboard.
 
-**The Cite button only appears once `citation_ieee` is filled in.** Leave the
-citation fields out for a paper that is accepted but not yet published — no one
-can then copy a citation that is still going to change.
+**The Cite button only appears once `citation_ieee` is filled in.** A paper
+that is accepted but not yet published has no publisher export, so write the
+three strings by hand and mark them as forthcoming: IEEE ends with "to be
+published", BibTeX carries `note={Accepted, to be published}`, RIS carries
+`N1  - Accepted, to be published`, and none of them has pages or a DOI (see
+`dualtower-ft-pricai.md`). Replace all three with the publisher's export once
+the proceedings appear.
 
 ### Papers not yet published
 
