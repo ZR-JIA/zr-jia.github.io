@@ -11,9 +11,7 @@ status: "Accepted &middot; Short Paper"
 date: 2026-11-16
 date_display: "November 16&ndash;20, 2026"
 links:
-  - { label: "Code",              icon: "fab fa-github", url: "https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT", primary: true }
-  - { label: "eICU Pipeline",     icon: "fab fa-github", url: "https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" }
-  - { label: "MIMIC-IV Pipeline", icon: "fab fa-github", url: "https://github.com/ZR-JIA/Data-Preprocessing-for-MIMIC" }
+  - { label: "Code", icon: "fab fa-github", url: "https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT", primary: true }
 
 # Accepted, not yet published. The citations below are written by hand and
 # marked "to be published"; replace all three with Springer's export, and add
@@ -194,6 +192,6 @@ citation_ris: |
     <strong>eICU Collaborative Research Database v2.0</strong> &mdash; 11,187 stroke patients from 176 of its 208 hospitals, split at patient level into 7,830 training, 1,119 validation and 2,238 test patients, stratified by in-hospital mortality (14.0% in every split). Each patient has 94 features: 3 categorical (gender, ethnicity, hospital site) and 91 numerical (age, vital signs and laboratory values). <strong>MIMIC-IV v3.1</strong> adds 7,125 patients from a single academic medical centre for the transfer experiments. Both datasets require <a href="https://physionet.org/" target="_blank" rel="noopener noreferrer">PhysioNet credentialed access</a>.
   </p>
   <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.8;">
-    Model training &mdash; <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke-FT</a>: DualTower-FT and its runtime safeguard, the stress-test harness, two-stage MIMIC-IV transfer, the ablation variants, a five-seed runner and the per-seed result files. It builds on the CCAI 2026 code release. Data pipelines &mdash; <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">Data-Preprocessing-for-eICU</a> for the eICU cohort and splits, and <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-MIMIC" target="_blank" rel="noopener noreferrer">Data-Preprocessing-for-MIMIC</a> for extracting MIMIC-IV stroke patients and harmonising them to the eICU schema.
+    Code &mdash; <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke-FT</a>: DualTower-FT and its runtime safeguard, the stress-test harness, two-stage MIMIC-IV transfer, the ablation variants, a five-seed runner and the per-seed result files. It builds on the CCAI 2026 code release.
   </p>
 </section>
