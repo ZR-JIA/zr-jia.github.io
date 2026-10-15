@@ -14,7 +14,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 
 | Route | File | Description |
 |---|---|---|
-| `/` | `_pages/index.md` | Homepage: profile, publications, news, research interests |
+| `/` | `_pages/index.md` | Homepage: profile, research interests, publications, GitHub activity, news |
 | `/publications/` | `_pages/publications.md` | Publication list (generated from `_publications/`) |
 | `/publications/<slug>/` | `_publications/<slug>.md` | Individual paper: abstract, results, methodology |
 | `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer |
@@ -59,6 +59,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 ├── assets/
 │   ├── css/main.css       # Design system (tokens, layout, components)
 │   ├── js/main.js         # Dark mode, mobile nav, Cite dialog
+│   ├── js/github-activity.js  # Homepage contribution graph (data loaded in the browser)
 │   ├── images/
 │   │   ├── ccai2026/      # CCAI 2026 conference photos
 │   │   └── ...            # avatar, og-image, favicons
