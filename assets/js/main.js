@@ -79,6 +79,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Email links carry the address as "name[at]domain" so that harvesters
+  // scraping the page do not find it; the mailto is built only on click.
+  document.querySelectorAll('a[data-mail]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.location.href = 'mailto:' + a.getAttribute('data-mail').replace('[at]', '@');
+    });
+  });
+
   function fallbackCopy(text, callback) {
     var ta = document.createElement('textarea');
     ta.value = text;
