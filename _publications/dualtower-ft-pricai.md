@@ -89,15 +89,15 @@ citation_ris: |
         <td>0.6171 &plusmn; 0.0058</td>
       </tr>
       <tr>
-        <td>Neural Network</td>
+        <td>NN</td>
         <td>0.5394 &plusmn; 0.0054</td>
       </tr>
       <tr>
-        <td>Standard Transformer</td>
+        <td>Vanilla Transformer</td>
         <td>0.5279 &plusmn; 0.0195</td>
       </tr>
       <tr>
-        <td>Standard MLP</td>
+        <td>Vanilla MLP</td>
         <td>0.5170 &plusmn; 0.0081</td>
       </tr>
     </tbody>
