@@ -11,12 +11,16 @@ status: "Accepted &middot; Short Paper"
 date: 2026-11-16
 date_display: "November 16&ndash;20, 2026"
 links:
-  - { label: "Code", icon: "fab fa-github", url: "https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT", primary: true }
+  - { label: "Accepted Manuscript", icon: "fas fa-file-pdf", url: "https://drive.google.com/file/d/1VoFZ2ZWZXMww6Ti3YDJo0RWyv0msw7-q/view?usp=sharing", primary: true }
+  - { label: "Code", icon: "fab fa-github", url: "https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT" }
 
 # Accepted, not yet published. The citations below are written by hand and
 # marked "to be published"; replace all three with Springer's export, and add
-# pages, doi and url_official, once the LNAI volume appears. Add the paper to
-# `links` (first, primary: true) when it can be released.
+# pages, doi and url_official, once the LNAI volume appears.
+# The Accepted Manuscript link is the camera-ready PDF on Google Drive. Under
+# the Springer licence it must carry Springer's accepted-manuscript notice,
+# with the DOI added once the Version of Record is out; it must not go into
+# this repository, whose MIT licence would cover it.
 citation_ieee: >-
   Z. Jia and K.-C. Wong, "DualTower-FT with an Adaptive Runtime Safeguard: A Deep
   Tabular Approach for ICU Stroke Mortality," in Proc. 23rd Pacific Rim Int. Conf.
@@ -46,7 +50,7 @@ citation_ris: |
 <section class="content-section">
   <p class="section-label">Status</p>
   <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.8;">
-    Accepted as a short paper at <strong>PRICAI 2026</strong>, the 23rd Pacific Rim International Conference on Artificial Intelligence (CORE Rank B), to be held in Guangzhou, China, November 16&ndash;20, 2026. The proceedings will be published by Springer in the Lecture Notes in Artificial Intelligence (LNAI) series. The code is linked above; the paper will be linked here once it is available.
+    Accepted as a short paper at <strong>PRICAI 2026</strong>, the 23rd Pacific Rim International Conference on Artificial Intelligence (CORE Rank B), to be held in Guangzhou, China, November 16&ndash;20, 2026. The proceedings will be published by Springer in the Lecture Notes in Artificial Intelligence (LNAI) series. The accepted manuscript, the authors' version before Springer's copy-editing, and the code are linked above.
   </p>
 </section>
 
