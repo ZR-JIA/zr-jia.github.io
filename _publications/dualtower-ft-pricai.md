@@ -1,8 +1,8 @@
 ---
 title: "DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality"
 description: "DualTower-FT, a deep tabular model with an Adaptive Runtime Safeguard for ICU stroke mortality prediction. Accepted as a short paper at PRICAI 2026."
-authors: "Zhengrong Jia*, Kwong-Cheong Wong*"
-authors_html: "<strong>Zhengrong Jia</strong><sup>*</sup>, Kwong-Cheong Wong<sup>*</sup>"
+authors: "Zhengrong Jia, Kwong-Cheong Wong*"
+authors_html: "<strong>Zhengrong Jia</strong>, Kwong-Cheong Wong<sup>*</sup>"
 venue: "The 23rd Pacific Rim International Conference on Artificial Intelligence (PRICAI 2026)"
 venue_short: "PRICAI 2026"
 venue_card: "The 23rd Pacific Rim International Conference on Artificial Intelligence &middot; Guangzhou, November 2026"
