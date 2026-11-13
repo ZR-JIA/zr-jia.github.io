@@ -113,7 +113,7 @@ citation_ris: |
 <section class="content-section">
   <p class="section-label">Architecture &amp; Methodology</p>
   <ul style="font-size:14px;color:var(--color-text-secondary);padding-left:20px;line-height:1.9;">
-    <li><strong>Dual-Tower Design</strong> &mdash; Separate encoding pathways for categorical (demographics) and numerical (vitals) features</li>
+    <li><strong>Dual-Tower Design</strong> &mdash; Separate encoding pathways for the categorical and the numerical features</li>
     <li><strong>Self-Attention (Numerical Tower)</strong> &mdash; A two-layer Transformer encoder models interactions among the 91 numerical inputs; the categorical tower uses learnable embeddings</li>
     <li><strong>Late Fusion</strong> &mdash; Tower outputs concatenated before classification head</li>
     <li><strong>Adaptive Runtime Safeguard</strong> &mdash; Range checks and index clamping for the categorical inputs, so that out-of-range values cannot reach the embedding lookup</li>

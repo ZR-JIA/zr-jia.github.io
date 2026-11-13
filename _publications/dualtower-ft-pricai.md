@@ -102,7 +102,7 @@ citation_ris: |
       </tr>
     </tbody>
   </table>
-  <p style="font-size:12px;color:var(--color-text-tertiary);margin-top:10px;">AUPRC is the primary metric at the cohort's 14.0% mortality rate; DualTower-FT's AUROC is 0.8848, against 0.8908 for XGBoost. DualTower-FT: mean &plusmn; SD over 5 random seeds on the 94-feature cohort (test N = 2,238). The other rows are the CCAI 2026 results on an earlier 97-feature cohort and were not retrained, so the differences are observed rather than controlled. XGBoost and Random Forest are single deterministic runs.</p>
+  <p style="font-size:12px;color:var(--color-text-tertiary);margin-top:10px;">AUPRC is the primary metric at the cohort's 14.0% mortality rate; DualTower-FT's AUROC is 0.8848, against 0.8908 for XGBoost. DualTower-FT: mean &plusmn; SD over 5 random seeds on the 94-feature cohort (test N = 2,238). The other rows are the CCAI 2026 results, which used the same split sizes and the same 94 input features but were not retrained with this codebase, so the differences come from separate runs rather than a controlled ablation. XGBoost and Random Forest are single deterministic runs.</p>
 </section>
 
 <section class="content-section">
@@ -188,7 +188,7 @@ citation_ris: |
       </tr>
     </tbody>
   </table>
-  <p style="font-size:12px;color:var(--color-text-tertiary);margin-top:10px;">All rows are tested on the same eICU test cohort. None of the three transfer strategies improved on eICU-only training. The best, with a source-domain embedding, was 0.14 pp below its eICU-only control, less than one seed's SD. Two likely causes, not yet isolated: six eICU measurements are missing from MIMIC-IV, and MIMIC-IV is a single medical centre while eICU spans 208 hospitals.</p>
+  <p style="font-size:12px;color:var(--color-text-tertiary);margin-top:10px;">All rows are tested on the same eICU test cohort. None of the three transfer strategies improved on eICU-only training. The best, with a source-domain embedding, was 0.14 pp below its eICU-only control, less than one seed's SD. Two likely causes, not yet isolated: six eICU measurements are missing from MIMIC-IV, and MIMIC-IV is a single medical centre while eICU spans 208 hospitals. The MIMIC-IV gender, ethnicity, age and site codes also differ from eICU's, an encoding defect whose effect has not been quantified.</p>
 </section>
 
 <section class="content-section">

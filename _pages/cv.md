@@ -83,10 +83,9 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
           </div>
           <p class="cv-entry-meta">Deep Learning on Tabular EHR Data · Stroke Mortality Prediction</p>
           <div class="cv-entry-body">
-            <p>Designed and implemented a <strong>Dual-Tower Transformer (DT-Transformer)</strong> for in-hospital stroke mortality prediction using the multicenter eICU Collaborative Research Database. The architecture decouples categorical demographics from numerical vitals into separate encoding towers, achieving an <strong>AUPRC of 0.6171</strong> (&plusmn; 0.0058 over five seeds) — a <strong>14.4% relative improvement</strong> over the strongest neural baseline. An <strong>Adaptive Runtime Safeguard</strong> clamps physiological outliers online within the data loader, ensuring stable, crash-free inference.</p>
+            <p>Designed and implemented a <strong>Dual-Tower Transformer (DT-Transformer)</strong> for in-hospital stroke mortality prediction using the multicenter eICU Collaborative Research Database. The architecture decouples categorical features from numerical vitals into separate encoding towers, achieving an <strong>AUPRC of 0.6171</strong> (&plusmn; 0.0058 over five seeds) — a <strong>14.4% relative improvement</strong> over the strongest neural baseline. An <strong>Adaptive Runtime Safeguard</strong> range-checks and clamps the categorical inputs so that out-of-range values cannot reach the embedding lookup.</p>
             <ul>
               <li>Outperformed the strongest neural baseline, NN (AUPRC 0.5394), and a standard Transformer (0.5279); tree ensembles still lead (XGBoost 0.6467, Random Forest 0.6236)</li>
-              <li>Implemented attention map visualization for clinical interpretability of feature importance</li>
               <li>Paper accepted and presented on May 24, 2026 at the <strong>2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</strong></li>
             </ul>
           </div>
@@ -159,7 +158,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
             <ul>
               <li>Engineered an end-to-end ML pipeline from raw eICU CSV ingestion (200,859 ICU stays) to model serialization, with reproducible preprocessing via custom DataLoader classes</li>
               <li>Modular architecture separating data, model, training, and evaluation layers for maintainability</li>
-              <li>Multi-seed evaluation harness (5 seeds on a fixed patient-stratified split) with automated metric logging (AUROC, AUPRC, F1) across all baselines</li>
+              <li>Multi-seed evaluation harness (5 seeds on a fixed 70/10/20 split) with automated metric logging (AUROC, AUPRC, F1) across all baselines</li>
               <li>Released open-source at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke</a> and <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">Data-Preprocessing-for-eICU</a></li>
             </ul>
           </div>
