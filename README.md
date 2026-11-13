@@ -17,7 +17,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 | `/` | `_pages/index.md` | Homepage: profile, research interests, publications, GitHub activity, news |
 | `/publications/` | `_pages/publications.md` | Publication list (generated from `_publications/`) |
 | `/publications/<slug>/` | `_publications/<slug>.md` | Individual paper: abstract, results, methodology |
-| `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer |
+| `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer, and conference posters |
 | `/gallery/` | `_pages/gallery.md` | Conference photo carousel |
 | `/commentary/` | `_pages/commentary.md` | Research commentary listing |
 | `/YYYY/MM/DD/slug.html` | `_posts/YYYY-MM-DD-slug.md` | Individual commentary post |
@@ -64,6 +64,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 │   │   ├── ccai2026/      # CCAI 2026 conference photos
 │   │   └── ...            # avatar, og-image, favicons
 │   ├── papers/            # CV PDF (tracked in git)
+│   ├── posters/           # Conference posters: PDF plus a JPEG preview
 │   ├── slides/            # Marp source files (excluded from Jekyll build)
 │   └── slides_html/       # Compiled Marp HTML (served via iframe)
 └── README.md

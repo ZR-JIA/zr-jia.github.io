@@ -720,6 +720,15 @@ img { max-width: 100%; height: auto; }
 
 .code-block pre { margin: 0; white-space: pre-wrap; }
 
+/* ---- Poster preview (Slides page) ---- */
+.poster-preview {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
 /* ---- Footer ---- */
 .site-footer {
   padding: 28px 0;
