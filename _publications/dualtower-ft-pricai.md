@@ -11,17 +11,18 @@ status: "Accepted &middot; Short Paper"
 date: 2026-11-16
 date_display: "November 16&ndash;20, 2026"
 links:
-  - { label: "Accepted Manuscript", icon: "fas fa-file-pdf", url: "https://drive.google.com/file/d/1VoFZ2ZWZXMww6Ti3YDJo0RWyv0msw7-q/view?usp=sharing", primary: true }
+  - { label: "Accepted Manuscript", icon: "fas fa-file-pdf", url: "https://drive.google.com/file/d/1Ts7LR1w4GAHiKVL1kJM2niU-7oJgfez1/view?usp=sharing", primary: true }
   - { label: "Code", icon: "fab fa-github", url: "https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT" }
   - { label: "Poster", icon: "fas fa-file-image", url: "/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.pdf" }
 
 # Accepted, not yet published. The citations below are written by hand and
 # marked "to be published"; replace all three with Springer's export, and add
 # pages, doi and url_official, once the LNAI volume appears.
-# The Accepted Manuscript link is the camera-ready PDF on Google Drive. Under
-# the Springer licence it must carry Springer's accepted-manuscript notice,
-# with the DOI added once the Version of Record is out; it must not go into
-# this repository, whose MIT licence would cover it.
+# The Accepted Manuscript link is the camera-ready PDF on Google Drive, with
+# Springer's accepted-manuscript notice in the top margin of page 1, as the
+# licence requires. Add the DOI to that notice once the Version of Record is
+# out. The PDF must not go into this repository, whose MIT licence would
+# cover it.
 citation_ieee: >-
   Z. Jia and K.-C. Wong, "DualTower-FT with an Adaptive Runtime Safeguard: A Deep
   Tabular Approach for ICU Stroke Mortality," in Proc. 23rd Pacific Rim Int. Conf.
