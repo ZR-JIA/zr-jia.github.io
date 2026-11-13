@@ -79,6 +79,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Homepage profile links: the first five show, the rest open from "More".
+  var heroLinks = document.querySelector('.hero-links');
+  var heroMore = heroLinks && heroLinks.querySelector('.hero-more');
+  if (heroMore) {
+    heroMore.addEventListener('click', function () {
+      var open = heroLinks.classList.toggle('is-expanded');
+      heroMore.setAttribute('aria-expanded', open ? 'true' : 'false');
+      heroMore.querySelector('.hero-more-label').textContent = open ? 'Less' : 'More';
+    });
+  }
+
   // Email links carry the address as "name[at]domain" so that harvesters
   // scraping the page do not find it; the mailto is built only on click.
   document.querySelectorAll('a[data-mail]').forEach(function (a) {

@@ -1131,6 +1131,25 @@ img { max-width: 100%; height: auto; }
   text-decoration-color: currentColor;
 }
 
+/* The first five profile links show; the rest wait behind "More". The head
+   script adds .js before CSS applies, so the extra links never flash in;
+   without JavaScript every link shows and the button stays hidden. */
+.hero-more { display: none; }
+.js .hero-more {
+  display: inline-flex;
+  background: none;
+  border: 0;
+  padding: 0;
+  line-height: inherit;
+  cursor: pointer;
+}
+.js .hero-links:not(.is-expanded) .hero-link-more { display: none; }
+.hero-more i {
+  font-size: 9px;
+  transition: transform var(--transition);
+}
+.hero-links.is-expanded .hero-more i { transform: rotate(180deg); }
+
 .hero-right { flex-shrink: 0; }
 
 .hero-portrait {

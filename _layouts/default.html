@@ -30,7 +30,7 @@
 
   <!-- Theme init: must run before CSS to avoid flash of unstyled content -->
   <script>
-    (function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}})();
+    (function(){document.documentElement.classList.add('js');var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
 
   <!-- Fonts -->
