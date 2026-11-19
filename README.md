@@ -18,7 +18,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 | `/publications/` | `_pages/publications.md` | Publication list (generated from `_publications/`) |
 | `/publications/<slug>/` | `_publications/<slug>.md` | Individual paper: abstract, results, methodology |
 | `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer, and conference posters |
-| `/gallery/` | `_pages/gallery.md` | Conference photo carousel |
+| `/gallery/` | `_pages/gallery.md` | Conference photo carousels, one per conference |
 | `/commentary/` | `_pages/commentary.md` | Research commentary listing |
 | `/YYYY/MM/DD/slug.html` | `_posts/YYYY-MM-DD-slug.md` | Individual commentary post |
 | `/cv/` | `_pages/cv.md` | Full curriculum vitae with PDF download |
@@ -62,6 +62,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 │   ├── js/github-activity.js  # Homepage contribution graph (data loaded in the browser)
 │   ├── images/
 │   │   ├── ccai2026/      # CCAI 2026 conference photos
+│   │   ├── pricai2026/    # PRICAI 2026 conference photos (2400 px, metadata stripped)
 │   │   └── ...            # avatar, og-image, favicons
 │   ├── papers/            # CV PDF (tracked in git)
 │   ├── posters/           # Conference posters: PDF plus a JPEG preview
@@ -264,7 +265,7 @@ load from cdnjs in `_layouts/default.html`.
 | CV content | `_pages/cv.md` |
 | CV PDF | Replace `assets/papers/CV_ZhengRong_JIA.pdf` |
 | Publications | `_publications/*.md` (one file per paper) |
-| Conference photos | `assets/images/ccai2026/` |
+| Conference photos | `assets/images/<conference>/` (e.g. `ccai2026/`, `pricai2026/`), listed in `_pages/gallery.md` |
 | Avatar photo | `assets/images/avatar.jpg` (400×400 recommended) |
 | Social share image | `assets/images/og-image.png` (1200×630) |
 | Site URL / GA4 ID | `_config.yml` |

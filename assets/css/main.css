@@ -876,6 +876,10 @@ img { max-width: 100%; height: auto; }
   display: block;
   flex-shrink: 0;
 }
+/* A portrait photo is shown whole, on the dark viewport, rather than cropped. */
+.carousel-track img.is-portrait { object-fit: contain; }
+
+.gallery-event + .gallery-event { margin-top: 48px; }
 
 .carousel-btn {
   position: absolute;
