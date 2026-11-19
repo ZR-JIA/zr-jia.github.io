@@ -12,6 +12,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
     <div class="hero-left">
       <h1 class="hero-name">Zheng Rong JIA</h1>
       <p class="hero-slogan">It’s never too late to begin again.</p>
+      <p class="hero-opportunity">Currently seeking MPhil and PhD opportunities.</p>
       <div class="hero-roles">
         <div class="hero-role">
           <p class="hero-role-label">MSc Student</p>
