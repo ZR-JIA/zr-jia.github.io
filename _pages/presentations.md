@@ -1,13 +1,13 @@
 ---
 layout: default
-permalink: /slides/
-title: "Slides"
-description: "Slide decks and posters by Zheng Rong JIA: the CCAI 2026 conference slides and the PRICAI 2026 poster."
+permalink: /presentations/
+title: "Presentations"
+description: "Conference presentations by Zheng Rong JIA: the CCAI 2026 oral talk with its slides and the PRICAI 2026 poster."
 ---
 
 <div class="container">
   <div class="page-header">
-    <h1>Slides & Presentations</h1>
+    <h1>Presentations</h1>
   </div>
 
   <div class="page-sections">

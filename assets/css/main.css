@@ -162,7 +162,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 16px;
   height: 50px;
 }
 
@@ -191,14 +191,15 @@ img { max-width: 100%; height: auto; }
 
 .navbar-links a {
   font-family: var(--font-text);
-  font-size: 10.8px;
+  font-size: 10.5px;
   font-weight: 600;
-  /* Tighter than the system's 0.24em: six labels must fit an 800px column */
-  letter-spacing: 0.1em;
+  /* Tighter than the system's 0.24em: six labels, "Presentations" and
+     "Curriculum Vitae" among them, must fit an 800px column */
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--color-text-secondary);
-  padding: 5px 6px;
+  padding: 5px 4px;
   transition: color var(--transition), text-decoration-color var(--transition);
   /* underline drawn under the text only, so padding does not stretch it */
   text-decoration: underline;
@@ -766,8 +767,9 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ---- Responsive ---- */
-/* The six tracked, uppercase nav labels need ~770px. Collapse to the menu
-   below 800px rather than 640px, or the bar overflows at tablet widths. */
+/* The six tracked, uppercase nav labels fill the 800px column with about
+   20px to spare. Collapse to the menu below 800px rather than 640px, or the
+   bar overflows at tablet widths. */
 @media (max-width: 800px) {
   .navbar-links {
     display: flex;

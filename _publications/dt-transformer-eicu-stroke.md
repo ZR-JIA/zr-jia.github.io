@@ -19,7 +19,7 @@ links:
   - { label: "IEEE Xplore",   icon: "fas fa-external-link-alt",  url: "https://ieeexplore.ieee.org/document/11641950/", primary: true }
   - { label: "Code",          icon: "fab fa-github",             url: "https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" }
   - { label: "Data Pipeline", icon: "fab fa-github",             url: "https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" }
-  - { label: "Slides",        icon: "fas fa-file-powerpoint",    url: "/slides/" }
+  - { label: "Slides",        icon: "fas fa-file-powerpoint",    url: "/presentations/" }
 citation_ieee: >-
   Z. Jia and K.-C. Wong, "Deep Learning for Stroke Mortality Prediction in eICU:
   A Dual-Tower Transformer Framework," 2026 6th International Conference on Computer

@@ -17,7 +17,7 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 | `/` | `_pages/index.md` | Homepage: profile, research interests, publications, GitHub activity, news |
 | `/publications/` | `_pages/publications.md` | Publication list (generated from `_publications/`) |
 | `/publications/<slug>/` | `_publications/<slug>.md` | Individual paper: abstract, results, methodology |
-| `/slides/` | `_pages/slides.md` | Presentation slides with embedded Marp viewer, and conference posters |
+| `/presentations/` | `_pages/presentations.md` | Conference talks and posters: slides in an embedded Marp viewer, posters as a preview and PDF. `/slides/` redirects here |
 | `/gallery/` | `_pages/gallery.md` | Conference photo carousels, one per conference |
 | `/commentary/` | `_pages/commentary.md` | Research commentary listing |
 | `/YYYY/MM/DD/slug.html` | `_posts/YYYY-MM-DD-slug.md` | Individual commentary post |
@@ -50,7 +50,8 @@ Personal academic website for **Zheng Rong JIA**, AI researcher in Clinical Deep
 ├── _pages/
 │   ├── index.md
 │   ├── publications.md    # list page (loops over _publications)
-│   ├── slides.md
+│   ├── presentations.md   # Talks and posters (/presentations/)
+│   ├── slides-redirect.html # Old /slides/ URL, redirects to /presentations/
 │   ├── gallery.md         # Photo carousel page
 │   ├── commentary.md      # Commentary listing page
 │   ├── cv.md
