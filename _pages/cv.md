@@ -167,6 +167,16 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
 
         <div class="cv-entry">
           <div class="cv-entry-header">
+            <span class="cv-entry-title">DualTower-FT &mdash; Runtime-Safe Training Pipeline</span>
+            <span class="cv-entry-date">2026</span>
+          </div>
+          <div class="cv-entry-body">
+            <p>Open-source code for the PRICAI 2026 paper: the DualTower-FT model with its forward-pass runtime safeguard, the safeguard stress test, two-stage MIMIC-IV transfer and five-seed results, released at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke-FT</a>.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
             <span class="cv-entry-title">Power Load Forecasting &mdash; Final Year Project</span>
             <span class="cv-entry-date">Sep 2024 – May 2025</span>
           </div>
