@@ -52,7 +52,7 @@ citation_ris: |
 <section class="content-section">
   <p class="section-label">Status</p>
   <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.8;">
-    Accepted as a short paper at <strong>PRICAI 2026</strong>, the 23rd Pacific Rim International Conference on Artificial Intelligence (CORE Rank B), to be held in Guangzhou, China, November 16&ndash;20, 2026. The proceedings will be published by Springer in the Lecture Notes in Artificial Intelligence (LNAI) series. The accepted manuscript (the authors' version before Springer's copy-editing), the code and the conference poster are linked above.
+    Accepted as a short paper at <strong>PRICAI 2026</strong>, the 23rd Pacific Rim International Conference on Artificial Intelligence (CORE Rank B), and presented as a poster at the conference in Guangzhou, China, November 16&ndash;20, 2026. The proceedings will be published by Springer in the Lecture Notes in Artificial Intelligence (LNAI) series. The accepted manuscript (the authors' version before Springer's copy-editing), the code and the conference poster are linked above.
   </p>
 </section>
 

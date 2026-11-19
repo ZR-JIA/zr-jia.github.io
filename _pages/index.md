@@ -93,6 +93,10 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
     <p class="section-label">News</p>
     <ul class="news-list">
       <li class="news-item">
+        <span class="news-date">Nov 16–20, 2026</span>
+        <span class="news-text"><strong>Attended <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a></strong> in Guangzhou &mdash; presented a poster of <em>DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality</em>. <a href="/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a> and <a href="/gallery/">photos</a> now available.</span>
+      </li>
+      <li class="news-item">
         <span class="news-date">Aug 19, 2026</span>
         <span class="news-text"><strong>Short paper accepted at <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a></strong> &mdash; <em>DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality</em>. <a href="/publications/dualtower-ft-pricai/">Details</a>.</span>
       </li>
