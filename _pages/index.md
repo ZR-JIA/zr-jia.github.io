@@ -24,7 +24,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
         </div>
         <div class="hero-role">
           <p class="hero-role-label">Research Focus</p>
-          <p class="hero-role-value">Clinical Prediction &middot; Trustworthy Clinical AI &middot; Reproducible Pipelines</p>
+          <p class="hero-role-value">EHR-based Clinical Prediction &middot; Trustworthy Clinical AI &middot; Reproducible Pipelines</p>
         </div>
       </div>
       <div class="hero-links">
@@ -51,7 +51,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
     <p class="section-label">Research Interests</p>
     <div class="interests-grid">
       <div class="interest-card">
-        <p class="interest-title">Clinical Prediction</p>
+        <p class="interest-title">EHR-based Clinical Prediction</p>
         <p class="interest-desc">Deep learning on electronic health records for ICU risk stratification and mortality prediction</p>
       </div>
       <div class="interest-card">

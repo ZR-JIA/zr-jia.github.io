@@ -218,7 +218,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
       <p class="section-label">Research Interests</p>
       <ul class="research-list">
         <li class="research-item">
-          <p class="research-name">Clinical Prediction</p>
+          <p class="research-name">EHR-based Clinical Prediction</p>
           <p class="research-desc">Deep learning on electronic health records for ICU risk stratification and mortality prediction, building on work in stroke mortality prediction on the multicenter eICU database (CCAI 2026; PRICAI 2026, accepted).</p>
         </li>
         <li class="research-item">
