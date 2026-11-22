@@ -2,7 +2,7 @@
 layout: default
 permalink: /publications/
 title: "Publications"
-description: "Peer-reviewed publications by Zheng Rong JIA on clinical AI, deep learning for electronic health records, and ICU risk prediction."
+description: "Peer-reviewed publications by Zhengrong Jia on clinical AI, deep learning for electronic health records, and ICU risk prediction."
 ---
 
 <div class="container">

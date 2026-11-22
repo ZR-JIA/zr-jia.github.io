@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /
-title: "Zheng Rong JIA"
+title: "Zhengrong Jia"
 description: "AI researcher specializing in Clinical AI and deep learning on electronic health records. First author, CCAI 2026 (published in IEEE Xplore) and PRICAI 2026 (short paper, accepted)."
 ---
 
@@ -10,7 +10,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
   <!-- ── Hero ─────────────────────────────────────── -->
   <section class="hero">
     <div class="hero-left">
-      <h1 class="hero-name">Zheng Rong JIA</h1>
+      <h1 class="hero-name">Zhengrong Jia</h1>
       <p class="hero-slogan">It’s never too late to begin again.</p>
       <p class="hero-opportunity">Currently seeking MPhil and PhD opportunities.</p>
       <div class="hero-roles">
@@ -42,7 +42,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
       </div>
     </div>
     <div class="hero-right">
-      <img src="/assets/images/avatar.jpg" alt="Zheng Rong JIA" class="hero-portrait" width="148" height="148">
+      <img src="/assets/images/avatar.jpg" alt="Zhengrong Jia" class="hero-portrait" width="148" height="148">
     </div>
   </section>
 

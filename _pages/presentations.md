@@ -2,7 +2,7 @@
 layout: default
 permalink: /presentations/
 title: "Presentations"
-description: "Conference presentations by Zheng Rong JIA: the CCAI 2026 oral talk with its slides and the PRICAI 2026 poster."
+description: "Conference presentations by Zhengrong Jia: the CCAI 2026 oral talk with its slides and the PRICAI 2026 poster."
 ---
 
 <div class="container">

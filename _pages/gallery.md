@@ -2,7 +2,7 @@
 layout: default
 permalink: /gallery/
 title: "Gallery"
-description: "Conference photos from PRICAI 2026, Guangzhou, and CCAI 2026, Nanjing — Zheng Rong JIA."
+description: "Conference photos from PRICAI 2026, Guangzhou, and CCAI 2026, Nanjing — Zhengrong Jia."
 ---
 
 <div class="container">

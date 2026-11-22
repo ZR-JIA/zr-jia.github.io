@@ -2,7 +2,7 @@
 layout: default
 permalink: /commentary/
 title: "Commentary"
-description: "Research commentary and analysis by Zheng Rong JIA — on clinical AI, deep learning, and the practice of science."
+description: "Research commentary and analysis by Zhengrong Jia — on clinical AI, deep learning, and the practice of science."
 ---
 
 <div class="container">

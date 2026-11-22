@@ -2,7 +2,7 @@
 layout: default
 permalink: /cv/
 title: "CV"
-description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertise in deep learning, clinical AI, and full-stack engineering."
+description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise in deep learning, clinical AI, and full-stack engineering."
 ---
 
 <div class="container">
@@ -259,7 +259,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
         </div>
         <div class="skill-row">
           <span class="skill-category">Google Scholar</span>
-          <span class="skill-items"><a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Zheng Rong JIA</a></span>
+          <span class="skill-items"><a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Zhengrong Jia</a></span>
         </div>
         <div class="skill-row">
           <span class="skill-category">ORCID</span>
@@ -287,7 +287,7 @@ description: "Curriculum Vitae of Zheng Rong JIA — AI researcher with expertis
         </div>
         <div class="skill-row">
           <span class="skill-category">LinkedIn</span>
-          <span class="skill-items"><a href="https://www.linkedin.com/in/zhengrong-jia-866456374" target="_blank" rel="noopener noreferrer">Zheng Rong JIA</a></span>
+          <span class="skill-items"><a href="https://www.linkedin.com/in/zhengrong-jia-866456374" target="_blank" rel="noopener noreferrer">Zhengrong Jia</a></span>
         </div>
       </div>
     </section>
