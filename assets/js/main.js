@@ -114,25 +114,55 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Dark Mode Toggle
   var themeToggle = document.querySelector('.theme-toggle');
-  var icon = themeToggle ? themeToggle.querySelector('i') : null;
   var html = document.documentElement;
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var themeTimer;
 
-  // Sync icon with theme already applied by inline <head> script
-  if (html.getAttribute('data-theme') === 'dark' && icon) {
-    icon.classList.replace('fa-moon', 'fa-sun');
+  // The half-circle icon turns over in dark mode through CSS; the button
+  // only reports its state to assistive technology.
+  function syncThemeButton() {
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-pressed', html.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
+    }
   }
+  syncThemeButton();
 
   if (themeToggle) {
     themeToggle.addEventListener('click', function () {
+      // Let every colour ease together while the theme changes.
+      if (!reduceMotion) {
+        html.classList.add('theme-transition');
+        clearTimeout(themeTimer);
+        themeTimer = setTimeout(function () { html.classList.remove('theme-transition'); }, 450);
+      }
       if (html.getAttribute('data-theme') === 'dark') {
         html.removeAttribute('data-theme');
         localStorage.setItem('theme', 'light');
-        if (icon) icon.classList.replace('fa-sun', 'fa-moon');
       } else {
         html.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
-        if (icon) icon.classList.replace('fa-moon', 'fa-sun');
       }
+      syncThemeButton();
+    });
+  }
+
+  // Sections below the fold rise into view once, as they are scrolled to.
+  // Sections already on screen at load are left alone, so the first screen
+  // never waits (see "Motion" in main.css).
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var revealer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealer.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.content-section').forEach(function (section) {
+      if (section.getBoundingClientRect().top < window.innerHeight) return;
+      section.classList.add('reveal');
+      revealer.observe(section);
     });
   }
 

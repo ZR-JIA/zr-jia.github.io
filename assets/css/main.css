@@ -71,6 +71,7 @@ body::after {
 
 @media print {
   body::after { display: none; }
+  .reveal { opacity: 1 !important; transform: none !important; }
 }
 
 /* ---- Skip to content ---- */
@@ -200,15 +201,15 @@ img { max-width: 100%; height: auto; }
   white-space: nowrap;
   color: var(--color-text-secondary);
   padding: 5px 4px;
-  transition: color var(--transition), text-decoration-color var(--transition);
-  /* underline drawn under the text only, so padding does not stretch it */
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-underline-offset: 6px;
+  /* The underline is a 1px rule that draws in from the left on hover. It
+     is inset by the side padding, so it sits under the text only. */
+  text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) no-repeat 4px calc(100% - 1px) / 0 1px;
+  transition: color var(--transition), background-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar-links a:hover,
-.navbar-links a.active { color: var(--color-text); text-decoration-color: currentColor; }
+.navbar-links a.active { color: var(--color-text); background-size: calc(100% - 8px) 1px; }
 
 .navbar-toggle {
   display: none;
@@ -1135,15 +1136,18 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-text-secondary);
-  text-decoration: underline;
-  text-decoration-color: var(--rule-mid);
-  text-underline-offset: 5px;
-  transition: color var(--transition), text-decoration-color var(--transition);
+  /* Two 1px rules: a resting one in rule-mid, and an ink one that draws
+     over it from the left on hover. */
+  text-decoration: none;
+  background:
+    linear-gradient(currentColor, currentColor) no-repeat left bottom / 0 1px,
+    linear-gradient(var(--rule-mid), var(--rule-mid)) no-repeat left bottom / 100% 1px;
+  transition: color var(--transition), background-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
 }
 .hero-link:hover {
   color: var(--color-text);
-  text-decoration-color: currentColor;
+  background-size: 100% 1px, 100% 1px;
 }
 
 /* The first five profile links show; the rest wait behind "More". The head
@@ -1590,9 +1594,77 @@ img { max-width: 100%; height: auto; }
   .cite-modal-foot .btn { width: 100%; justify-content: center; }
 }
 
+/* ---- Motion ---- */
+/* Restrained movement only; everything here is switched off for visitors
+   whose system asks for reduced motion (block below).
+   1. Page changes (cross-document view transitions). Moving between
+      sections, the whole page slides across: towards the left for a
+      section later in the menu, towards the right for an earlier one (the
+      head script in default.html tags the direction). Within a section, or
+      where the direction is unknown, pages cross-fade. The navigation bar
+      carries its own name, so it stays put while the page beneath it moves.
+      Browsers without view transitions navigate as before. */
+@view-transition { navigation: auto; }
+::view-transition-old(root),
+::view-transition-new(root) { animation-duration: 0.28s; }
+.navbar { view-transition-name: site-nav; }
+
+html:active-view-transition-type(forward)::view-transition-old(root),
+html:active-view-transition-type(forward)::view-transition-new(root),
+html:active-view-transition-type(backward)::view-transition-old(root),
+html:active-view-transition-type(backward)::view-transition-new(root) {
+  mix-blend-mode: normal;
+  animation-duration: 0.45s;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  animation-fill-mode: both;
+}
+html:active-view-transition-type(forward)::view-transition-old(root)  { animation-name: vt-out-left; }
+html:active-view-transition-type(forward)::view-transition-new(root)  { animation-name: vt-in-right; }
+html:active-view-transition-type(backward)::view-transition-old(root) { animation-name: vt-out-right; }
+html:active-view-transition-type(backward)::view-transition-new(root) { animation-name: vt-in-left; }
+@keyframes vt-out-left  { to   { transform: translateX(-100%); } }
+@keyframes vt-in-right  { from { transform: translateX(100%); } }
+@keyframes vt-out-right { to   { transform: translateX(100%); } }
+@keyframes vt-in-left   { from { transform: translateX(-100%); } }
+
+/* 2. Theme switch: the half-circle turns over, and while main.js holds
+   .theme-transition on <html> (450ms) every colour eases together. */
+.theme-toggle i { transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+[data-theme="dark"] .theme-toggle i { transform: rotate(180deg); }
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease,
+              fill 0.35s ease, text-decoration-color 0.35s ease,
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* 3. Sections below the fold rise into view once (main.js adds .reveal,
+   then .is-visible as each is scrolled to). */
+/* The transition sits on .is-visible only, so marking a section .reveal
+   hides it at once instead of fading it out off screen. */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* 4. Navigation and homepage links draw their underline from the left
+   (see .navbar-links a and .hero-link). */
+
 @media (prefers-reduced-motion: reduce) {
   .cite-modal,
   .cite-modal-panel { transition: none; }
+  @view-transition { navigation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .theme-toggle i,
+  .navbar-links a,
+  .hero-link { transition: none; }
 }
 
 /* ---- Education Entry (logo | content | years+place) ---- */

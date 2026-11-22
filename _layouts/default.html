@@ -32,6 +32,27 @@
   <script>
     (function(){document.documentElement.classList.add('js');var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
+  <!-- Page-change direction: when a cross-document view transition starts,
+       compare the two pages' places in the navigation order and tag the
+       transition forward or backward, so main.css slides the new page in
+       from the matching side. Pages in the same section get no tag and
+       cross-fade. Must run before the new page first renders. -->
+  <script>
+    window.addEventListener('pagereveal', function (e) {
+      var nav = window.navigation, act = nav && nav.activation;
+      if (!e.viewTransition || !act || !act.from || !act.entry) return;
+      var order = ['/publications/', '/presentations/', '/gallery/', '/commentary/', '/cv/'];
+      function rank(url) {
+        var path = new URL(url).pathname;
+        if (path === '/') return 0;
+        for (var i = 0; i < order.length; i++) { if (path.indexOf(order[i]) === 0) return i + 1; }
+        return /^\/\d{4}\//.test(path) ? 4 : -1;   // commentary posts live under /YYYY/
+      }
+      var from = rank(act.from.url), to = rank(act.entry.url);
+      if (from < 0 || to < 0 || from === to) return;
+      e.viewTransition.types.add(to > from ? 'forward' : 'backward');
+    });
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
