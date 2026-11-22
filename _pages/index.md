@@ -114,10 +114,6 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
         <span class="news-text"><strong>Attended <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a></strong> in Nanjing &mdash; delivered an oral presentation of <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>. <a href="/presentations/">Slides</a> and <a href="/gallery/">photos</a> now available.</span>
       </li>
       <li class="news-item">
-        <span class="news-date">May 2026</span>
-        <span class="news-text">Released the <strong>DT-Transformer</strong> framework open-source for reproducible clinical AI research &mdash; <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">training pipeline</a> and <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">data preprocessing pipeline</a>.</span>
-      </li>
-      <li class="news-item">
         <span class="news-date">Feb 2, 2026</span>
         <span class="news-text"><strong>Paper accepted at <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a></strong> &mdash; <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>.</span>
       </li>
