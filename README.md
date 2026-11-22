@@ -261,7 +261,7 @@ load from cdnjs in `_layouts/default.html`.
 | What | Where |
 |---|---|
 | Profile text & bio | `_pages/index.md` |
-| Profile links | `_pages/index.md` (hero), `_includes/footer.html`, `_pages/cv.md` (Contact) and the JSON-LD `sameAs` list in `_layouts/default.html` — update all four together, keeping one order: Email, Curriculum Vitae, Google Scholar, ORCID, IEEE Xplore, Scopus, Web of Science, ResearchGate, GitHub, LinkedIn. The hero shows Email, Curriculum Vitae, ORCID, GitHub and Google Scholar, in that order so its two rows balance; the rest carry `hero-link-more` and open from its More button |
+| Profile links | `_pages/index.md` (hero), `_includes/footer.html`, `_pages/cv.md` (Contact) and the JSON-LD `sameAs` list in `_layouts/default.html` — update all four together, keeping one order: Email, Curriculum Vitae, Google Scholar, ORCID, IEEE Xplore, Scopus, Web of Science, ResearchGate, GitHub, LinkedIn. The hero shows Email, Curriculum Vitae, ORCID, GitHub and Google Scholar; the rest carry `hero-link-more` and open from its More button |
 | Navigation links | `_includes/navbar.html` (hardcoded) |
 | CV content | `_pages/cv.md` |
 | CV PDF | Replace `assets/papers/CV_ZhengRong_JIA.pdf` |
