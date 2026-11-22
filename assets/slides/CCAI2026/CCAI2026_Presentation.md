@@ -114,7 +114,7 @@ style: |
 
 *Research Area:* Deep Learning · Clinical EHR · Stroke Mortality Prediction
 
-*Email:* zhengrong.jia.academic[at]gmail.com
+*Email:* zhengrong[dot]jia[dot]academic[at]gmail[dot]com
 
 **Paper CI5896  ·  CCAI 2026  ·  May 22–24, Nanjing**
 
@@ -361,6 +361,6 @@ style: |
 
 ## Questions welcome
 
-Zhengrong Jia  ·  zhengrong.jia.academic[at]gmail.com
+Zhengrong Jia  ·  zhengrong[dot]jia[dot]academic[at]gmail[dot]com
 
 Paper **CI5896**  ·  CCAI 2026  ·  May 22–24, Nanjing

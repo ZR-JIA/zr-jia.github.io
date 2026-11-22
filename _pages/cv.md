@@ -251,11 +251,11 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
       <div class="skills-table">
         <div class="skill-row">
           <span class="skill-category">Email</span>
-          <span class="skill-items"><a href="#" data-mail="zhengrong.jia.academic[at]gmail.com">zhengrong.jia.academic[at]gmail.com</a></span>
+          <span class="skill-items"><a href="#" data-mail="zhengrong[dot]jia[dot]academic[at]gmail[dot]com">zhengrong[dot]jia[dot]academic[at]gmail[dot]com</a></span>
         </div>
         <div class="skill-row">
           <span class="skill-category">Email (APU)</span>
-          <span class="skill-items"><a href="#" data-mail="TP195417[at]mail.apu.edu.my">TP195417[at]mail.apu.edu.my</a></span>
+          <span class="skill-items"><a href="#" data-mail="TP195417[at]mail[dot]apu[dot]edu[dot]my">TP195417[at]mail[dot]apu[dot]edu[dot]my</a></span>
         </div>
         <div class="skill-row">
           <span class="skill-category">Google Scholar</span>

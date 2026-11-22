@@ -90,12 +90,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Email links carry the address as "name[at]domain" so that harvesters
-  // scraping the page do not find it; the mailto is built only on click.
+  // Email links carry the address with "[at]" for @ and "[dot]" for each dot,
+  // so harvesters scraping the page do not find it; the mailto is built
+  // only on click.
   document.querySelectorAll('a[data-mail]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       e.preventDefault();
-      window.location.href = 'mailto:' + a.getAttribute('data-mail').replace('[at]', '@');
+      window.location.href = 'mailto:' + a.getAttribute('data-mail')
+        .replace(/\[at\]/g, '@').replace(/\[dot\]/g, '.');
     });
   });
 
