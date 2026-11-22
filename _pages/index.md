@@ -30,9 +30,9 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
       <div class="hero-links">
         <a href="#" data-mail="zhengrong[dot]jia[dot]academic[at]gmail[dot]com" class="hero-link"><i class="fas fa-envelope"></i> Email</a>
         <a href="/cv/" class="hero-link"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
-        <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-google-scholar"></i> Google Scholar</a>
         <a href="https://orcid.org/0009-0007-8829-6713" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-orcid"></i> ORCID</a>
         <a href="https://github.com/ZR-JIA" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-google-scholar"></i> Google Scholar</a>
         <a href="https://ieeexplore.ieee.org/author/737514430667351" target="_blank" rel="noopener noreferrer" class="hero-link hero-link-more"><i class="ai ai-ieee"></i> IEEE Xplore</a>
         <a href="https://www.scopus.com/authid/detail.uri?authorId=60820100100" target="_blank" rel="noopener noreferrer" class="hero-link hero-link-more"><i class="ai ai-scopus"></i> Scopus</a>
         <a href="https://www.webofscience.com/wos/author/record/RFS-2719-2026" target="_blank" rel="noopener noreferrer" class="hero-link hero-link-more"><i class="ai ai-clarivate"></i> Web of Science</a>
