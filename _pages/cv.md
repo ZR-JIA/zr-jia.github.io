@@ -223,7 +223,7 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
         </li>
         <li class="research-item">
           <p class="research-name">Trustworthy Clinical AI</p>
-          <p class="research-desc">Inference-time safeguards against physiological outliers, and attention-based interpretability that a clinician can check.</p>
+          <p class="research-desc">Inference-time safeguards against malformed and out-of-range inputs, and attention-based interpretability that a clinician can check.</p>
         </li>
         <li class="research-item">
           <p class="research-name">Reproducible Pipelines</p>

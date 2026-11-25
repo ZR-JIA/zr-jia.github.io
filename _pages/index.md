@@ -56,7 +56,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
       </div>
       <div class="interest-card">
         <p class="interest-title">Trustworthy Clinical AI</p>
-        <p class="interest-desc">Inference-time safeguards against physiological outliers, and attention-based interpretability a clinician can check</p>
+        <p class="interest-desc">Inference-time safeguards against malformed and out-of-range inputs, and attention-based interpretability a clinician can check</p>
       </div>
       <div class="interest-card">
         <p class="interest-title">Reproducible Pipelines</p>
