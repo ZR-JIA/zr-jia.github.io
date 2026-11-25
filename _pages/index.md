@@ -16,7 +16,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
       <div class="hero-roles">
         <div class="hero-role">
           <p class="hero-role-label">MSc Student</p>
-          <p class="hero-role-value"><a href="https://www.apu.edu.my/" target="_blank" rel="noopener noreferrer">Asia Pacific University</a></p>
+          <p class="hero-role-value"><a href="https://www.apu.edu.my/" target="_blank" rel="noopener noreferrer">Asia Pacific University</a> &middot; Aug 2026 – Aug 2027 (expected)</p>
         </div>
         <div class="hero-role">
           <p class="hero-role-label">Young Ambassador &amp; Researcher</p>
