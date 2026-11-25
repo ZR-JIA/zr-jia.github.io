@@ -12,7 +12,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
     <div class="hero-left">
       <h1 class="hero-name">Zhengrong Jia</h1>
       <p class="hero-slogan">It’s never too late to begin again.</p>
-      <p class="hero-opportunity">Currently seeking MPhil and PhD opportunities.</p>
+      <p class="hero-opportunity">Currently seeking MPhil and PhD positions for Fall 2027 entry.</p>
       <div class="hero-roles">
         <div class="hero-role">
           <p class="hero-role-label">MSc Student</p>
