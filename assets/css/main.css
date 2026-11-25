@@ -113,7 +113,6 @@ body {
   font-size: 16px;
   line-height: 1.75;
   min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -153,7 +152,6 @@ img { max-width: 100%; height: auto; }
   z-index: 100;
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .navbar-container {
@@ -1626,18 +1624,22 @@ html:active-view-transition-type(backward)::view-transition-new(root) { animatio
 @keyframes vt-out-right { to   { transform: translateX(100%); } }
 @keyframes vt-in-left   { from { transform: translateX(-100%); } }
 
-/* 2. Theme switch: the half-circle turns over, and while main.js holds
-   .theme-transition on <html> (450ms) every colour eases together. */
+/* 2. Theme switch: main.js runs the change inside a view transition, so
+   the whole page (text, rules, backgrounds, images) cross-fades from one
+   theme to the other in one step, using the 0.28s fade above. Per-element
+   colour transitions would lag behind it: inherited text colour, eased
+   level by level, held its old colour while the background had already
+   changed. So while .theme-switching is on <html>, every transition is
+   off and only the half-circle turns over. */
 .theme-toggle i { transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
 [data-theme="dark"] .theme-toggle i { transform: rotate(180deg); }
-html.theme-transition,
-html.theme-transition *,
-html.theme-transition *::before,
-html.theme-transition *::after {
-  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease,
-              fill 0.35s ease, text-decoration-color 0.35s ease,
-              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after { transition: none !important; }
+html.theme-switching .theme-toggle i { transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important; }
+::view-transition-group(site-nav),
+::view-transition-old(site-nav),
+::view-transition-new(site-nav) { animation-duration: 0.28s; }
 
 /* 3. Sections below the fold rise into view once (main.js adds .reveal,
    then .is-visible as each is scrolled to). */

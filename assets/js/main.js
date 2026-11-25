@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var html = document.documentElement;
   var reduceMotion = window.matchMedia &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var themeTimer;
 
   // The half-circle icon turns over in dark mode through CSS; the button
   // only reports its state to assistive technology.
@@ -130,20 +129,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (themeToggle) {
     themeToggle.addEventListener('click', function () {
-      // Let every colour ease together while the theme changes.
-      if (!reduceMotion) {
-        html.classList.add('theme-transition');
-        clearTimeout(themeTimer);
-        themeTimer = setTimeout(function () { html.classList.remove('theme-transition'); }, 450);
+      var toDark = html.getAttribute('data-theme') !== 'dark';
+      function applyTheme() {
+        if (toDark) {
+          html.setAttribute('data-theme', 'dark');
+        } else {
+          html.removeAttribute('data-theme');
+        }
+        try { localStorage.setItem('theme', toDark ? 'dark' : 'light'); } catch (e) {}
+        syncThemeButton();
       }
-      if (html.getAttribute('data-theme') === 'dark') {
-        html.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
-      } else {
-        html.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
+      // Cross-fade the whole page in one step (see "Motion" in main.css).
+      // Without view transitions, or with reduced motion, switch at once.
+      if (reduceMotion || !document.startViewTransition) {
+        applyTheme();
+        return;
       }
-      syncThemeButton();
+      html.classList.add('theme-switching');
+      var switching = document.startViewTransition(applyTheme);
+      switching.finished.then(function () {
+        html.classList.remove('theme-switching');
+      }, function () {
+        html.classList.remove('theme-switching');
+      });
     });
   }
 
