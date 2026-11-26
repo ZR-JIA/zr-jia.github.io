@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 title: "Zhengrong Jia"
-description: "AI researcher specializing in Clinical AI and deep learning on electronic health records. First author, CCAI 2026 (published in IEEE Xplore) and PRICAI 2026 (short paper, accepted)."
+description: "AI researcher specializing in Clinical AI and deep learning for electronic health records. First author at CCAI 2026 (IEEE Xplore) and PRICAI 2026 (short paper)."
 ---
 
 <div class="container">
@@ -12,7 +12,7 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
     <div class="hero-left">
       <h1 class="hero-name">Zhengrong Jia</h1>
       <p class="hero-slogan">It’s never too late to begin again.</p>
-      <p class="hero-opportunity">Currently seeking MPhil and PhD positions for Fall 2027 entry.</p>
+      <p class="hero-opportunity">Seeking MPhil and PhD positions for Fall 2027 entry.</p>
       <div class="hero-roles">
         <div class="hero-role">
           <p class="hero-role-label">MSc Student</p>
@@ -29,10 +29,10 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
       </div>
       <div class="hero-links">
         <a href="#" data-mail="zhengrong[dot]jia[dot]academic[at]gmail[dot]com" class="hero-link"><i class="fas fa-envelope"></i> Email</a>
-        <a href="/cv/" class="hero-link"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
-        <a href="https://orcid.org/0009-0007-8829-6713" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-orcid"></i> ORCID</a>
-        <a href="https://github.com/ZR-JIA" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
+        <a href="/cv/" class="hero-link"><i class="fas fa-file-alt"></i> CV</a>
         <a href="https://scholar.google.com/citations?user=juPceOgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-google-scholar"></i> Google Scholar</a>
+        <a href="https://github.com/ZR-JIA" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://orcid.org/0009-0007-8829-6713" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-orcid"></i> ORCID</a>
         <a href="https://ieeexplore.ieee.org/author/737514430667351" target="_blank" rel="noopener noreferrer" class="hero-link hero-link-more"><i class="ai ai-ieee"></i> IEEE Xplore</a>
         <a href="https://www.scopus.com/authid/detail.uri?authorId=60820100100" target="_blank" rel="noopener noreferrer" class="hero-link hero-link-more"><i class="ai ai-scopus"></i> Scopus</a>
         <a href="https://www.webofscience.com/wos/author/record/RFS-2719-2026" target="_blank" rel="noopener noreferrer" class="hero-link hero-link-more"><i class="ai ai-clarivate"></i> Web of Science</a>
@@ -46,21 +46,29 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
     </div>
   </section>
 
+  <!-- ── About ──────────────────────────────────── -->
+  <section class="content-section" data-no-reveal>
+    <p class="section-label">About</p>
+    <div class="philosophy-block">
+      <p class="philosophy-text">In critical care, a model failure is not an abstract drop in metrics; it can mean <strong>missing a deteriorating patient</strong>. That reality shapes the problems I work on. My research focuses on deep learning for electronic health records that holds up under messy hospital data, <strong>stays honest about its limits</strong>, and can be <strong>reproduced across cohorts</strong>.</p>
+    </div>
+  </section>
+
   <!-- ── Research Interests ─────────────────────── -->
-  <section class="content-section">
+  <section class="content-section" data-no-reveal>
     <p class="section-label">Research Interests</p>
     <div class="interests-grid">
       <div class="interest-card">
         <p class="interest-title">EHR-based Clinical Prediction</p>
-        <p class="interest-desc">Deep learning on electronic health records for ICU risk stratification and mortality prediction</p>
+        <p class="interest-desc">Deep learning on electronic health records for ICU risk stratification and mortality prediction.</p>
       </div>
       <div class="interest-card">
         <p class="interest-title">Trustworthy Clinical AI</p>
-        <p class="interest-desc">Inference-time safeguards against malformed and out-of-range inputs, and attention-based interpretability a clinician can check</p>
+        <p class="interest-desc">Inference-time safeguards against malformed or out-of-range inputs, along with calibration and interpretability methods clinicians can audit.</p>
       </div>
       <div class="interest-card">
         <p class="interest-title">Reproducible Pipelines</p>
-        <p class="interest-desc">Multicenter clinical databases, leakage-free cohort pipelines, and open code</p>
+        <p class="interest-desc">Multicenter clinical databases, leakage-free cohort construction, and open-source implementations.</p>
       </div>
     </div>
   </section>
@@ -92,43 +100,40 @@ description: "AI researcher specializing in Clinical AI and deep learning on ele
   <!-- ── News ───────────────────────────────────── -->
   <section class="content-section">
     <p class="section-label">News</p>
-    <ul class="news-list">
+    <ul class="news-list" id="news-list" data-collapse-limit="5">
       <li class="news-item">
         <span class="news-date">Nov 16–20, 2026</span>
-        <span class="news-text"><strong>Attended <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a></strong> in Guangzhou &mdash; presented a poster of <em>DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality</em>. <a href="/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a> and <a href="/gallery/">photos</a> now available.</span>
+        <span class="news-text"><strong>Attended <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a></strong> in Guangzhou and presented the poster for <em>DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality</em>. <a href="/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a> and <a href="/gallery/">photos</a> are now available.</span>
       </li>
       <li class="news-item">
         <span class="news-date">Aug 19, 2026</span>
-        <span class="news-text"><strong>Short paper accepted at <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a></strong> &mdash; <em>DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality</em>. <a href="/publications/dualtower-ft-pricai/">Details</a>.</span>
+        <span class="news-text"><strong>Short paper accepted to <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a>:</strong> <em>DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality</em>. <a href="/publications/dualtower-ft-pricai/">Details</a>.</span>
       </li>
       <li class="news-item">
         <span class="news-date">Jul 15, 2026</span>
-        <span class="news-text">Reviewed four submissions for <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a> and was invited to serve on its <strong>Program Committee</strong>.</span>
+        <span class="news-text">Reviewed four submissions for <a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a> and was subsequently invited to join its <strong>Program Committee</strong>.</span>
       </li>
       <li class="news-item">
         <span class="news-date">May 22–24, 2026</span>
-        <span class="news-text"><strong>Received Best Industrial Paper Award &amp; Best Presentation Award at <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a></strong> &mdash; Nanjing.</span>
+        <span class="news-text"><strong>Received the Best Industrial Paper Award and the Best Presentation Award</strong> at <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a> in Nanjing.</span>
       </li>
       <li class="news-item">
         <span class="news-date">May 22–24, 2026</span>
-        <span class="news-text"><strong>Attended <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a></strong> in Nanjing &mdash; delivered an oral presentation of <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>. <a href="/presentations/">Slides</a> and <a href="/gallery/">photos</a> now available.</span>
+        <span class="news-text"><strong>Attended <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a></strong> in Nanjing and gave an oral presentation on <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>. <a href="/presentations/">Slides</a> and <a href="/gallery/">photos</a> are now available.</span>
       </li>
-      <li class="news-item">
+      <li class="news-item news-item-extra">
         <span class="news-date">Feb 2, 2026</span>
-        <span class="news-text"><strong>Paper accepted at <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a></strong> &mdash; <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>.</span>
+        <span class="news-text"><strong>Paper accepted to <a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a>:</strong> <em>Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</em>.</span>
       </li>
-      <li class="news-item">
+      <li class="news-item news-item-extra">
         <span class="news-date">Aug 2025</span>
-        <span class="news-text">Earned B.Sc. in Software Engineering from Macau University of Science and Technology.</span>
+        <span class="news-text">Earned a B.Sc. in Software Engineering from Macau University of Science and Technology.</span>
       </li>
     </ul>
-  </section>
-
-  <!-- ── About ──────────────────────────────────── -->
-  <section class="content-section">
-    <p class="section-label">About</p>
-    <div class="philosophy-block">
-      <p class="philosophy-text">When machine learning meets <strong>real clinical stakes</strong>, a model's failure is not an accuracy number but <strong>a missed diagnosis</strong>. Those are the problems I am drawn to. My work focuses on building deep learning systems for electronic health records that are not only accurate, but <strong>interpretable and honest about their limits</strong>. I believe the most durable research is <strong>reproducible, open</strong>, and built with the long game in mind.</p>
+    <div class="news-actions">
+      <button type="button" class="btn btn-outline news-toggle" aria-expanded="false" aria-controls="news-list">
+        <span class="news-toggle-label">Show all</span><i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </button>
     </div>
   </section>
 

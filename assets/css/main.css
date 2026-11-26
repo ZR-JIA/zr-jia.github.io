@@ -3,7 +3,7 @@
    ============================================ */
 
 :root {
-  /* 在場 Broadsheet palette: warm paper, warm ink, hairline rules, and one
+  /* Broadsheet palette: warm paper, warm ink, hairline rules, and one
      accent (seal) reserved for hairline-scale details. */
   --paper: #f4f1e9;
   --paper-tint: #eeeade;
@@ -33,7 +33,7 @@
 
 
   --container-max: 800px;
-  --transition: 0.2s ease;
+  --transition: 180ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 [data-theme="dark"] {
@@ -104,6 +104,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -113,6 +114,7 @@ body {
   font-size: 16px;
   line-height: 1.75;
   min-height: 100vh;
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -150,9 +152,14 @@ img { max-width: 100%; height: auto; }
   position: sticky;
   top: 0;
   z-index: 100;
+  width: 100%;
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
 }
+
+/* Defensive rule: keep legacy hamburger markup hidden if a browser serves
+   stale cached HTML with the updated stylesheet. */
+.navbar-toggle { display: none !important; }
 
 .navbar-container {
   max-width: var(--container-max);
@@ -185,39 +192,41 @@ img { max-width: 100%; height: auto; }
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 0;
+  gap: 8px;
 }
 
 .navbar-links a {
+  position: relative;
   font-family: var(--font-text);
   font-size: 10.5px;
   font-weight: 600;
-  /* Tighter than the system's 0.24em: six labels, "Presentations" and
-     "Curriculum Vitae" among them, must fit an 800px column */
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--color-text-secondary);
   padding: 5px 4px;
-  /* The underline is a 1px rule that draws in from the left on hover. It
-     is inset by the side padding, so it sits under the text only. */
   text-decoration: none;
-  background: linear-gradient(currentColor, currentColor) no-repeat 4px calc(100% - 1px) / 0 1px;
-  transition: color var(--transition), background-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 1px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
 }
 
 .navbar-links a:hover,
-.navbar-links a.active { color: var(--color-text); background-size: calc(100% - 8px) 1px; }
+.navbar-links a.active { color: var(--color-text); }
 
-.navbar-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 18px;
-  color: var(--color-text);
-  cursor: pointer;
-  padding: 8px;
-}
+.navbar-links a:hover::after,
+.navbar-links a.active::after { transform: scaleX(1); }
 
 .theme-toggle {
   background: none;
@@ -384,12 +393,13 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
   border: 1px solid var(--color-accent);
   padding: 2px 9px;
-  transition: all var(--transition);
+  transition: transform var(--transition), border-color var(--transition), color var(--transition), background-color var(--transition);
 }
 
 .pub-academic-links a:hover {
   background: var(--color-accent);
   color: #fff;
+  transform: translateY(-2px);
   text-decoration: none;
 }
 
@@ -430,6 +440,22 @@ img { max-width: 100%; height: auto; }
 }
 
 .news-text strong { color: var(--color-text); }
+
+/* Show the latest 5 news items by default when JS is enabled; reveal the rest
+   via "Show all". Without JS every item remains visible and the button stays hidden. */
+.js .news-list:not(.is-expanded) .news-item-extra { display: none; }
+.news-actions { display: none; }
+.js .news-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+.js .news-actions[hidden] { display: none; }
+.news-toggle i {
+  font-size: 9px;
+  transition: transform var(--transition);
+}
+.news-toggle[aria-expanded="true"] i { transform: rotate(180deg); }
 
 /* ---- Research List ---- */
 .research-list { list-style: none; }
@@ -549,6 +575,7 @@ img { max-width: 100%; height: auto; }
   font-family: var(--font-text);
   font-size: 14px;
   color: var(--color-text-secondary);
+  overflow-wrap: anywhere;
 }
 
 /* ---- Buttons ---- */
@@ -563,7 +590,7 @@ img { max-width: 100%; height: auto; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  transition: all var(--transition);
+  transition: transform var(--transition), border-color var(--transition), color var(--transition), background-color var(--transition);
   /* Reset UA chrome so <button class="btn"> matches <a class="btn">.
      Keep this at .btn specificity — a button.btn selector would outrank
      .btn-outline and strip its border. */
@@ -584,15 +611,17 @@ img { max-width: 100%; height: auto; }
 
 .btn-outline {
   background: transparent;
-  color: var(--color-text);
-  border: 1px solid var(--color-text);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--rule-mid);
 }
 
 /* paper-deep is the palette's only interactive fill */
 .btn-primary:hover,
 .btn-outline:hover {
   background: var(--paper-deep);
+  border-color: var(--color-text);
   color: var(--color-text);
+  transform: translateY(-2px);
   text-decoration: none;
 }
 
@@ -766,53 +795,82 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ---- Responsive ---- */
-/* The six tracked, uppercase nav labels fill the 800px column with about
-   20px to spare. Collapse to the menu below 800px rather than 640px, or the
-   bar overflows at tablet widths. */
+/* Below 800px, switch to a two-row broadsheet masthead: the name and theme
+   toggle sit on the top row, and the six sections run across a hairline-ruled
+   horizontal strip underneath so nothing is hidden behind a hamburger button. */
 @media (max-width: 800px) {
-  .navbar-links {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    background: var(--color-bg);
-    padding: 8px 18px 16px;
-    border-bottom: 1px solid var(--color-border);
-    z-index: 99;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-6px);
-    pointer-events: none;
-    transition: max-height 0.28s ease, opacity 0.2s ease, transform 0.2s ease;
+  .navbar-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0;
+    gap: 0;
   }
 
-  .navbar-links.open {
-    max-height: 320px;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+  .navbar-brand {
+    order: 1;
+    padding: 12px 0 12px 18px;
   }
 
-  /* Menu and theme buttons sit together at the right. The menu button's
-     auto margin takes the free space, so the name stays left. It precedes
-     the menu in the markup, so Tab moves from it straight into the open
-     menu; the visual order matches the focus order. */
-  .navbar-container { gap: 2px; }
-  .navbar-toggle,
   .theme-toggle {
+    order: 2;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
     padding: 0;
-    margin-left: 0;
+    margin: 0 10px 0 auto;
     font-size: 16px;
   }
-  .navbar-toggle { margin-left: auto; }
+
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 18px;
+    border-top: 1px solid var(--color-border);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+
+  .navbar-links::-webkit-scrollbar { display: none; }
+
+  .navbar-links li { flex-shrink: 0; }
+
+  .navbar-links a {
+    display: block;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0.01em;
+  }
+
+  .navbar-links a::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+  }
+}
+
+@media (max-width: 440px) {
+  .navbar-brand { padding: 11px 0 11px 14px; }
+  .theme-toggle { margin-right: 6px; }
+  .navbar-links {
+    gap: 6px;
+    padding: 0 14px;
+  }
+  .navbar-links a {
+    font-size: 11.5px;
+    letter-spacing: 0;
+  }
 }
 
 @media (max-width: 640px) {
@@ -821,7 +879,6 @@ img { max-width: 100%; height: auto; }
   .news-text { padding-left: 0; border-left: 0; }
   .section-label { font-size: 15px; letter-spacing: 0.12em; text-indent: 0.12em; gap: 14px; }
   .container { padding: 0 18px; }
-  .navbar-container { padding: 0 18px; }
 
   .profile-section {
     flex-direction: column;
@@ -866,7 +923,7 @@ img { max-width: 100%; height: auto; }
 .carousel-track {
   display: flex;
   height: 100%;
-  transition: transform 0.4s ease;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
 }
 
@@ -1069,6 +1126,15 @@ img { max-width: 100%; height: auto; }
   font-size: 18px;
   font-style: italic;
   color: var(--color-text-secondary);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.hero-opportunity {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
   margin-bottom: 22px;
   line-height: 1.5;
 }
@@ -1133,18 +1199,16 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-text-secondary);
-  /* Two 1px rules: a resting one in rule-mid, and an ink one that draws
-     over it from the left on hover. */
   text-decoration: none;
-  background:
-    linear-gradient(currentColor, currentColor) no-repeat left bottom / 0 1px,
-    linear-gradient(var(--rule-mid), var(--rule-mid)) no-repeat left bottom / 100% 1px;
-  transition: color var(--transition), background-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--rule-mid);
+  transition: color var(--transition), border-color var(--transition), transform var(--transition);
   white-space: nowrap;
 }
 .hero-link:hover {
   color: var(--color-text);
-  background-size: 100% 1px, 100% 1px;
+  border-bottom-color: var(--color-text);
+  transform: translateY(-2px);
 }
 
 /* The first five profile links show; the rest wait behind "More". The head
@@ -1155,9 +1219,13 @@ img { max-width: 100%; height: auto; }
   display: inline-flex;
   background: none;
   border: 0;
-  padding: 0;
+  border-bottom: 1px solid transparent;
+  padding: 0 0 2px;
   line-height: inherit;
   cursor: pointer;
+}
+.js .hero-more:hover {
+  border-bottom-color: var(--color-text);
 }
 .js .hero-links:not(.is-expanded) .hero-link-more { display: none; }
 .hero-more i {
@@ -1311,18 +1379,6 @@ img { max-width: 100%; height: auto; }
   color: var(--color-text-secondary);
   line-height: 1.72;
   margin: 0;
-}
-
-/* Drop cap: the opening letter set in the display face across two lines.
-   The paragraph opens on "W"; a narrow letter such as "I" reads as a bar. */
-.philosophy-text::first-letter {
-  float: left;
-  margin: 0.06em 0.1em 0 0;
-  font-family: var(--font-display);
-  font-size: 3.5em;
-  font-weight: 800;
-  line-height: 0.84;
-  color: var(--color-text);
 }
 
 /* ---- Utility ---- */
@@ -1604,7 +1660,13 @@ img { max-width: 100%; height: auto; }
 @view-transition { navigation: auto; }
 ::view-transition-old(root),
 ::view-transition-new(root) { animation-duration: 0.28s; }
-.navbar { view-transition-name: site-nav; }
+/* Pin the navbar during page slides on desktop only. On mobile (<= 800px),
+   the second-row nav strip scrolls horizontally and changes scrollLeft across
+   tabs; iOS WebKit clips named view-transition snapshots containing a scrolled
+   child, so letting the mobile navbar slide with the page avoids the glitch. */
+@media (min-width: 801px) {
+  .navbar { view-transition-name: site-nav; }
+}
 
 html:active-view-transition-type(forward)::view-transition-old(root),
 html:active-view-transition-type(forward)::view-transition-new(root),
@@ -1647,25 +1709,31 @@ html.theme-switching .theme-toggle i { transition: transform 0.5s cubic-bezier(0
    hides it at once instead of fading it out off screen. */
 .reveal {
   opacity: 0;
-  transform: translateY(14px);
+  transform: translateY(10px);
 }
 .reveal.is-visible {
   opacity: 1;
-  transform: none;
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transform: translateY(0);
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* 4. Navigation and homepage links draw their underline from the left
-   (see .navbar-links a and .hero-link). */
+/* 4. Hover micro-interactions animate transform/opacity or border colour in 180ms. */
 
 @media (prefers-reduced-motion: reduce) {
-  .cite-modal,
-  .cite-modal-panel { transition: none; }
+  html { scroll-behavior: auto; }
   @view-transition { navigation: none; }
-  .reveal { opacity: 1; transform: none; transition: none; }
-  .theme-toggle i,
-  .navbar-links a,
-  .hero-link { transition: none; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  .btn:hover,
+  .hero-link:hover,
+  .pub-academic-links a:hover { transform: none; }
 }
 
 /* ---- Education Entry (logo | content | years+place) ---- */

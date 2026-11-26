@@ -2,7 +2,7 @@
 layout: default
 permalink: /commentary/
 title: "Commentary"
-description: "Research commentary and analysis by Zhengrong Jia — on clinical AI, deep learning, and the practice of science."
+description: "Research commentary and analysis by Zhengrong Jia on clinical AI, deep learning, and scientific rigor."
 ---
 
 <div class="container">
@@ -33,7 +33,7 @@ description: "Research commentary and analysis by Zhengrong Jia — on clinical 
           {% endfor %}
         </ul>
       {% else %}
-        <p style="font-size:15px;color:var(--color-text-secondary);">No posts yet. Check back soon.</p>
+        <p style="font-size:15px;color:var(--color-text-secondary);">No commentary posts published yet.</p>
       {% endif %}
     </section>
   </div>

@@ -2,7 +2,7 @@
 layout: default
 permalink: /gallery/
 title: "Gallery"
-description: "Conference photos from PRICAI 2026, Guangzhou, and CCAI 2026, Nanjing — Zhengrong Jia."
+description: "Conference photographs from PRICAI 2026 (Guangzhou) and CCAI 2026 (Nanjing) — Zhengrong Jia."
 ---
 
 <div class="container">
@@ -17,17 +17,17 @@ description: "Conference photos from PRICAI 2026, Guangzhou, and CCAI 2026, Nanj
       <div class="gallery-event">
         <div class="cv-entry-header" style="margin-bottom:20px;">
           <span class="cv-entry-title"><a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">PRICAI 2026</a></span>
-          <span class="cv-entry-date">November 16–20, 2026 · Guangzhou</span>
+          <span class="cv-entry-date">November 16–20, 2026 · Guangzhou, China</span>
         </div>
 
         <div class="carousel">
           <div class="carousel-viewport">
             <div class="carousel-track">
-              <img src="/assets/images/pricai2026/pricai2026-01.jpg" alt="At the PRICAI 2026 backdrop, Guangzhou">
-              <img src="/assets/images/pricai2026/pricai2026-02.jpg" alt="At the PRICAI 2026 backdrop, close-up">
-              <img src="/assets/images/pricai2026/pricai2026-03.jpg" alt="In the audience at a PRICAI 2026 session">
-              <img src="/assets/images/pricai2026/pricai2026-04.jpg" alt="The PRICAI 2026 poster session">
-              <img class="is-portrait" src="/assets/images/pricai2026/pricai2026-05.jpg" alt="The DualTower-FT poster on display at PRICAI 2026">
+              <img src="/assets/images/pricai2026/pricai2026-01.jpg" alt="Zhengrong Jia at the PRICAI 2026 venue backdrop in Guangzhou">
+              <img src="/assets/images/pricai2026/pricai2026-02.jpg" alt="Close-up portrait at the PRICAI 2026 venue backdrop">
+              <img src="/assets/images/pricai2026/pricai2026-03.jpg" alt="Attending a technical session at PRICAI 2026">
+              <img src="/assets/images/pricai2026/pricai2026-04.jpg" alt="Poster session at PRICAI 2026">
+              <img class="is-portrait" src="/assets/images/pricai2026/pricai2026-05.jpg" alt="DualTower-FT poster on display at PRICAI 2026">
             </div>
             <button class="carousel-btn prev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
             <button class="carousel-btn next" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
@@ -46,20 +46,20 @@ description: "Conference photos from PRICAI 2026, Guangzhou, and CCAI 2026, Nanj
       <div class="gallery-event">
         <div class="cv-entry-header" style="margin-bottom:20px;">
           <span class="cv-entry-title"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">CCAI 2026</a></span>
-          <span class="cv-entry-date">May 22–24, 2026 · Nanjing</span>
+          <span class="cv-entry-date">May 22–24, 2026 · Nanjing, China</span>
         </div>
 
         <div class="carousel">
           <div class="carousel-viewport">
             <div class="carousel-track">
-              <img src="/assets/images/ccai2026/ccai2026-01.jpg" alt="CCAI 2026 Nanjing · 1">
-              <img src="/assets/images/ccai2026/ccai2026-02.jpg" alt="CCAI 2026 Nanjing · 2">
-              <img src="/assets/images/ccai2026/ccai2026-03.jpg" alt="CCAI 2026 Nanjing · 3">
-              <img src="/assets/images/ccai2026/ccai2026-04.jpg" alt="CCAI 2026 Nanjing · 4">
-              <img src="/assets/images/ccai2026/ccai2026-05.jpg" alt="CCAI 2026 Nanjing · 5">
-              <img src="/assets/images/ccai2026/ccai2026-06.jpg" alt="CCAI 2026 Nanjing · 6">
-              <img src="/assets/images/ccai2026/ccai2026-07.jpg" alt="CCAI 2026 Nanjing · 7">
-              <img src="/assets/images/ccai2026/ccai2026-08.jpg" alt="CCAI 2026 Nanjing · 8">
+              <img src="/assets/images/ccai2026/ccai2026-01.jpg" alt="CCAI 2026 in Nanjing — Photo 1">
+              <img src="/assets/images/ccai2026/ccai2026-02.jpg" alt="CCAI 2026 in Nanjing — Photo 2">
+              <img src="/assets/images/ccai2026/ccai2026-03.jpg" alt="CCAI 2026 in Nanjing — Photo 3">
+              <img src="/assets/images/ccai2026/ccai2026-04.jpg" alt="CCAI 2026 in Nanjing — Photo 4">
+              <img src="/assets/images/ccai2026/ccai2026-05.jpg" alt="CCAI 2026 in Nanjing — Photo 5">
+              <img src="/assets/images/ccai2026/ccai2026-06.jpg" alt="CCAI 2026 in Nanjing — Photo 6">
+              <img src="/assets/images/ccai2026/ccai2026-07.jpg" alt="CCAI 2026 in Nanjing — Photo 7">
+              <img src="/assets/images/ccai2026/ccai2026-08.jpg" alt="CCAI 2026 in Nanjing — Photo 8">
             </div>
             <button class="carousel-btn prev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
             <button class="carousel-btn next" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
@@ -83,6 +83,8 @@ description: "Conference photos from PRICAI 2026, Guangzhou, and CCAI 2026, Nanj
 
 <script>
 // One independent carousel per conference; each counts its own photos.
+var prefersReducedMotion = window.matchMedia &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 document.querySelectorAll('.carousel').forEach(function (root) {
   var track   = root.querySelector('.carousel-track');
   var dots    = root.querySelectorAll('.carousel-dot');
@@ -101,6 +103,7 @@ document.querySelectorAll('.carousel').forEach(function (root) {
   }
 
   function startAuto() {
+    if (prefersReducedMotion) return;
     timer = setInterval(function () { go(cur + 1); }, 4000);
   }
   function resetAuto() {

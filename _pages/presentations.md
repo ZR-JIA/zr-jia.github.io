@@ -2,7 +2,7 @@
 layout: default
 permalink: /presentations/
 title: "Presentations"
-description: "Conference presentations by Zhengrong Jia: the CCAI 2026 oral talk with its slides and the PRICAI 2026 poster."
+description: "Conference presentations by Zhengrong Jia, including an oral presentation at CCAI 2026 (with slides) and a poster presentation at PRICAI 2026."
 ---
 
 <div class="container">
@@ -20,9 +20,9 @@ description: "Conference presentations by Zhengrong Jia: the CCAI 2026 oral talk
             <span class="cv-entry-title">DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality</span>
             <span class="cv-entry-date">PRICAI 2026</span>
           </div>
-          <p class="cv-entry-meta"><a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">The 23rd Pacific Rim International Conference on Artificial Intelligence (PRICAI 2026)</a> &mdash; Poster &middot; November 16&ndash;20, 2026 &middot; Guangzhou</p>
+          <p class="cv-entry-meta"><a href="https://2026.pricai.org/" target="_blank" rel="noopener noreferrer">The 23rd Pacific Rim International Conference on Artificial Intelligence (PRICAI 2026)</a> &mdash; Poster Presentation &middot; November 16&ndash;20, 2026 &middot; Guangzhou, China</p>
           <div style="margin-top:14px; margin-bottom:14px;">
-            <a href="/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the poster PDF"><img class="poster-preview" src="/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.jpg" alt="PRICAI 2026 poster: DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality" width="900" height="1501" loading="lazy"></a>
+            <a href="/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PRICAI 2026 poster PDF"><img class="poster-preview" src="/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.jpg" alt="PRICAI 2026 poster: DualTower-FT with an Adaptive Runtime Safeguard: A Deep Tabular Approach for ICU Stroke Mortality" width="900" height="1501" loading="lazy"></a>
           </div>
           <div class="pub-detail-actions">
             <a href="/assets/posters/PRICAI2026/PRICAI2026_DualTowerFT_Poster.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Poster (PDF)</a>
@@ -33,9 +33,9 @@ description: "Conference presentations by Zhengrong Jia: the CCAI 2026 oral talk
             <span class="cv-entry-title">Deep Learning for Stroke Mortality Prediction in eICU: A Dual-Tower Transformer Framework</span>
             <span class="cv-entry-date">CCAI 2026</span>
           </div>
-          <p class="cv-entry-meta"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a> &mdash; May 24, 2026 &middot; Nanjing</p>
-          <div style="margin-top:14px; margin-bottom:14px;">
-            <iframe src="/assets/slides_html/CCAI2026.html" width="100%" height="520px" style="border:1px solid var(--color-border);border-radius:6px;display:block;" allowfullscreen></iframe>
+          <p class="cv-entry-meta"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a> &mdash; Oral Presentation &middot; May 24, 2026 &middot; Nanjing, China</p>
+          <div style="margin-top:14px; margin-bottom:14px; overflow:hidden; width:100%;">
+            <iframe src="/assets/slides_html/CCAI2026.html" height="520" style="width:1px;min-width:100%;max-width:100%;border:1px solid var(--color-border);display:block;" allowfullscreen></iframe>
           </div>
           <div class="pub-detail-actions">
             <a href="https://drive.google.com/file/d/16FePUDlv0bs38EvAamXJQVxBRFpne3AV/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Slides (PDF)</a>

@@ -54,21 +54,21 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
     </section>
 
     <section class="content-section">
-      <p class="section-label">Awards & Honors</p>
+      <p class="section-label">Awards &amp; Honors</p>
       <div class="cv-entries">
         <div class="cv-entry">
           <div class="cv-entry-header">
             <span class="cv-entry-title">Best Industrial Paper Award</span>
             <span class="cv-entry-date">May 2026</span>
           </div>
-          <p class="cv-entry-org"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a>, Nanjing</p>
+          <p class="cv-entry-org"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a>, Nanjing, China</p>
         </div>
         <div class="cv-entry">
           <div class="cv-entry-header">
             <span class="cv-entry-title">Best Presentation Award</span>
             <span class="cv-entry-date">May 2026</span>
           </div>
-          <p class="cv-entry-org"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a>, Nanjing</p>
+          <p class="cv-entry-org"><a href="https://ccai.net" target="_blank" rel="noopener noreferrer">2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</a>, Nanjing, China</p>
         </div>
       </div>
     </section>
@@ -81,12 +81,14 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
             <span class="cv-entry-title">Lead Researcher &mdash; Medical AI &amp; Predictive Modeling</span>
             <span class="cv-entry-date">Aug 2025 – Present</span>
           </div>
+          <p class="cv-entry-org"><a href="https://aae.com.hk/" target="_blank" rel="noopener noreferrer">Asia AI Education and Future Technology Association (AAE)</a> &mdash; with Dr. Kwong-Cheong Wong</p>
           <p class="cv-entry-meta">Deep Learning on Tabular EHR Data · Stroke Mortality Prediction</p>
           <div class="cv-entry-body">
-            <p>Designed and implemented a <strong>Dual-Tower Transformer (DT-Transformer)</strong> for in-hospital stroke mortality prediction using the multicenter eICU Collaborative Research Database. The architecture decouples categorical features from numerical vitals into separate encoding towers, achieving an <strong>AUPRC of 0.6171</strong> (&plusmn; 0.0058 over five seeds) — a <strong>14.4% relative improvement</strong> over the strongest neural baseline. An <strong>Adaptive Runtime Safeguard</strong> range-checks and clamps the categorical inputs so that out-of-range values cannot reach the embedding lookup.</p>
             <ul>
-              <li>Outperformed the strongest neural baseline, NN (AUPRC 0.5394), and a standard Transformer (0.5279); tree ensembles still lead (XGBoost 0.6467, Random Forest 0.6236)</li>
-              <li>Paper accepted and presented on May 24, 2026 at the <strong>2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI)</strong></li>
+              <li>Designed and implemented a <strong>Dual-Tower Transformer (DT-Transformer, CCAI 2026)</strong> for in-hospital stroke mortality prediction on the multicenter eICU database, encoding categorical features with learnable embeddings and numerical clinical variables with a multi-head self-attention encoder.</li>
+              <li>Achieved a mean <strong>AUPRC of 0.6171</strong> (&plusmn; 0.0058 across five seeds)&mdash;a <strong>14.4% relative gain</strong> over the strongest neural baseline (NN 0.5394) and <strong>3.4&times; lower cross-seed standard deviation</strong> than a standard Transformer (0.5279), while XGBoost retained the overall lead (0.6467).</li>
+              <li>Extended the model into <strong>DualTower-FT (PRICAI 2026)</strong> by replacing mean pooling with an FT-Transformer [CLS] token, raising AUPRC to <strong>0.6247 &plusmn; 0.0015</strong> across five seeds (4&times; lower cross-seed standard deviation than the prior dual-tower model, highest among compared neural baselines) and evaluating cross-database transfer on MIMIC-IV.</li>
+              <li>Integrated an <strong>Adaptive Runtime Safeguard</strong> directly into the forward pass to clamp categorical indices, bound numerical extremes, and neutralize NaN/&plusmn;&infin; inputs, achieving zero inference failures across four stress-test perturbation conditions.</li>
             </ul>
           </div>
         </div>
@@ -104,9 +106,8 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
           <p class="cv-entry-org"><a href="https://aae.com.hk/" target="_blank" rel="noopener noreferrer">Asia AI Education and Future Technology Association (AAE)</a> &mdash; Remote / Hong Kong, China</p>
           <div class="cv-entry-body">
             <ul>
-              <li>Collaborated closely with Head Advisor Dr. Kwong-Cheong Wong on deep learning for stroke mortality prediction using the eICU database</li>
-              <li>Represented the association at CCAI 2026 in Nanjing, where the resulting paper received the Best Industrial Paper Award and the Best Presentation Award</li>
-              <li>Represented the association at PRICAI 2026 in Guangzhou, presenting the follow-up paper as a poster</li>
+              <li>Represented the association at CCAI 2026 in Nanjing, delivering an oral presentation that received the Best Industrial Paper Award and the Best Presentation Award.</li>
+              <li>Represented the association at PRICAI 2026 in Guangzhou, presenting the poster for the follow-up DualTower-FT study.</li>
             </ul>
           </div>
         </div>
@@ -115,12 +116,12 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
             <span class="cv-entry-title">Machine Learning Engineering Intern</span>
             <span class="cv-entry-date">Jul – Aug 2024</span>
           </div>
-          <p class="cv-entry-org">China Southern Power Grid &mdash; Guangzhou</p>
+          <p class="cv-entry-org">China Southern Power Grid &mdash; Guangzhou, China</p>
           <p class="cv-entry-meta">Python · Pandas · NumPy · Matplotlib · Linux</p>
           <div class="cv-entry-body">
             <ul>
-              <li>Processed <strong>60 GB</strong> of multi-province power equipment inspection data to identify equipment fault frequencies and optimize inspection robot algorithms</li>
-              <li>Contributed to the development of closing and splitting functions for power inspection robots to support real-world operational accuracy</li>
+              <li>Processed <strong>60 GB</strong> of multi-province power-equipment inspection data to analyze fault frequencies and optimize inspection-robot algorithms.</li>
+              <li>Contributed to switchgear opening-and-closing control functions for power inspection robots to improve operational reliability in the field.</li>
             </ul>
           </div>
         </div>
@@ -135,10 +136,10 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
             <span class="cv-entry-title">Reviewer and Program Committee Member</span>
             <span class="cv-entry-date">2026</span>
           </div>
-          <p class="cv-entry-org">Pacific Rim International Conference on Artificial Intelligence (PRICAI)</p>
+          <p class="cv-entry-org">Pacific Rim International Conference on Artificial Intelligence (PRICAI 2026)</p>
           <div class="cv-entry-body">
             <ul>
-              <li>Reviewed four submissions and was subsequently invited to serve as a Program Committee member</li>
+              <li>Reviewed four submissions for PRICAI 2026 and was subsequently invited to join its Program Committee.</li>
             </ul>
           </div>
         </div>
@@ -157,10 +158,10 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
           <p class="cv-entry-meta">Python · PyTorch · Scikit-learn · Pandas · Linux</p>
           <div class="cv-entry-body">
             <ul>
-              <li>Engineered an end-to-end ML pipeline from raw eICU CSV ingestion (200,859 ICU stays) to model serialization, with reproducible preprocessing via custom DataLoader classes</li>
-              <li>Modular architecture separating data, model, training, and evaluation layers for maintainability</li>
-              <li>Multi-seed evaluation harness (5 seeds on a fixed 70/10/20 split) with automated metric logging (AUROC, AUPRC, F1) across all baselines</li>
-              <li>Released open-source at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke</a> and <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">Data-Preprocessing-for-eICU</a></li>
+              <li>Engineered an end-to-end machine learning pipeline from raw eICU CSV ingestion (200,859 ICU stays) to model serialization, with reproducible preprocessing via custom PyTorch DataLoader classes.</li>
+              <li>Structured a modular codebase separating data, model, training, and evaluation layers for maintainability.</li>
+              <li>Built a multi-seed evaluation harness (five seeds on a fixed 70/10/20 split) with automated logging of AUROC, AUPRC, and F1 across all baselines.</li>
+              <li>Open-sourced at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke</a> and <a href="https://github.com/ZR-JIA/Data-Preprocessing-for-eICU" target="_blank" rel="noopener noreferrer">Data-Preprocessing-for-eICU</a>.</li>
             </ul>
           </div>
         </div>
@@ -171,7 +172,7 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
             <span class="cv-entry-date">2026</span>
           </div>
           <div class="cv-entry-body">
-            <p>Open-source code for the PRICAI 2026 paper: the DualTower-FT model with its forward-pass runtime safeguard, the safeguard stress test, two-stage MIMIC-IV transfer and five-seed results, released at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke-FT</a>.</p>
+            <p>Open-source implementation for the PRICAI 2026 paper, providing the DualTower-FT model with its forward-pass runtime safeguard, stress-test harness, two-stage MIMIC-IV transfer pipeline, and five-seed benchmark results at <a href="https://github.com/ZR-JIA/Dual-Tower-Transformer-eICU-Stroke-FT" target="_blank" rel="noopener noreferrer">Dual-Tower-Transformer-eICU-Stroke-FT</a>.</p>
           </div>
         </div>
 
@@ -181,7 +182,7 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
             <span class="cv-entry-date">Sep 2024 – May 2025</span>
           </div>
           <div class="cv-entry-body">
-            <p>Multi-timescale LSTM for daily, weekly and quarterly power load forecasting, with an interactive decision-support system: 1.42% MAPE on daily predictions and 82% higher quarterly accuracy than ARIMA.</p>
+            <p>Developed a multi-timescale LSTM model for daily, weekly, and quarterly power-load forecasting paired with an interactive decision-support interface, achieving a 1.42% daily MAPE and outperforming an ARIMA baseline by 82% on quarterly forecasts.</p>
           </div>
         </div>
 
@@ -191,7 +192,7 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
             <span class="cv-entry-date">2024 – 2025</span>
           </div>
           <div class="cv-entry-body">
-            <p>Full-stack web platform with a Vue.js front end, a Spring Boot REST back end and a Python microservice serving a trained scikit-learn classifier, with JWT role-based access control and Docker Compose deployment.</p>
+            <p>Built a full-stack web platform combining a Vue.js front end, a Spring Boot REST back end, and a Python microservice serving a trained scikit-learn classifier, with JWT role-based access control and Docker Compose deployment.</p>
           </div>
         </div>
 
@@ -203,9 +204,9 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
           <p class="cv-entry-meta">Jekyll · Liquid · CSS Custom Properties · JavaScript · GitHub Pages</p>
           <div class="cv-entry-body">
             <ul>
-              <li>Custom responsive static site from scratch — zero third-party UI frameworks</li>
-              <li>Component-based layout via Jekyll includes, Liquid templating, and CSS custom properties (design tokens)</li>
-              <li>Automated deployment via GitHub Pages CI/CD; SEO metadata, structured data, sitemap, robots.txt</li>
+              <li>Designed and built a responsive static academic site from scratch without third-party UI frameworks.</li>
+              <li>Implemented a component-based architecture using Jekyll includes, Liquid templates, and CSS custom properties (design tokens).</li>
+              <li>Configured automated CI/CD deployment via GitHub Pages alongside SEO metadata, JSON-LD structured data, sitemap generation, and robots.txt.</li>
             </ul>
           </div>
         </div>
@@ -219,17 +220,35 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
       <ul class="research-list">
         <li class="research-item">
           <p class="research-name">EHR-based Clinical Prediction</p>
-          <p class="research-desc">Deep learning on electronic health records for ICU risk stratification and mortality prediction, building on work in stroke mortality prediction on the multicenter eICU database (CCAI 2026; PRICAI 2026, accepted).</p>
+          <p class="research-desc">Deep learning on electronic health records for ICU risk stratification and mortality prediction, building on stroke mortality studies using the multicenter eICU database (CCAI 2026; PRICAI 2026).</p>
         </li>
         <li class="research-item">
           <p class="research-name">Trustworthy Clinical AI</p>
-          <p class="research-desc">Inference-time safeguards against malformed and out-of-range inputs, and attention-based interpretability that a clinician can check.</p>
+          <p class="research-desc">Inference-time safeguards against malformed or out-of-range inputs, along with calibration and interpretability methods clinicians can audit.</p>
         </li>
         <li class="research-item">
           <p class="research-name">Reproducible Pipelines</p>
-          <p class="research-desc">Multicenter clinical databases, leakage-free cohort construction, and open-source code.</p>
+          <p class="research-desc">Multicenter clinical databases, leakage-free cohort construction, and open-source implementations.</p>
         </li>
       </ul>
+    </section>
+
+    <section class="content-section">
+      <p class="section-label">Skills</p>
+      <div class="skills-table">
+        <div class="skill-row">
+          <span class="skill-category">Languages &amp; Frameworks</span>
+          <span class="skill-items">Python, SQL; PyTorch, scikit-learn, XGBoost, Optuna, pandas, NumPy</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Clinical Databases</span>
+          <span class="skill-items">eICU-CRD v2.0, MIMIC-IV v3.1</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Tools</span>
+          <span class="skill-items">Git, Linux, Docker, LaTeX</span>
+        </div>
+      </div>
     </section>
 
     <section class="content-section">
@@ -241,7 +260,7 @@ description: "Curriculum Vitae of Zhengrong Jia — AI researcher with expertise
         </div>
         <div class="skill-row">
           <span class="skill-category">English</span>
-          <span class="skill-items">Upper-Intermediate</span>
+          <span class="skill-items">Professional working proficiency</span>
         </div>
       </div>
     </section>

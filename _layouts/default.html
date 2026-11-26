@@ -64,7 +64,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.6/css/academicons.min.css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -76,7 +76,7 @@
     "image": "https://zr-jia.github.io/assets/images/avatar.jpg",
     "email": "zhengrong[dot]jia[dot]academic[at]gmail[dot]com",
     "jobTitle": "AI Researcher",
-    "description": "AI researcher specializing in Clinical AI and Deep Learning. First author of a CCAI 2026 paper, published in IEEE Xplore, and of a PRICAI 2026 short paper, accepted.",
+    "description": "AI researcher specializing in Clinical AI and deep learning for electronic health records. First author of a CCAI 2026 paper published in IEEE Xplore and a PRICAI 2026 short paper.",
     "alumniOf": {
       "@type": "CollegeOrUniversity",
       "name": "Macau University of Science and Technology"
@@ -125,6 +125,6 @@
 
   {% include footer.html %}
 
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>
